@@ -1,0 +1,229 @@
+@import "tippy.js/dist/tippy.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+.min-h-fill-available {
+	@apply min-h-screen;
+	min-height: -moz-available;
+	min-height: -webkit-fill-available;
+	min-height: stretch;
+}
+
+.focus\:shadow-outline,
+.focus\:shadow-outline-red,
+.focus\:shadow-outline-gray .focus\:shadow-outline-yellow {
+	@apply outline-none;
+}
+
+.focus\:shadow-outline:focus {
+	@apply outline-none;
+	@apply border-primary-300;
+	@apply ring;
+	@apply ring-offset-0;
+	@apply ring-primary-200;
+	@apply ring-opacity-50;
+}
+.focus\:shadow-outline-only-border:focus {
+	@apply outline-none;
+	@apply border-primary-300;
+}
+
+.focus\:shadow-outline-red:focus {
+	@apply outline-none;
+	@apply border-red-400;
+	@apply ring;
+	@apply ring-offset-0;
+	@apply ring-red-300;
+	@apply ring-opacity-50;
+}
+
+.focus\:shadow-outline-gray:focus {
+	@apply outline-none;
+	@apply border-gray-400;
+	@apply ring;
+	@apply ring-offset-0;
+	@apply ring-gray-300;
+	@apply ring-opacity-50;
+}
+
+.focus\:shadow-outline-yellow:focus {
+	@apply outline-none;
+	@apply border-yellow-500;
+	@apply ring;
+	@apply ring-offset-0;
+	@apply ring-yellow-500;
+	@apply ring-opacity-50;
+}
+
+.panel-actions > :not([hidden]) ~ :not([hidden]):last-child {
+	@apply pr-4;
+	@apply m-0;
+}
+
+/**
+ * We want to have a proper width fallback
+ * value, so that in case browser does not
+ * support "max-content", then at least it
+ * would look decent enough.
+ */
+.user-navigation-w-max {
+	@apply w-52;
+	@apply w-max;
+}
+
+/**
+ * This class is used by sidebar on html/body elements
+ * in order to forcefully hide scrollbar without
+ * removing/modifying style attribute.
+ * In general we don't want to remove/modify style
+ * because we could accidentally remove wrong styles
+ * for example from headlessui library.
+ */
+.sidebar-hide-scrollbar {
+	overflow: hidden !important;
+}
+
+.shadow-up {
+	box-shadow: 0 -1px 3px 0 rgb(0 0 0 / 8%), 0 -1px 2px -1px rgb(0 0 0 / 8%);
+}
+
+.grid-node-container {
+	grid-template-columns: repeat(var(--d-gtc), 1fr);
+}
+.grid-node-item {
+	grid-column: span var(--d-gc) / span var(--d-gc);
+}
+@media (min-width: 640px) {
+	.grid-node-container {
+		grid-template-columns: repeat(var(--sm-gtc, var(--d-gtc)), 1fr);
+	}
+	.grid-node-item {
+		grid-column: span var(--sm-gc, var(--d-gc)) / span
+			var(--sm-gc, var(--d-gc));
+	}
+}
+@media (min-width: 768px) {
+	.grid-node-container {
+		grid-template-columns: repeat(
+			var(--md-gtc, var(--sm-gtc, var(--d-gtc))),
+			1fr
+		);
+	}
+	.grid-node-item {
+		grid-column: span var(--md-gc, var(--sm-gc, var(--d-gc))) / span
+			var(--md-gc, var(--sm-gc, var(--d-gc)));
+	}
+}
+@media (min-width: 1024px) {
+	.grid-node-container {
+		grid-template-columns: repeat(
+			var(--lg-gtc, var(--md-gtc, var(--sm-gtc, var(--d-gtc)))),
+			1fr
+		);
+	}
+	.grid-node-item {
+		grid-column: span var(--lg-gc, var(--md-gc, var(--sm-gc, var(--d-gc)))) /
+			span var(--lg-gc, var(--md-gc, var(--sm-gc, var(--d-gc))));
+	}
+}
+@media (min-width: 1280px) {
+	.grid-node-container {
+		grid-template-columns: repeat(
+			var(
+				--xl-gtc,
+				var(--lg-gtc, var(--md-gtc, var(--sm-gtc, var(--d-gtc))))
+			),
+			1fr
+		);
+	}
+	.grid-node-item {
+		grid-column: span
+			var(--xl-gc, var(--lg-gc, var(--md-gc, var(--sm-gc, var(--d-gc))))) /
+			span
+			var(--xl-gc, var(--lg-gc, var(--md-gc, var(--sm-gc, var(--d-gc)))));
+	}
+}
+
+.responsive-display {
+	display: var(--d-d);
+}
+@media (min-width: 640px) {
+	.responsive-display {
+		display: var(--sm-d, var(--d-d));
+	}
+}
+@media (min-width: 768px) {
+	.responsive-display {
+		display: var(--md-d, var(--sm-d, var(--d-d)));
+	}
+}
+@media (min-width: 1024px) {
+	.responsive-display {
+		display: var(--lg-d, var(--md-d, var(--sm-d, var(--d-d))));
+	}
+}
+@media (min-width: 1280px) {
+	.responsive-display {
+		display: var(--xl-d, var(--lg-d, var(--md-d, var(--sm-d, var(--d-d)))));
+	}
+}
+
+.responsive-text-align {
+	text-align: var(--d-ta);
+}
+@media (min-width: 640px) {
+	.responsive-text-align {
+		text-align: var(--sm-ta, var(--d-ta));
+	}
+}
+@media (min-width: 768px) {
+	.responsive-text-align {
+		text-align: var(--md-ta, var(--sm-ta, var(--d-ta)));
+	}
+}
+@media (min-width: 1024px) {
+	.responsive-text-align {
+		text-align: var(--lg-ta, var(--md-ta, var(--sm-ta, var(--d-ta))));
+	}
+}
+@media (min-width: 1280px) {
+	.responsive-text-align {
+		text-align: var(
+			--xl-ta,
+			var(--lg-ta, var(--md-ta, var(--sm-ta, var(--d-ta))))
+		);
+	}
+}
+
+.responsive-justify {
+	justify-content: var(--d-jc);
+}
+@media (min-width: 640px) {
+	.responsive-justify {
+		justify-content: var(--sm-jc, var(--d-jc));
+	}
+}
+@media (min-width: 768px) {
+	.responsive-justify {
+		justify-content: var(--md-jc, var(--sm-jc, var(--d-jc)));
+	}
+}
+@media (min-width: 1024px) {
+	.responsive-justify {
+		justify-content: var(--lg-jc, var(--md-jc, var(--sm-jc, var(--d-jc))));
+	}
+}
+@media (min-width: 1280px) {
+	.responsive-justify {
+		justify-content: var(
+			--xl-jc,
+			var(--lg-jc, var(--md-jc, var(--sm-jc, var(--d-jc))))
+		);
+	}
+}

@@ -1,0 +1,7 @@
+/node_modules
+/vendor
+/resources/dist-module
+.idea
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log

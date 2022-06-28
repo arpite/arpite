@@ -1,40 +1,23 @@
-# Cygnus
+<a href="https://arpite.dev" >
+  <img alt="Arpite hero image" src="./.github/HeroImage.png">
+</a>
+
+# Arpine
+An open-source library for Laravel for building high-quality, accessible applications and administrator dashboards.
 
 ## Installation
-1. Clone into project
+1. Install the packege from Composer
 ```bash
-git clone git@github.com:sudobeecom/cygnus.git
+composer require sudobee/cygnus@dev-alpha
 ```
 
-2. Add repository to project
-```json
-"repositories": [
-    {
-        "type": "path",
-        "url": "./cygnus"
-    }
-],
-```
-
-3. Require new package
-```json
-"require": {
-    "sudobee/cygnus": "*"
-},
-```
-
-4. Update packages using composer
-```bash
-composer update
-```
-
-5. Publish/re-publish assets
+2. Publish/re-publish assets
 ```bash
 rm -rf public/vendor/cygnus
 php artisan vendor:publish --tag=cygnus-assets
 ```
 
-6. Add `app.blade.php`
+3. Add `app.blade.php`
 ```html
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="overflow-y-scroll">
@@ -72,7 +55,7 @@ php artisan vendor:publish --tag=cygnus-assets
 </html>
 ```
 
-7. Add to AppServiceProvider boot() method
+4. Add to AppServiceProvider boot() method
 ```php
 Inertia::share([
     "baseUrl" => fn() => URL::to("/"),
@@ -85,7 +68,7 @@ Inertia::share([
 ]);
 ```
 
-8. Add to HandleInertiaRequests share() method
+5. Add to HandleInertiaRequests share() method
 ```php
 /** @var User|null $user */
 $user = auth()->check() ? auth()->user() : null;
@@ -96,16 +79,10 @@ return array_merge(parent::share($request), [
 ]);
 ```
 
-9. Add to RouteServiceProvider getHomepage() method
+6. Add to RouteServiceProvider getHomepage() method
 ```php
 public static function getHomepage(): string
 {
     return self::HOME;
 }
-```
-
-## Update
-Run inside your project directory:
-```bash
-git submodule update --remote --merge
 ```

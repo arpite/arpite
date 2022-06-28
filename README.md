@@ -3,9 +3,10 @@
 </a>
 
 # Arpine
-An open-source library for Laravel for building high-quality, accessible applications and administrator dashboards.
+An open-source Laravel library for building high-quality, accessible applications and administrator dashboards. Built using [Inertia.js](https://inertiajs.com/), [React](https://reactjs.org/), [TailwindCSS](https://tailwindcss.com/), and [React Aria](https://react-spectrum.adobe.com/react-aria/).
 
-## Installation
+## Getting Started
+**⚠️ Arpine is currently in early development and APIs are likely to change quite often. Use at production on your own risk!**
 1. Install the packege from Composer
 ```bash
 composer require sudobee/cygnus@dev-alpha
@@ -86,3 +87,5 @@ public static function getHomepage(): string
     return self::HOME;
 }
 ```
+## License
+Arpite is licensed under the MIT License, see [LICENSE](./LICENSE) for more information.

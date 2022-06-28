@@ -32,8 +32,8 @@ php artisan vendor:publish --tag=cygnus-assets
     <!-- Fonts -->
     <link rel="stylesheet" href="{{ asset('fonts/inter/inter.css') }}" />
 
-    <link rel="stylesheet" href="/vendor/cygnus/index.css">
-    <script src="/vendor/cygnus/index.js" defer></script>
+    <link rel="stylesheet" href="/vendor/cygnus/cygnus.css">
+    <script src="/vendor/cygnus/cygnus.js" defer></script>
 
     <style>
         :root {

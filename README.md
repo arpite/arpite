@@ -3,7 +3,7 @@
 </a>
 
 # Arpite
-An open-source Laravel library for building high-quality, accessible applications and administrator dashboards. Built using [Inertia.js](https://inertiajs.com/), [React](https://reactjs.org/), [TailwindCSS](https://tailwindcss.com/), and [HeadlessUI](https://headlessui.com/).
+An open-source Laravel library for building high-quality, accessible applications and administration dashboards. Built using [Inertia.js](https://inertiajs.com/), [React](https://reactjs.org/), [TailwindCSS](https://tailwindcss.com/), and [HeadlessUI](https://headlessui.com/).
 
 ## Getting Started
 **⚠️ Arpite is currently in early development and APIs are likely to change quite often. Use in production on your own risk!**

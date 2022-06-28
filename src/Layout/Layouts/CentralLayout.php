@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Layout\Layouts;
+namespace Arpite\Arpite\Layout\Layouts;
 
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Layout\Layout;
+use Arpite\Arpite\Component\Components\Text;
+use Arpite\Arpite\Component\Traits\HasTitle;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Layout\Layout;
 
 class CentralLayout extends Layout
 {

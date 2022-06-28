@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits\HasTextAlign;
+namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasTextAlign;
 
-use SudoBee\Cygnus\Component\Enums\Align;
-use SudoBee\Cygnus\Component\ResponsiveValue;
+use Arpite\Arpite\Component\Enums\Align;
+use Arpite\Arpite\Component\ResponsiveValue;
 
 it("should have initial export", function () {
 	expect((new TestComponentWithHasTextAlignTrait())->export())->toBe([

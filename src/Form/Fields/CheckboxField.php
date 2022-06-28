@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields;
+namespace Arpite\Arpite\Form\Fields;
 
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Components\Text;
+use Arpite\Arpite\Component\Traits\HasDescription;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 use Illuminate\Validation\Rule;
 
 /**

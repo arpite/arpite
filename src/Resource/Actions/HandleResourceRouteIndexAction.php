@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Resource\Actions;
+namespace Arpite\Arpite\Resource\Actions;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
@@ -10,16 +10,16 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
 use Inertia\Response;
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Button\Button;
-use SudoBee\Cygnus\Component\Components\Link\Link;
-use SudoBee\Cygnus\Component\Components\PaginatedTable\PaginatedTable;
-use SudoBee\Cygnus\Component\Components\Table\Cells\TableLinks;
-use SudoBee\Cygnus\Component\Components\Table\TableRow;
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Component\Enums\Icon;
-use SudoBee\Cygnus\Core\Utilities\Translate;
-use SudoBee\Cygnus\Responses\StructuredPageResponse;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Components\Button\Button;
+use Arpite\Arpite\Component\Components\Link\Link;
+use Arpite\Arpite\Component\Components\PaginatedTable\PaginatedTable;
+use Arpite\Arpite\Component\Components\Table\Cells\TableLinks;
+use Arpite\Arpite\Component\Components\Table\TableRow;
+use Arpite\Arpite\Component\Components\Text;
+use Arpite\Arpite\Component\Enums\Icon;
+use Arpite\Arpite\Core\Utilities\Translate;
+use Arpite\Arpite\Responses\StructuredPageResponse;
 
 class HandleResourceRouteIndexAction
 {

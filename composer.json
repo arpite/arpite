@@ -1,5 +1,5 @@
 {
-    "name": "sudobee/cygnus",
+    "name": "arpite/arpite",
     "require": {
         "php": "^8.1",
         "ext-json": "*",
@@ -20,18 +20,18 @@
     },
     "autoload": {
         "psr-4": {
-            "SudoBee\\Cygnus\\": "src"
+            "Arpite\\Arpite\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SudoBee\\Cygnus\\Tests\\": "tests"
+            "Arpite\\Arpite\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "SudoBee\\Cygnus\\CygnusServiceProvider"
+                "Arpite\\Arpite\\ArpiteServiceProvider"
             ]
         }
     },

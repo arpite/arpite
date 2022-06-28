@@ -1,15 +1,15 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Table;
+namespace Arpite\Arpite\Component\Components\Table;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\EmptyState;
-use SudoBee\Cygnus\Component\Components\Panel;
-use SudoBee\Cygnus\Component\Traits\HasActions;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Component\Traits\HasWithPanel;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Components\EmptyState;
+use Arpite\Arpite\Component\Components\Panel;
+use Arpite\Arpite\Component\Traits\HasActions;
+use Arpite\Arpite\Component\Traits\HasDescription;
+use Arpite\Arpite\Component\Traits\HasTitle;
+use Arpite\Arpite\Component\Traits\HasWithPanel;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 use Exception;
 use Illuminate\Support\Str;
 

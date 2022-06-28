@@ -6,7 +6,7 @@ export default defineConfig({
 		rollupOptions: {
 			input: "resources/js/index.tsx",
 			output: {
-				entryFileNames: "cygnus.js",
+				entryFileNames: "arpite.js",
 			},
 		},
 		outDir: "resources/dist",

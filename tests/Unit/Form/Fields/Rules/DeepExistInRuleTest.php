@@ -1,6 +1,6 @@
 <?php
 
-use SudoBee\Cygnus\Component\Rules\DeepExistInRule;
+use Arpite\Arpite\Component\Rules\DeepExistInRule;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 

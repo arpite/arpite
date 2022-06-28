@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\PaginatedTable\Actions;
+namespace Arpite\Arpite\Component\Components\PaginatedTable\Actions;
 
 use Illuminate\Support\Arr;
 

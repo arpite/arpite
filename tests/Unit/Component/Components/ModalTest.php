@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components;
+namespace Arpite\Arpite\Tests\Unit\Component\Components;
 
-use SudoBee\Cygnus\Component\Components\Modal\Modal;
-use SudoBee\Cygnus\Form\Form;
+use Arpite\Arpite\Component\Components\Modal\Modal;
+use Arpite\Arpite\Form\Form;
 use Exception;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Form\Operation\TestOperation;
+use Arpite\Arpite\Tests\Constants;
+use Arpite\Arpite\Tests\TestCase;
+use Arpite\Arpite\Tests\Unit\Form\Operation\TestOperation;
 
 const MODAL_COMPONENT_EXPORT = [
 	"nodeType" => "Modal",

@@ -5,7 +5,7 @@ import StructuredPage from "./Pages/StructuredPage";
 import { InertiaProgress } from "@inertiajs/progress";
 import "./i18n";
 
-export class Cygnus {
+export class Arpite {
 	private static customNodes: Record<string, React.FC<any>> = {};
 
 	public static getCustomNodes() {
@@ -13,7 +13,7 @@ export class Cygnus {
 	}
 
 	public static addNodes(nodes: Record<string, React.FC<any>>) {
-		Cygnus.customNodes = { ...Cygnus.customNodes, ...nodes };
+		Arpite.customNodes = { ...Arpite.customNodes, ...nodes };
 
 		return this;
 	}

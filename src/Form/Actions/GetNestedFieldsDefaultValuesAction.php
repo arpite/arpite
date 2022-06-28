@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Actions;
+namespace Arpite\Arpite\Form\Actions;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Form\Fields\Field;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Form\Fields\Field;
 
 class GetNestedFieldsDefaultValuesAction
 {

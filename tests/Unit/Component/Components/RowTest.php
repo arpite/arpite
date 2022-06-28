@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components;
+namespace Arpite\Arpite\Tests\Unit\Component\Components;
 
-use SudoBee\Cygnus\Component\Components\Row;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Component\Components\Row;
+use Arpite\Arpite\Tests\TestCase;
 
 class RowTest extends TestCase
 {

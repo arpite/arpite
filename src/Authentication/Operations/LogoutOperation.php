@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Operations;
+namespace Arpite\Arpite\Authentication\Operations;
 
-use SudoBee\Cygnus\Authentication\Actions\LogoutUserAction;
-use SudoBee\Cygnus\Form\Operation;
+use Arpite\Arpite\Authentication\Actions\LogoutUserAction;
+use Arpite\Arpite\Form\Operation;
 
 class LogoutOperation extends Operation
 {

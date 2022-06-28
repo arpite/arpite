@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\ResourceFieldConfiguration;
+namespace Arpite\Arpite\ResourceFieldConfiguration;
 
 use Illuminate\Support\Collection;
-use SudoBee\Cygnus\Resource\Enums\ResourcePageType;
+use Arpite\Arpite\Resource\Enums\ResourcePageType;
 
 class ResourceFieldConfiguration
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Operation;
+namespace Arpite\Arpite\Tests\Unit\Form\Operation;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 class OperationWithInertiaResponseTest extends TestCase
 {

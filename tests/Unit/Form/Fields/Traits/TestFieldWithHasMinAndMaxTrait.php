@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields\Traits;
+namespace Arpite\Arpite\Tests\Unit\Form\Fields\Traits;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Fields\Field;
-use SudoBee\Cygnus\Form\Fields\Traits\HasMinAndMax;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Form\Fields\Field;
+use Arpite\Arpite\Form\Fields\Traits\HasMinAndMax;
 
 class TestFieldWithHasMinAndMaxTrait extends Field
 {

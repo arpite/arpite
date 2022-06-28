@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields;
+namespace Arpite\Arpite\Tests\Unit\Form\Fields;
 
-use SudoBee\Cygnus\Form\Fields\TextField;
+use Arpite\Arpite\Form\Fields\TextField;
 use Illuminate\Validation\Rules\Password;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 class TextFieldTest extends TestCase
 {

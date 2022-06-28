@@ -1,14 +1,14 @@
 <?php
 
-namespace SudoBee\Cygnus;
+namespace Arpite\Arpite;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class CygnusServiceProvider extends PackageServiceProvider
+class ArpiteServiceProvider extends PackageServiceProvider
 {
 	public function configurePackage(Package $package): void
 	{
-		$package->name("cygnus")->hasAssets();
+		$package->name("arpite")->hasAssets();
 	}
 }

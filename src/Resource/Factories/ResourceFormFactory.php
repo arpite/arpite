@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Resource\Factories;
+namespace Arpite\Arpite\Resource\Factories;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use SudoBee\Cygnus\Core\Utilities\Translate;
-use SudoBee\Cygnus\Form\Fields\Field;
-use SudoBee\Cygnus\Form\Form;
+use Arpite\Arpite\Core\Utilities\Translate;
+use Arpite\Arpite\Form\Fields\Field;
+use Arpite\Arpite\Form\Form;
 
 class ResourceFormFactory
 {

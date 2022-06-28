@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Core\Traits;
+namespace Arpite\Arpite\Core\Traits;
 
 trait HasRegisterRoutes
 {

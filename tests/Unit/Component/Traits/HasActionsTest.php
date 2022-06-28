@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits;
+namespace Arpite\Arpite\Tests\Unit\Component\Traits;
 
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Arpite\Tests\TestCase;
+use Arpite\Arpite\Tests\Unit\Component\TestComponent;
 
 class HasActionsTest extends TestCase
 {

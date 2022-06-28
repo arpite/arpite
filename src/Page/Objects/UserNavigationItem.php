@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Page\Objects;
+namespace Arpite\Arpite\Page\Objects;
 
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Interfaces\Exportable;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Arpite\Component\Traits\HasTitle;
+use Arpite\Arpite\Core\Interfaces\Exportable;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Page\Page;
 
 class UserNavigationItem implements Exportable
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Form;
+namespace Arpite\Arpite\Tests\Unit\Form\Form;
 
-use SudoBee\Cygnus\Form\Form\FormButton;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Form\Form\FormButton;
+use Arpite\Arpite\Tests\Constants;
+use Arpite\Arpite\Tests\TestCase;
 
 class FormButtonTest extends TestCase
 {

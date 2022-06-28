@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Page;
+namespace Arpite\Arpite\Page;
 
-use SudoBee\Cygnus\Core\Traits\HasResolveHelpers;
+use Arpite\Arpite\Core\Traits\HasResolveHelpers;
 use Exception;
 
 abstract class TabPage extends Page

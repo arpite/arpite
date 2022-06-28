@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Page;
+namespace Arpite\Arpite\Tests\Unit\Page;
 
-use SudoBee\Cygnus\Page\TabPage;
+use Arpite\Arpite\Page\TabPage;
 
 class VeryOldTestTab extends TabPage
 {

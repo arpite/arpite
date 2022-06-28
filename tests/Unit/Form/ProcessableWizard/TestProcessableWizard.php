@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\ProcessableWizard;
+namespace Arpite\Arpite\Tests\Unit\Form\ProcessableWizard;
 
-use SudoBee\Cygnus\Component\Components\Wizard\Partials\WizardStep;
-use SudoBee\Cygnus\Form\ProcessableWizard;
-use SudoBee\Cygnus\Tests\Unit\Form\Fields\TestField;
+use Arpite\Arpite\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Arpite\Form\ProcessableWizard;
+use Arpite\Arpite\Tests\Unit\Form\Fields\TestField;
 
 class TestProcessableWizard extends ProcessableWizard
 {

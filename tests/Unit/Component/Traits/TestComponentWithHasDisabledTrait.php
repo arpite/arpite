@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits;
+namespace Arpite\Arpite\Tests\Unit\Component\Traits;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasDisabled;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Traits\HasDisabled;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasDisabledTrait extends Component
 {

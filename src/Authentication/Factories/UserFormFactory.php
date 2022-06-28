@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Factories;
+namespace Arpite\Arpite\Authentication\Factories;
 
 use Domain\Team\Models\User;
 use Illuminate\Validation\Rule;
-use SudoBee\Cygnus\Form\Fields\TextField;
+use Arpite\Arpite\Form\Fields\TextField;
 
 class UserFormFactory
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Enums;
+namespace Arpite\Arpite\Component\Enums;
 
 class Align
 {

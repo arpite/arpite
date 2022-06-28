@@ -1,7 +1,7 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Button\Button;
-use SudoBee\Cygnus\Component\Components\ShopConnectionPanel;
+use Arpite\Arpite\Component\Components\Button\Button;
+use Arpite\Arpite\Component\Components\ShopConnectionPanel;
 use Domain\Integration\Integrations\WooCommerceIntegration;
 use Domain\Integration\Models\Integration;
 

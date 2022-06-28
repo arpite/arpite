@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components;
+namespace Arpite\Arpite\Component\Components;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Enums\Icon;
-use SudoBee\Cygnus\Component\Traits\HasButtons;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Component\Traits\HasIcon;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Enums\Icon;
+use Arpite\Arpite\Component\Traits\HasButtons;
+use Arpite\Arpite\Component\Traits\HasDescription;
+use Arpite\Arpite\Component\Traits\HasIcon;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class AlertBanner extends Component
 {

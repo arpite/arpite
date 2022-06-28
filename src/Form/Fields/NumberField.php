@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields;
+namespace Arpite\Arpite\Form\Fields;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Fields\Traits\HasMinAndMax;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Form\Fields\Traits\HasMinAndMax;
 
 /**
  * @extends Field<?int>

@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\PricingPlans;
+namespace Arpite\Arpite\Component\Components\PricingPlans;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasButtons;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Traits\HasButtons;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class PricingPlanInterval extends Component
 {

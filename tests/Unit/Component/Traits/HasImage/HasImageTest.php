@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits\HasImage;
+namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasImage;
 
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 const COMPONENT_EXPORT = [
 	"nodeType" => "TestComponentWithHasImageTrait",

@@ -1,3 +1,3 @@
-import { Cygnus } from "./Cygnus";
+import { Arpite } from "./Arpite";
 
-Cygnus.render();
+Arpite.render();

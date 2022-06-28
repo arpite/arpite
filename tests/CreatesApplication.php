@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests;
+namespace Arpite\Arpite\Tests;
 
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;

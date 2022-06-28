@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields;
+namespace Arpite\Arpite\Form\Fields;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 use Illuminate\Validation\Rules\Password;
 
 /**

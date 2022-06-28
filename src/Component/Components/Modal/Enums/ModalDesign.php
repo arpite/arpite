@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Modal\Enums;
+namespace Arpite\Arpite\Component\Components\Modal\Enums;
 
 class ModalDesign
 {

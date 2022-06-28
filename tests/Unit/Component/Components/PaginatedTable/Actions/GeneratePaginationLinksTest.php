@@ -1,6 +1,6 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\PaginatedTable\Actions\GeneratePaginationLinksAction;
+use Arpite\Arpite\Component\Components\PaginatedTable\Actions\GeneratePaginationLinksAction;
 
 it(
 	"should generate pagination links correctly when in first page",

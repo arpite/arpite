@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Chart\Enums;
+namespace Arpite\Arpite\Component\Components\Chart\Enums;
 
 class DataColor
 {

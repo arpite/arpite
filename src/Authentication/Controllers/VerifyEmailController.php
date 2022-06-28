@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Controllers;
+namespace Arpite\Arpite\Authentication\Controllers;
 
-use SudoBee\Cygnus\Core\Utilities\Notification;
+use Arpite\Arpite\Core\Utilities\Notification;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\RedirectResponse;
 

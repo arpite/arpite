@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\ProcessableWizard;
+namespace Arpite\Arpite\Form\ProcessableWizard;
 
-use SudoBee\Cygnus\Form\Form;
-use SudoBee\Cygnus\Form\ProcessableWizard;
+use Arpite\Arpite\Form\Form;
+use Arpite\Arpite\Form\ProcessableWizard;
 
 class ProcessableWizardForm
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Traits;
+namespace Arpite\Arpite\Form\Traits;
 
-use App\Cygnus\OperationStore;
+use App\Arpite\OperationStore;
 
 trait HasStore
 {

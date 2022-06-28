@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Actions;
+namespace Arpite\Arpite\Authentication\Actions;
 
 class LogoutUserAction
 {

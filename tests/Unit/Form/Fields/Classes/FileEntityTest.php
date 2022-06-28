@@ -1,6 +1,6 @@
 <?php
 
-use SudoBee\Cygnus\Form\Fields\Classes\FileEntity;
+use Arpite\Arpite\Form\Fields\Classes\FileEntity;
 
 it("should return correct array", function () {
 	expect(

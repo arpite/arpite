@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Core\Utilities;
+namespace Arpite\Arpite\Core\Utilities;
 
 class Translate
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Core\Utilities;
+namespace Arpite\Arpite\Tests\Unit\Core\Utilities;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Tests\TestCase;
+use Arpite\Arpite\Tests\Unit\Component\TestComponent;
 
 class ExportBuilderTest extends TestCase
 {

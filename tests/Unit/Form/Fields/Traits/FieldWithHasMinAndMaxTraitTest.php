@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields\Traits;
+namespace Arpite\Arpite\Tests\Unit\Form\Fields\Traits;
 
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 class FieldWithHasMinAndMaxTraitTest extends TestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components;
+namespace Arpite\Arpite\Tests\Unit\Component\Components;
 
-use SudoBee\Cygnus\Component\Components\AddressDisplay;
+use Arpite\Arpite\Component\Components\AddressDisplay;
 use Domain\Carrier\Carriers\OmnivaCarrier;
 use Domain\Carrier\Models\Carrier;
 use Domain\Carrier\Models\Location;
@@ -10,8 +10,8 @@ use Domain\Country\Models\Country;
 use Domain\Shipment\Enums\AddressType;
 use Domain\Shipment\Models\Address;
 use Domain\Team\Models\Team;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\Constants;
+use Arpite\Arpite\Tests\TestCase;
 
 class AddressDisplayTest extends TestCase
 {

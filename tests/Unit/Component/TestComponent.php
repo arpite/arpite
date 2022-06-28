@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component;
+namespace Arpite\Arpite\Tests\Unit\Component;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponent extends Component
 {

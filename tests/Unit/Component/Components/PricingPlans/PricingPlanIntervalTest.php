@@ -1,7 +1,7 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\PricingPlans\PricingPlanInterval;
-use SudoBee\Cygnus\Tests\Constants;
+use Arpite\Arpite\Component\Components\PricingPlans\PricingPlanInterval;
+use Arpite\Arpite\Tests\Constants;
 
 it("should have initial state", function () {
 	$testComponent = PricingPlanInterval::make();

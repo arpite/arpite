@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Traits;
+namespace Arpite\Arpite\Component\Traits;
 
-use SudoBee\Cygnus\Component\Components\Button\Enums\ButtonDesign;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Components\Button\Enums\ButtonDesign;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 trait HasButtonDesign
 {

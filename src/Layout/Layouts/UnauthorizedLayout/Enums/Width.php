@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Layout\Layouts\UnauthorizedLayout\Enums;
+namespace Arpite\Arpite\Layout\Layouts\UnauthorizedLayout\Enums;
 
 class Width
 {

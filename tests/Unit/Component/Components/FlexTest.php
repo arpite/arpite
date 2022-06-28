@@ -1,9 +1,9 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Flex\Enums\Display;
-use SudoBee\Cygnus\Component\Components\Flex\Enums\Justify;
-use SudoBee\Cygnus\Component\Components\Flex\Flex;
-use SudoBee\Cygnus\Component\ResponsiveValue;
+use Arpite\Arpite\Component\Components\Flex\Enums\Display;
+use Arpite\Arpite\Component\Components\Flex\Enums\Justify;
+use Arpite\Arpite\Component\Components\Flex\Flex;
+use Arpite\Arpite\Component\ResponsiveValue;
 
 it("should have initial export", function () {
 	expect(Flex::make()->export())->toBe([

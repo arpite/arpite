@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Chart;
+namespace Arpite\Arpite\Component\Components\Chart;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Chart\Enums\DataType;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Components\Chart\Enums\DataType;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class Chart extends Component
 {

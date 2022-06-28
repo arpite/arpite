@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Link;
+namespace Arpite\Arpite\Component\Components\Link;
 
-use SudoBee\Cygnus\Component\ButtonTemplate;
-use SudoBee\Cygnus\Component\Traits\HasTextAlign;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\ButtonTemplate;
+use Arpite\Arpite\Component\Traits\HasTextAlign;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 use Exception;
 
 class Link extends ButtonTemplate

@@ -1,5 +1,5 @@
 <?php
 
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 uses(TestCase::class)->in("Unit");

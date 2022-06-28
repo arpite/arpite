@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Component;
+namespace Arpite\Arpite\Component;
 
-use SudoBee\Cygnus\Core\Interfaces\Exportable;
+use Arpite\Arpite\Core\Interfaces\Exportable;
 
 abstract class Component implements Exportable
 {

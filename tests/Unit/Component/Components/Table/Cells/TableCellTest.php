@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Table\Cells;
+namespace Arpite\Arpite\Tests\Unit\Component\Components\Table\Cells;
 
-use SudoBee\Cygnus\Component\Components\Table\Cells\TableCell;
-use SudoBee\Cygnus\Component\Components\Table\Enums\StatusImage;
+use Arpite\Arpite\Component\Components\Table\Cells\TableCell;
+use Arpite\Arpite\Component\Components\Table\Enums\StatusImage;
 use Exception;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 class TableCellTest extends TestCase
 {

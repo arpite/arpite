@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields\RadiosField;
+namespace Arpite\Arpite\Tests\Unit\Form\Fields\RadiosField;
 
-use SudoBee\Cygnus\Form\Fields\RadiosField\RadioButton;
-use SudoBee\Cygnus\Form\Fields\RadiosField\RadiosField;
+use Arpite\Arpite\Form\Fields\RadiosField\RadioButton;
+use Arpite\Arpite\Form\Fields\RadiosField\RadiosField;
 use Illuminate\Validation\Rule;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\Constants;
+use Arpite\Arpite\Tests\TestCase;
 
 class RadiosFieldTest extends TestCase
 {

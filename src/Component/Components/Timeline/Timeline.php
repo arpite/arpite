@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Timeline;
+namespace Arpite\Arpite\Component\Components\Timeline;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class Timeline extends Component
 {

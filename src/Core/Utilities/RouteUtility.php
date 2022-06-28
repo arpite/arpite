@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Core\Utilities;
+namespace Arpite\Arpite\Core\Utilities;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use SudoBee\Cygnus\Core\Enums\RouteMethod;
-use SudoBee\Cygnus\Form\Actions\HandleExceptionGracefullyAction;
+use Arpite\Arpite\Core\Enums\RouteMethod;
+use Arpite\Arpite\Form\Actions\HandleExceptionGracefullyAction;
 use Throwable;
 
 class RouteUtility

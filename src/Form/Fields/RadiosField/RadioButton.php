@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields\RadiosField;
+namespace Arpite\Arpite\Form\Fields\RadiosField;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Traits\HasDescription;
+use Arpite\Arpite\Component\Traits\HasTitle;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class RadioButton extends Component
 {

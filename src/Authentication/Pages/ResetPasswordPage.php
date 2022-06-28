@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Pages;
+namespace Arpite\Arpite\Authentication\Pages;
 
-use SudoBee\Cygnus\Authentication\Forms\ResetPasswordForm;
-use SudoBee\Cygnus\Component\Components\Panel;
-use SudoBee\Cygnus\Layout\Layout;
-use SudoBee\Cygnus\Layout\Layouts\CentralLayout;
-use SudoBee\Cygnus\Layout\Layouts\UnauthorizedLayout\UnauthorizedLayout;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Arpite\Authentication\Forms\ResetPasswordForm;
+use Arpite\Arpite\Component\Components\Panel;
+use Arpite\Arpite\Layout\Layout;
+use Arpite\Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Arpite\Layout\Layouts\UnauthorizedLayout\UnauthorizedLayout;
+use Arpite\Arpite\Page\Page;
 
 class ResetPasswordPage extends Page
 {

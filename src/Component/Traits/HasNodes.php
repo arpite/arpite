@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Traits;
+namespace Arpite\Arpite\Component\Traits;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 trait HasNodes
 {

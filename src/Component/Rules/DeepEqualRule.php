@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Rules;
+namespace Arpite\Arpite\Component\Rules;
 
 use Exception;
 use Illuminate\Contracts\Validation\Rule;

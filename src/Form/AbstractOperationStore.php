@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Form;
+namespace Arpite\Arpite\Form;
 
 abstract class AbstractOperationStore
 {

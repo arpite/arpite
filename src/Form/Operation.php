@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Form;
+namespace Arpite\Arpite\Form;
 
-use SudoBee\Cygnus\Core\Traits\HasRegisterRoutes;
-use SudoBee\Cygnus\Core\Traits\HasResolveHelpers;
-use SudoBee\Cygnus\Core\Utilities\Notification;
-use SudoBee\Cygnus\Core\Utilities\RouteUtility;
-use SudoBee\Cygnus\Form\Actions\IsInertiaRequestAction;
-use SudoBee\Cygnus\Form\Enums\OperationResponseType;
+use Arpite\Arpite\Core\Traits\HasRegisterRoutes;
+use Arpite\Arpite\Core\Traits\HasResolveHelpers;
+use Arpite\Arpite\Core\Utilities\Notification;
+use Arpite\Arpite\Core\Utilities\RouteUtility;
+use Arpite\Arpite\Form\Actions\IsInertiaRequestAction;
+use Arpite\Arpite\Form\Enums\OperationResponseType;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

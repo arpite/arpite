@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Utilities;
+namespace Arpite\Arpite\Component\Utilities;
 
 use Illuminate\Support\Str;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Pages;
+namespace Arpite\Arpite\Authentication\Pages;
 
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Route;
-use SudoBee\Cygnus\Authentication\Operations\LogoutOperation;
+use Arpite\Arpite\Authentication\Operations\LogoutOperation;
 
 class AuthenticationPages
 {

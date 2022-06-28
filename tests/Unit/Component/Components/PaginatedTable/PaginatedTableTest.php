@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\PaginatedTable;
+namespace Arpite\Arpite\Tests\Unit\Component\Components\PaginatedTable;
 
-use SudoBee\Cygnus\Component\Components\PaginatedTable\PaginatedTable;
-use SudoBee\Cygnus\Component\Components\Table\TableRow;
+use Arpite\Arpite\Component\Components\PaginatedTable\PaginatedTable;
+use Arpite\Arpite\Component\Components\Table\TableRow;
 use Domain\Team\Models\User;
 use Exception;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Arpite\Tests\TestCase;
+use Arpite\Arpite\Tests\Unit\Component\TestComponent;
 
 class PaginatedTableTest extends TestCase
 {

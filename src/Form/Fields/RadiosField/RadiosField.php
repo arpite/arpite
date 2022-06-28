@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields\RadiosField;
+namespace Arpite\Arpite\Form\Fields\RadiosField;
 
-use SudoBee\Cygnus\Component\Exceptions\MethodNotAllowedException;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Fields\Enums\ValidationRule;
-use SudoBee\Cygnus\Form\Fields\Field;
+use Arpite\Arpite\Component\Exceptions\MethodNotAllowedException;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Form\Fields\Enums\ValidationRule;
+use Arpite\Arpite\Form\Fields\Field;
 use Illuminate\Validation\Rule;
 
 /**

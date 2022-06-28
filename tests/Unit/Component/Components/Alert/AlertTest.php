@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Alert;
+namespace Arpite\Arpite\Tests\Unit\Component\Components\Alert;
 
-use SudoBee\Cygnus\Component\Components\Alert\Alert;
-use SudoBee\Cygnus\Component\Components\Alert\Enums\AlertType;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Component\Components\Alert\Alert;
+use Arpite\Arpite\Component\Components\Alert\Enums\AlertType;
+use Arpite\Arpite\Tests\TestCase;
 
 class AlertTest extends TestCase
 {

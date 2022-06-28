@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits\HasButtonColor;
+namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasButtonColor;
 
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 const COMPONENT_EXPORT = [
 	"nodeType" => "TestComponentWithHasButtonColorTrait",

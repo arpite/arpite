@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Chart;
+namespace Arpite\Arpite\Component\Components\Chart;
 
-use SudoBee\Cygnus\Core\Interfaces\Exportable;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Core\Interfaces\Exportable;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class DataSet implements Exportable
 {

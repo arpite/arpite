@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Wizard;
+namespace Arpite\Arpite\Component\Components\Wizard;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Traits\HasNodes;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class WizardContent extends Component
 {

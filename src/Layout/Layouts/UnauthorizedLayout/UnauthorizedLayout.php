@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Layout\Layouts\UnauthorizedLayout;
+namespace Arpite\Arpite\Layout\Layouts\UnauthorizedLayout;
 
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Layout\Layout;
-use SudoBee\Cygnus\Layout\Layouts\UnauthorizedLayout\Enums\Width;
+use Arpite\Arpite\Component\Components\Text;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Layout\Layout;
+use Arpite\Arpite\Layout\Layouts\UnauthorizedLayout\Enums\Width;
 
 class UnauthorizedLayout extends Layout
 {

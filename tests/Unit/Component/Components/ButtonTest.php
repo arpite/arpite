@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components;
+namespace Arpite\Arpite\Tests\Unit\Component\Components;
 
-use SudoBee\Cygnus\Component\Components\Button\Button;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Component\Components\Button\Button;
+use Arpite\Arpite\Tests\Constants;
+use Arpite\Arpite\Tests\TestCase;
 
 class ButtonTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components;
+namespace Arpite\Arpite\Tests\Unit\Component\Components;
 
-use SudoBee\Cygnus\Component\Components\Grid;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Arpite\Component\Components\Grid;
+use Arpite\Arpite\Tests\TestCase;
+use Arpite\Arpite\Tests\Unit\Component\TestComponent;
 
 class GridTest extends TestCase
 {

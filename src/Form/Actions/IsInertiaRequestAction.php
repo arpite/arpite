@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Actions;
+namespace Arpite\Arpite\Form\Actions;
 
 use Illuminate\Http\Request;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Link;
+namespace Arpite\Arpite\Tests\Unit\Component\Components\Link;
 
-use SudoBee\Cygnus\Component\Components\Link\Link;
+use Arpite\Arpite\Component\Components\Link\Link;
 use Exception;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 class LinkTest extends TestCase
 {

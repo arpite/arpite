@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Page\Resolvers;
+namespace Arpite\Arpite\Page\Resolvers;
 
-use SudoBee\Cygnus\Page\Objects\NavigationItem;
+use Arpite\Arpite\Page\Objects\NavigationItem;
 
 class NavigationResolver
 {

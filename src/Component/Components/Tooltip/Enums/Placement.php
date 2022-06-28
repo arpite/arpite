@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Tooltip\Enums;
+namespace Arpite\Arpite\Component\Components\Tooltip\Enums;
 
 class Placement
 {

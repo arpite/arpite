@@ -1,9 +1,9 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Panel;
-use SudoBee\Cygnus\Form\Fields\Classes\Dependee;
-use SudoBee\Cygnus\Form\Fields\TextField;
-use SudoBee\Cygnus\Tests\Constants;
+use Arpite\Arpite\Component\Components\Panel;
+use Arpite\Arpite\Form\Fields\Classes\Dependee;
+use Arpite\Arpite\Form\Fields\TextField;
+use Arpite\Arpite\Tests\Constants;
 
 it("init state", function () {
 	$dependee = Dependee::make("");

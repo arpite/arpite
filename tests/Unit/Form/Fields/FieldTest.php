@@ -1,14 +1,14 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields;
+namespace Arpite\Arpite\Tests\Unit\Form\Fields;
 
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Component\Rules\DeepEqualRule;
-use SudoBee\Cygnus\Form\Fields\Enums\ValidationRule;
+use Arpite\Arpite\Component\Components\Text;
+use Arpite\Arpite\Component\Rules\DeepEqualRule;
+use Arpite\Arpite\Form\Fields\Enums\ValidationRule;
 use Exception;
 use Illuminate\Validation\Rule;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\Constants;
+use Arpite\Arpite\Tests\TestCase;
 
 class FieldTest extends TestCase
 {

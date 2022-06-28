@@ -1,7 +1,7 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\AlertBanner;
-use SudoBee\Cygnus\Component\Enums\Icon;
+use Arpite\Arpite\Component\Components\AlertBanner;
+use Arpite\Arpite\Component\Enums\Icon;
 
 it("should have initial export", function () {
 	expect(AlertBanner::make()->export())->toBe([

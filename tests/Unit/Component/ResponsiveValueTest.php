@@ -1,6 +1,6 @@
 <?php
 
-use SudoBee\Cygnus\Component\ResponsiveValue;
+use Arpite\Arpite\Component\ResponsiveValue;
 
 it("should export all given values", function () {
 	expect(

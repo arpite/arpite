@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Exceptions;
+namespace Arpite\Arpite\Component\Exceptions;
 
 use Exception;
 

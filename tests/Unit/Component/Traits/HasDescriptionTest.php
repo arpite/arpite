@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits;
+namespace Arpite\Arpite\Tests\Unit\Component\Traits;
 
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 class HasDescriptionTest extends TestCase
 {

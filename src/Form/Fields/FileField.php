@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields;
+namespace Arpite\Arpite\Form\Fields;
 
-use SudoBee\Cygnus\Component\Rules\DeepExistInRule;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Fields\Classes\FileEntity;
+use Arpite\Arpite\Component\Rules\DeepExistInRule;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Form\Fields\Classes\FileEntity;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;

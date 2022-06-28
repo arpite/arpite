@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields\Enums;
+namespace Arpite\Arpite\Form\Fields\Enums;
 
 class ValidationRule
 {

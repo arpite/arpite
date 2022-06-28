@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Tabs;
+namespace Arpite\Arpite\Component\Components\Tabs;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasActions;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Traits\HasActions;
+use Arpite\Arpite\Component\Traits\HasNodes;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class Tab extends Component
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields;
+namespace Arpite\Arpite\Tests\Unit\Form\Fields;
 
-use SudoBee\Cygnus\Form\Fields\SelectField;
+use Arpite\Arpite\Form\Fields\SelectField;
 use Database\Seeders\DatabaseSeeder;
 use Domain\Country\Models\Country;
 use Illuminate\Validation\Rule;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Tests\TestCase;
 
 class SelectFieldTest extends TestCase
 {

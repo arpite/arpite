@@ -1,7 +1,7 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Layout\Layouts\CentralLayout;
+use Arpite\Arpite\Component\Components\Text;
+use Arpite\Arpite\Layout\Layouts\CentralLayout;
 
 it("should have initial export", function () {
 	expect(CentralLayout::make()->export())

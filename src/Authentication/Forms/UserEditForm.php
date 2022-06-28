@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Forms;
+namespace Arpite\Arpite\Authentication\Forms;
 
 use App\Providers\RouteServiceProvider;
-use SudoBee\Cygnus\Authentication\Actions\CreateOrUpdateUserAction;
-use SudoBee\Cygnus\Authentication\Factories\UserFormFactory;
-use SudoBee\Cygnus\Core\Utilities\Notification;
-use SudoBee\Cygnus\Form\Form;
-use SudoBee\Cygnus\Form\ProcessableForm;
+use Arpite\Arpite\Authentication\Actions\CreateOrUpdateUserAction;
+use Arpite\Arpite\Authentication\Factories\UserFormFactory;
+use Arpite\Arpite\Core\Utilities\Notification;
+use Arpite\Arpite\Form\Form;
+use Arpite\Arpite\Form\ProcessableForm;
 use Domain\Team\Models\User;
 
 class UserEditForm extends ProcessableForm

@@ -1,7 +1,7 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Arpite\Component\Components\Text;
+use Arpite\Arpite\Tests\Unit\Component\TestComponent;
 
 it("should match initial export", function () {
 	expect(Text::make()->export())->toBe([

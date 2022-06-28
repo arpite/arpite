@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components;
+namespace Arpite\Arpite\Component\Components;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Core\Interfaces\Exportable;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Core\Interfaces\Exportable;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class Text extends Component
 {

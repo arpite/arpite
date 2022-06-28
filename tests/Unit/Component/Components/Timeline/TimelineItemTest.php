@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Timeline;
+namespace Arpite\Arpite\Tests\Unit\Component\Components\Timeline;
 
 use Carbon\CarbonImmutable;
-use SudoBee\Cygnus\Component\Components\Timeline\TimelineItem;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Arpite\Component\Components\Timeline\TimelineItem;
+use Arpite\Arpite\Tests\TestCase;
 
 class TimelineItemTest extends TestCase
 {

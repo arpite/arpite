@@ -1,15 +1,15 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Forms;
+namespace Arpite\Arpite\Authentication\Forms;
 
-use SudoBee\Cygnus\Authentication\Jobs\SendResetPasswordMailJob;
-use SudoBee\Cygnus\Authentication\Pages\ForgotPasswordEmailSentPage;
-use SudoBee\Cygnus\Core\Utilities\Notification;
-use SudoBee\Cygnus\Form\Fields\TextField;
-use SudoBee\Cygnus\Form\Form;
-use SudoBee\Cygnus\Form\Form\FormButton;
-use SudoBee\Cygnus\Form\ProcessableForm;
-use SudoBee\Cygnus\Page\Utilities\Link;
+use Arpite\Arpite\Authentication\Jobs\SendResetPasswordMailJob;
+use Arpite\Arpite\Authentication\Pages\ForgotPasswordEmailSentPage;
+use Arpite\Arpite\Core\Utilities\Notification;
+use Arpite\Arpite\Form\Fields\TextField;
+use Arpite\Arpite\Form\Form;
+use Arpite\Arpite\Form\Form\FormButton;
+use Arpite\Arpite\Form\ProcessableForm;
+use Arpite\Arpite\Page\Utilities\Link;
 use Domain\Team\Models\User;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;

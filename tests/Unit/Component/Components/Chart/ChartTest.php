@@ -1,9 +1,9 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Chart\Chart;
-use SudoBee\Cygnus\Component\Components\Chart\DataSet;
-use SudoBee\Cygnus\Component\Components\Chart\Enums\DataColor;
-use SudoBee\Cygnus\Component\Components\Chart\Enums\DataType;
+use Arpite\Arpite\Component\Components\Chart\Chart;
+use Arpite\Arpite\Component\Components\Chart\DataSet;
+use Arpite\Arpite\Component\Components\Chart\Enums\DataColor;
+use Arpite\Arpite\Component\Components\Chart\Enums\DataType;
 
 it("should have initial export", function () {
 	expect(Chart::make()->export())->toBe([

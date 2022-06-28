@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Pages;
+namespace Arpite\Arpite\Authentication\Pages;
 
-use SudoBee\Cygnus\Authentication\Forms\RegisterForm;
-use SudoBee\Cygnus\Authentication\Partials\SubtitleWithLoginPageLink;
-use SudoBee\Cygnus\Component\Components\Panel;
-use SudoBee\Cygnus\Layout\Layout;
-use SudoBee\Cygnus\Layout\Layouts\CentralLayout;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Arpite\Authentication\Forms\RegisterForm;
+use Arpite\Arpite\Authentication\Partials\SubtitleWithLoginPageLink;
+use Arpite\Arpite\Component\Components\Panel;
+use Arpite\Arpite\Layout\Layout;
+use Arpite\Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Arpite\Page\Page;
 
 class RegisterPage extends Page
 {

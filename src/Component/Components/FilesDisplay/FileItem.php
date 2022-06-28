@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\FilesDisplay;
+namespace Arpite\Arpite\Component\Components\FilesDisplay;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Traits\HasNodes;
+use Arpite\Arpite\Component\Traits\HasTitle;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class FileItem extends Component
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Layout\Layouts;
+namespace Arpite\Arpite\Layout\Layouts;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Layout\Layout;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Layout\Layout;
 
 class LeftSideLayout extends Layout
 {

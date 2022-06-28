@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Flex;
+namespace Arpite\Arpite\Component\Components\Flex;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Flex\Enums\Display;
-use SudoBee\Cygnus\Component\ResponsiveValue;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Arpite\Component\Component;
+use Arpite\Arpite\Component\Components\Flex\Enums\Display;
+use Arpite\Arpite\Component\ResponsiveValue;
+use Arpite\Arpite\Component\Traits\HasNodes;
+use Arpite\Arpite\Core\Utilities\ExportBuilder;
 
 class Flex extends Component
 {

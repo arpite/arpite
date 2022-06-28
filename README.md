@@ -9,13 +9,13 @@ An open-source Laravel library for building high-quality, accessible application
 **⚠️ Arpite is currently in early development and APIs are likely to change quite often. Use in production on your own risk!**
 1. Install the packege from Composer
 ```bash
-composer require sudobee/cygnus@dev-alpha
+composer require arpite/arpite@dev-master
 ```
 
 2. Publish/re-publish assets
 ```bash
-rm -rf public/vendor/cygnus
-php artisan vendor:publish --tag=cygnus-assets
+rm -rf public/vendor/arpite
+php artisan vendor:publish --tag=arpite-assets
 ```
 
 3. Add `app.blade.php`
@@ -32,21 +32,21 @@ php artisan vendor:publish --tag=cygnus-assets
     <!-- Fonts -->
     <link rel="stylesheet" href="{{ asset('fonts/inter/inter.css') }}" />
 
-    <link rel="stylesheet" href="/vendor/cygnus/cygnus.css">
-    <script src="/vendor/cygnus/cygnus.js" defer></script>
+    <link rel="stylesheet" href="/vendor/arpite/arpite.css">
+    <script src="/vendor/arpite/arpite.js" defer></script>
 
     <style>
         :root {
-            --cygnus-primary-50: 239 246 255;
-            --cygnus-primary-100: 219 234 254;
-            --cygnus-primary-200: 191 219 254;
-            --cygnus-primary-300: 147 197 253;
-            --cygnus-primary-400: 96 165 250;
-            --cygnus-primary-500: 59 130 246;
-            --cygnus-primary-600: 37 99 235;
-            --cygnus-primary-700: 29 78 216;
-            --cygnus-primary-800: 30 64 175;
-            --cygnus-primary-900: 30 58 138;
+            --arpite-primary-50: 239 246 255;
+            --arpite-primary-100: 219 234 254;
+            --arpite-primary-200: 191 219 254;
+            --arpite-primary-300: 147 197 253;
+            --arpite-primary-400: 96 165 250;
+            --arpite-primary-500: 59 130 246;
+            --arpite-primary-600: 37 99 235;
+            --arpite-primary-700: 29 78 216;
+            --arpite-primary-800: 30 64 175;
+            --arpite-primary-900: 30 58 138;
         }
     </style>
 </head>

@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use Arpite\Arpite\Form\Fields\SelectField;
+use Arpite\Form\Fields\SelectField;
 use Database\Seeders\DatabaseSeeder;
 use Domain\Country\Models\Country;
 use Illuminate\Validation\Rule;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class SelectFieldTest extends TestCase
 {

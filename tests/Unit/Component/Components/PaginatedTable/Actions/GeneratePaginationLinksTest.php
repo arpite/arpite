@@ -1,6 +1,6 @@
 <?php
 
-use Arpite\Arpite\Component\Components\PaginatedTable\Actions\GeneratePaginationLinksAction;
+use Arpite\Component\Components\PaginatedTable\Actions\GeneratePaginationLinksAction;
 
 it(
 	"should generate pagination links correctly when in first page",

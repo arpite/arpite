@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\Link;
+namespace Arpite\Tests\Unit\Component\Components\Link;
 
-use Arpite\Arpite\Component\Components\Link\Link;
+use Arpite\Component\Components\Link\Link;
 use Exception;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class LinkTest extends TestCase
 {

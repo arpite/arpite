@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Flex\Enums;
+namespace Arpite\Component\Components\Flex\Enums;
 
 class Justify
 {

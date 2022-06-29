@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Core\Utilities;
+namespace Arpite\Core\Utilities;
 
 use Throwable;
 

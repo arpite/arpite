@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Form;
+namespace Arpite\Tests\Unit\Form\Form;
 
-use Arpite\Arpite\Form\Form\FormButton;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Form\Form\FormButton;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class FormButtonTest extends TestCase
 {

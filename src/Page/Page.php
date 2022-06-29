@@ -1,23 +1,23 @@
 <?php
 
-namespace Arpite\Arpite\Page;
+namespace Arpite\Page;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Core\Traits\HasRegisterRoutes;
-use Arpite\Arpite\Core\Traits\HasResolveHelpers;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Core\Utilities\RouteUtility;
-use Arpite\Arpite\Form\Operation;
-use Arpite\Arpite\Layout\Layout;
-use Arpite\Arpite\Layout\Layouts\TopSideLayout;
-use Arpite\Arpite\Page\Resolvers\LayoutResolver;
-use Arpite\Arpite\Page\Resolvers\NavigationResolver;
+use Arpite\Component\Component;
+use Arpite\Core\Traits\HasRegisterRoutes;
+use Arpite\Core\Traits\HasResolveHelpers;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Core\Utilities\RouteUtility;
+use Arpite\Form\Operation;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\TopSideLayout;
+use Arpite\Page\Resolvers\LayoutResolver;
+use Arpite\Page\Resolvers\NavigationResolver;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;
 use Inertia\Response;
-use Arpite\Arpite\Responses\StructuredPageResponse;
+use Arpite\Responses\StructuredPageResponse;
 
 abstract class Page extends Controller
 {

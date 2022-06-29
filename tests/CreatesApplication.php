@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Tests;
+namespace Arpite\Tests;
 
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;

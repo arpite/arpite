@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Actions;
+namespace Arpite\Authentication\Actions;
 
 class LogoutUserAction
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Page\Resolvers;
+namespace Arpite\Page\Resolvers;
 
 class LayoutResolver
 {

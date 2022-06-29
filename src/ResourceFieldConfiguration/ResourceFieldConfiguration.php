@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\ResourceFieldConfiguration;
+namespace Arpite\ResourceFieldConfiguration;
 
 use Illuminate\Support\Collection;
-use Arpite\Arpite\Resource\Enums\ResourcePageType;
+use Arpite\Resource\Enums\ResourcePageType;
 
 class ResourceFieldConfiguration
 {

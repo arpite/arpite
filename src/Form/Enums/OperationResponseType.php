@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Form\Enums;
+namespace Arpite\Form\Enums;
 
 class OperationResponseType
 {

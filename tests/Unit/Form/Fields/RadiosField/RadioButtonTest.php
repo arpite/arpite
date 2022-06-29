@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields\RadiosField;
+namespace Arpite\Tests\Unit\Form\Fields\RadiosField;
 
-use Arpite\Arpite\Form\Fields\RadiosField\RadioButton;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Form\Fields\RadiosField\RadioButton;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class RadioButtonTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Jobs;
+namespace Arpite\Authentication\Jobs;
 
 use Domain\Team\Models\User;
 use Illuminate\Auth\Passwords\PasswordBroker;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Core\Utilities;
+namespace Arpite\Core\Utilities;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Arpite\Arpite\Core\Enums\RouteMethod;
-use Arpite\Arpite\Form\Actions\HandleExceptionGracefullyAction;
+use Arpite\Core\Enums\RouteMethod;
+use Arpite\Form\Actions\HandleExceptionGracefullyAction;
 use Throwable;
 
 class RouteUtility

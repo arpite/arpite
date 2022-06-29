@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Form;
+namespace Arpite\Form;
 
 abstract class AbstractOperationStore
 {

@@ -1,8 +1,8 @@
 <?php
 
-use Arpite\Arpite\Component\Components\Card\Card;
-use Arpite\Arpite\Component\Components\Card\Enums\CardDesignEnum;
-use Arpite\Arpite\Tests\Constants;
+use Arpite\Component\Components\Card\Card;
+use Arpite\Component\Components\Card\Enums\CardDesignEnum;
+use Arpite\Tests\Constants;
 
 it("should have initial state", function () {
 	$testCard = Card::make();

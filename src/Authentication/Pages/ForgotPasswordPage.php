@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Pages;
+namespace Arpite\Authentication\Pages;
 
-use Arpite\Arpite\Authentication\Forms\ForgotPasswordForm;
-use Arpite\Arpite\Authentication\Partials\SubtitleWithLoginPageLink;
-use Arpite\Arpite\Component\Components\Panel;
-use Arpite\Arpite\Layout\Layout;
-use Arpite\Arpite\Layout\Layouts\CentralLayout;
-use Arpite\Arpite\Page\Page;
+use Arpite\Authentication\Forms\ForgotPasswordForm;
+use Arpite\Authentication\Partials\SubtitleWithLoginPageLink;
+use Arpite\Component\Components\Panel;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Page\Page;
 
 class ForgotPasswordPage extends Page
 {

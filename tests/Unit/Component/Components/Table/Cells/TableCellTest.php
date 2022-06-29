@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\Table\Cells;
+namespace Arpite\Tests\Unit\Component\Components\Table\Cells;
 
-use Arpite\Arpite\Component\Components\Table\Cells\TableCell;
-use Arpite\Arpite\Component\Components\Table\Enums\StatusImage;
+use Arpite\Component\Components\Table\Cells\TableCell;
+use Arpite\Component\Components\Table\Enums\StatusImage;
 use Exception;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class TableCellTest extends TestCase
 {

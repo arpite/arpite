@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Table\Actions;
+namespace Arpite\Component\Components\Table\Actions;
 
 class GetTableSelectedValuesValidationRulesAction
 {

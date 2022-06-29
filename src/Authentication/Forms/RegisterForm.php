@@ -1,15 +1,15 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Forms;
+namespace Arpite\Authentication\Forms;
 
 use App\Providers\RouteServiceProvider;
 use Illuminate\Validation\Rule;
-use Arpite\Arpite\Authentication\Actions\CreateOrUpdateUserAction;
-use Arpite\Arpite\Authentication\Factories\UserFormFactory;
-use Arpite\Arpite\Form\Fields\TextField;
-use Arpite\Arpite\Form\Form;
-use Arpite\Arpite\Form\Form\FormButton;
-use Arpite\Arpite\Form\ProcessableForm;
+use Arpite\Authentication\Actions\CreateOrUpdateUserAction;
+use Arpite\Authentication\Factories\UserFormFactory;
+use Arpite\Form\Fields\TextField;
+use Arpite\Form\Form;
+use Arpite\Form\Form\FormButton;
+use Arpite\Form\ProcessableForm;
 use Domain\Team\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;

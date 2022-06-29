@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components;
+namespace Arpite\Component\Components;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Core\Interfaces\Exportable;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Text extends Component
 {

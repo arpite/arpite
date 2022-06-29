@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields\Classes;
+namespace Arpite\Form\Fields\Classes;
 
-use Arpite\Arpite\Core\Interfaces\Exportable;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class FileEntity implements Exportable
 {

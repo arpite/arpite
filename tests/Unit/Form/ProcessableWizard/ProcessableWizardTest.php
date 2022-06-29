@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\ProcessableWizard;
+namespace Arpite\Tests\Unit\Form\ProcessableWizard;
 
-use Arpite\Arpite\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Component\Components\Wizard\Partials\WizardStep;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class ProcessableWizardTest extends TestCase
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Arpite\Arpite\Component;
+namespace Arpite\Component;
 
-use Arpite\Arpite\Component\Components\Alert\Alert;
-use Arpite\Arpite\Component\Components\Modal\Modal;
-use Arpite\Arpite\Component\Traits\HasAction;
-use Arpite\Arpite\Component\Traits\HasButtonColor;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Operation;
-use Arpite\Arpite\Page\Page;
-use Arpite\Arpite\Page\Utilities\Link;
+use Arpite\Component\Components\Alert\Alert;
+use Arpite\Component\Components\Modal\Modal;
+use Arpite\Component\Traits\HasAction;
+use Arpite\Component\Traits\HasButtonColor;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Operation;
+use Arpite\Page\Page;
+use Arpite\Page\Utilities\Link;
 
 abstract class ButtonTemplate extends Component
 {

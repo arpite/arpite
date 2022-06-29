@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Link;
+namespace Arpite\Component\Components\Link;
 
-use Arpite\Arpite\Component\ButtonTemplate;
-use Arpite\Arpite\Component\Traits\HasTextAlign;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\ButtonTemplate;
+use Arpite\Component\Traits\HasTextAlign;
+use Arpite\Core\Utilities\ExportBuilder;
 use Exception;
 
 class Link extends ButtonTemplate

@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components;
+namespace Arpite\Component\Components;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Button\Button;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Button\Button;
+use Arpite\Core\Utilities\ExportBuilder;
 use Domain\Integration\Models\Integration;
 use Exception;
 

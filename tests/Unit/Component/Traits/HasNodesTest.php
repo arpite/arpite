@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits;
+namespace Arpite\Tests\Unit\Component\Traits;
 
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class HasNodesTest extends TestCase
 {

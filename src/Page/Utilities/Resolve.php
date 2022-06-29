@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Page\Utilities;
+namespace Arpite\Page\Utilities;
 
-use Arpite\Arpite\Page\Page;
+use Arpite\Page\Page;
 use Illuminate\Support\Str;
 
 class Resolve

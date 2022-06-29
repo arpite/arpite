@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Rules;
+namespace Arpite\Component\Rules;
 
 use Exception;
 use Illuminate\Contracts\Validation\Rule;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use Arpite\Arpite\Component\Components\Grid;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Component\Components\Grid;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class GridTest extends TestCase
 {

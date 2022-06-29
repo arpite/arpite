@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Operation;
+namespace Arpite\Tests\Unit\Form\Operation;
 
-use Arpite\Arpite\Form\Operation;
+use Arpite\Form\Operation;
 
 class TestOperation extends Operation
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Page\Enums;
+namespace Arpite\Page\Enums;
 
 class TabsDesign
 {

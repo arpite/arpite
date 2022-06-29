@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components;
+namespace Arpite\Component\Components;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\ResponsiveValue;
-use Arpite\Arpite\Component\Traits\HasGap;
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\ResponsiveValue;
+use Arpite\Component\Traits\HasGap;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Grid extends Component
 {

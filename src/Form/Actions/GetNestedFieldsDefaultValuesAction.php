@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Form\Actions;
+namespace Arpite\Form\Actions;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Form\Fields\Field;
+use Arpite\Component\Component;
+use Arpite\Form\Fields\Field;
 
 class GetNestedFieldsDefaultValuesAction
 {

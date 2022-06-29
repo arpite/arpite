@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\Wizard;
+namespace Arpite\Tests\Unit\Component\Components\Wizard;
 
-use Arpite\Arpite\Component\Components\Wizard\Partials\WizardStep;
-use Arpite\Arpite\Component\Components\Wizard\WizardHeader;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Component\Components\Wizard\WizardHeader;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class WizardHeaderTest extends TestCase
 {

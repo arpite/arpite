@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields;
+namespace Arpite\Form\Fields;
 
-use Arpite\Arpite\Component\Rules\DeepExistInRule;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Fields\Classes\FileEntity;
+use Arpite\Component\Rules\DeepExistInRule;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Fields\Classes\FileEntity;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;

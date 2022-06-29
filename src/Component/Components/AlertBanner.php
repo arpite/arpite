@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components;
+namespace Arpite\Component\Components;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Enums\Icon;
-use Arpite\Arpite\Component\Traits\HasButtons;
-use Arpite\Arpite\Component\Traits\HasDescription;
-use Arpite\Arpite\Component\Traits\HasIcon;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Enums\Icon;
+use Arpite\Component\Traits\HasButtons;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasIcon;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class AlertBanner extends Component
 {

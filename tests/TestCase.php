@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Tests;
+namespace Arpite\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Arpite\Arpite\ArpiteServiceProvider;
-use Arpite\Arpite\Page\Page;
+use Arpite\ArpiteServiceProvider;
+use Arpite\Page\Page;
 use Database\Seeders\DatabaseSeeder;
 use Domain\Integration\Models\Integration;
 use Domain\Shop\Actions\CreateShopAction;

@@ -1,6 +1,6 @@
 <?php
 
-use Arpite\Arpite\Component\Rules\DeepEqualRule;
+use Arpite\Component\Rules\DeepEqualRule;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 

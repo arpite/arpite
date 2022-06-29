@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Operations;
+namespace Arpite\Authentication\Operations;
 
-use Arpite\Arpite\Authentication\Actions\LogoutUserAction;
-use Arpite\Arpite\Form\Operation;
+use Arpite\Authentication\Actions\LogoutUserAction;
+use Arpite\Form\Operation;
 
 class LogoutOperation extends Operation
 {

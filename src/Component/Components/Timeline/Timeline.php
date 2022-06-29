@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Timeline;
+namespace Arpite\Component\Components\Timeline;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Timeline extends Component
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Page\Page;
+namespace Arpite\Tests\Unit\Page\Page;
 
-use Arpite\Arpite\Page\Page;
+use Arpite\Page\Page;
 
 class TestPage extends Page
 {

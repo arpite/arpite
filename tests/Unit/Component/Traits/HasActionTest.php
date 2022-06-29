@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits;
+namespace Arpite\Tests\Unit\Component\Traits;
 
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class HasActionTest extends TestCase
 {

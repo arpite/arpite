@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Pages;
+namespace Arpite\Authentication\Pages;
 
-use Arpite\Arpite\Authentication\Forms\ResetPasswordForm;
-use Arpite\Arpite\Component\Components\Panel;
-use Arpite\Arpite\Layout\Layout;
-use Arpite\Arpite\Layout\Layouts\CentralLayout;
-use Arpite\Arpite\Layout\Layouts\UnauthorizedLayout\UnauthorizedLayout;
-use Arpite\Arpite\Page\Page;
+use Arpite\Authentication\Forms\ResetPasswordForm;
+use Arpite\Component\Components\Panel;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Layout\Layouts\UnauthorizedLayout\UnauthorizedLayout;
+use Arpite\Page\Page;
 
 class ResetPasswordPage extends Page
 {

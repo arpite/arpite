@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use Arpite\Arpite\Form\Fields\TextField;
+use Arpite\Form\Fields\TextField;
 use Illuminate\Validation\Rules\Password;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class TextFieldTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Arpite\Arpite\Layout\Layouts\TopSideLayout;
+use Arpite\Layout\Layouts\TopSideLayout;
 
 it("should have initial export", function () {
 	expect(TopSideLayout::make()->export())->toHaveKey(

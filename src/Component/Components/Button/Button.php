@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Button;
+namespace Arpite\Component\Components\Button;
 
-use Arpite\Arpite\Component\ButtonTemplate;
-use Arpite\Arpite\Component\Traits\HasButtonDesign;
-use Arpite\Arpite\Component\Traits\HasDisabled;
-use Arpite\Arpite\Component\Traits\HasIcon;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\ButtonTemplate;
+use Arpite\Component\Traits\HasButtonDesign;
+use Arpite\Component\Traits\HasDisabled;
+use Arpite\Component\Traits\HasIcon;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Button extends ButtonTemplate
 {

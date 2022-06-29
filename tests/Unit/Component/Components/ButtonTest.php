@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use Arpite\Arpite\Component\Components\Button\Button;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Button\Button;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class ButtonTest extends TestCase
 {

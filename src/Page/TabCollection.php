@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Page;
+namespace Arpite\Page;
 
-use Arpite\Arpite\Core\Traits\HasRegisterRoutes;
-use Arpite\Arpite\Page\Enums\TabsDesign;
+use Arpite\Core\Traits\HasRegisterRoutes;
+use Arpite\Page\Enums\TabsDesign;
 
 abstract class TabCollection
 {

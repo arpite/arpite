@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use Arpite\Arpite\Form\Fields\ToggleField;
+use Arpite\Form\Fields\ToggleField;
 use Illuminate\Validation\Rule;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class ToggleFieldTest extends TestCase
 {

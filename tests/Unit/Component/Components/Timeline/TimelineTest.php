@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\Timeline;
+namespace Arpite\Tests\Unit\Component\Components\Timeline;
 
-use Arpite\Arpite\Component\Components\Timeline\Timeline;
-use Arpite\Arpite\Component\Components\Timeline\TimelineItem;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Timeline\Timeline;
+use Arpite\Component\Components\Timeline\TimelineItem;
+use Arpite\Tests\TestCase;
 
 class TimelineTest extends TestCase
 {

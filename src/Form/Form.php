@@ -1,20 +1,20 @@
 <?php
 
-namespace Arpite\Arpite\Form;
+namespace Arpite\Form;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Table\Actions\GetTableSelectedValuesValidationRulesAction;
-use Arpite\Arpite\Component\Traits\HasActions;
-use Arpite\Arpite\Component\Traits\HasDescription;
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Component\Traits\HasPreserveScroll;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Component\Traits\HasWithPanel;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
-use Arpite\Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
-use Arpite\Arpite\Form\Enums\OperationResponseType;
-use Arpite\Arpite\Form\Form\FormButton;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Table\Actions\GetTableSelectedValuesValidationRulesAction;
+use Arpite\Component\Traits\HasActions;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Component\Traits\HasPreserveScroll;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Component\Traits\HasWithPanel;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
+use Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
+use Arpite\Form\Enums\OperationResponseType;
+use Arpite\Form\Form\FormButton;
 use Exception;
 
 class Form extends Component

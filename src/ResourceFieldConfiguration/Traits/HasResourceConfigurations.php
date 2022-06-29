@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\ResourceFieldConfiguration\Traits;
+namespace Arpite\ResourceFieldConfiguration\Traits;
 
-use Arpite\Arpite\ResourceFieldConfiguration\ResourceFieldConfiguration;
-use Arpite\Arpite\Resource\Enums\ResourcePageType;
+use Arpite\ResourceFieldConfiguration\ResourceFieldConfiguration;
+use Arpite\Resource\Enums\ResourcePageType;
 
 trait HasResourceConfigurations
 {

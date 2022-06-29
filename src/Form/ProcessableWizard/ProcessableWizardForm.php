@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Form\ProcessableWizard;
+namespace Arpite\Form\ProcessableWizard;
 
-use Arpite\Arpite\Form\Form;
-use Arpite\Arpite\Form\ProcessableWizard;
+use Arpite\Form\Form;
+use Arpite\Form\ProcessableWizard;
 
 class ProcessableWizardForm
 {

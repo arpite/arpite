@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Core\Utilities;
+namespace Arpite\Tests\Unit\Core\Utilities;
 
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class ExportBuilderTest extends TestCase
 {

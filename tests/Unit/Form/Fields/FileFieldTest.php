@@ -1,11 +1,11 @@
 <?php
 
-use Arpite\Arpite\Form\Fields\Classes\FileEntity;
-use Arpite\Arpite\Form\Fields\FileField;
+use Arpite\Form\Fields\Classes\FileEntity;
+use Arpite\Form\Fields\FileField;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use Arpite\Arpite\Tests\Constants;
+use Arpite\Tests\Constants;
 
 it("should have init properties", function () {
 	$field = FileField::make("First");

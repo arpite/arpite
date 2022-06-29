@@ -1,15 +1,15 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Table;
+namespace Arpite\Component\Components\Table;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\EmptyState;
-use Arpite\Arpite\Component\Components\Panel;
-use Arpite\Arpite\Component\Traits\HasActions;
-use Arpite\Arpite\Component\Traits\HasDescription;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Component\Traits\HasWithPanel;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\EmptyState;
+use Arpite\Component\Components\Panel;
+use Arpite\Component\Traits\HasActions;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Component\Traits\HasWithPanel;
+use Arpite\Core\Utilities\ExportBuilder;
 use Exception;
 use Illuminate\Support\Str;
 

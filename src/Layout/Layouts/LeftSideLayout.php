@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Layout\Layouts;
+namespace Arpite\Layout\Layouts;
 
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Layout\Layout;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Layout\Layout;
 
 class LeftSideLayout extends Layout
 {

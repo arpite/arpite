@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use Arpite\Arpite\Component\Components\Image;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Image;
+use Arpite\Tests\TestCase;
 
 class ImageTest extends TestCase
 {

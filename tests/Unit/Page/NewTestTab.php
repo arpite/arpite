@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Page;
+namespace Arpite\Tests\Unit\Page;
 
-use Arpite\Arpite\Page\TabPage;
+use Arpite\Page\TabPage;
 
 class NewTestTab extends TabPage
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Resource;
+namespace Arpite\Resource;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
@@ -13,19 +13,19 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Inertia\Response;
 use LogicException;
-use Arpite\Arpite\Core\Traits\HasRegisterRoutes;
-use Arpite\Arpite\Core\Traits\HasResolveHelpers;
-use Arpite\Arpite\Core\Utilities\Notification;
-use Arpite\Arpite\Core\Utilities\RouteUtility;
-use Arpite\Arpite\Core\Utilities\Translate;
-use Arpite\Arpite\Form\Fields\Field;
-use Arpite\Arpite\Resource\Actions\HandleResourceRouteIndexAction;
-use Arpite\Arpite\Resource\Enums\ResourcePageType;
-use Arpite\Arpite\Resource\Traits\HasResourceFields;
-use Arpite\Arpite\Resource\Factories\ResourceFormFactory;
-use Arpite\Arpite\Form\Form;
-use Arpite\Arpite\Form\Traits\HasCanHaveStore;
-use Arpite\Arpite\Responses\StructuredPageResponse;
+use Arpite\Core\Traits\HasRegisterRoutes;
+use Arpite\Core\Traits\HasResolveHelpers;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Core\Utilities\RouteUtility;
+use Arpite\Core\Utilities\Translate;
+use Arpite\Form\Fields\Field;
+use Arpite\Resource\Actions\HandleResourceRouteIndexAction;
+use Arpite\Resource\Enums\ResourcePageType;
+use Arpite\Resource\Traits\HasResourceFields;
+use Arpite\Resource\Factories\ResourceFormFactory;
+use Arpite\Form\Form;
+use Arpite\Form\Traits\HasCanHaveStore;
+use Arpite\Responses\StructuredPageResponse;
 
 /**
  * @template TModelClass of Model

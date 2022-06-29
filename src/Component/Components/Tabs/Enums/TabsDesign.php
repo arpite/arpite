@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Tabs\Enums;
+namespace Arpite\Component\Components\Tabs\Enums;
 
 class TabsDesign
 {

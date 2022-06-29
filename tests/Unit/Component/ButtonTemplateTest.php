@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component;
+namespace Arpite\Tests\Unit\Component;
 
-use Arpite\Arpite\Component\Components\Alert\Alert;
-use Arpite\Arpite\Component\Components\Modal\Modal;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Page\Page\TestPage;
+use Arpite\Component\Components\Alert\Alert;
+use Arpite\Component\Components\Modal\Modal;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Page\Page\TestPage;
 
 class ButtonTemplateTest extends TestCase
 {

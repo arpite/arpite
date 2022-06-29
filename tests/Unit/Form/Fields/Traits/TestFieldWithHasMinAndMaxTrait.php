@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields\Traits;
+namespace Arpite\Tests\Unit\Form\Fields\Traits;
 
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Fields\Field;
-use Arpite\Arpite\Form\Fields\Traits\HasMinAndMax;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Fields\Field;
+use Arpite\Form\Fields\Traits\HasMinAndMax;
 
 class TestFieldWithHasMinAndMaxTrait extends Field
 {

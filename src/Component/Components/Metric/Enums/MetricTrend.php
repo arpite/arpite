@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Metric\Enums;
+namespace Arpite\Component\Components\Metric\Enums;
 
 enum MetricTrend
 {

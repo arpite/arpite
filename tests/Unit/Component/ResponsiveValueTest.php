@@ -1,6 +1,6 @@
 <?php
 
-use Arpite\Arpite\Component\ResponsiveValue;
+use Arpite\Component\ResponsiveValue;
 
 it("should export all given values", function () {
 	expect(

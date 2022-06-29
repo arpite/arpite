@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\Table;
+namespace Arpite\Tests\Unit\Component\Components\Table;
 
-use Arpite\Arpite\Component\Components\Table\TableRow;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Component\Components\Table\TableRow;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class TableRowTest extends TestCase
 {

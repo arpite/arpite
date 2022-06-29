@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use Arpite\Arpite\Component\Components\AddressDisplay;
+use Arpite\Component\Components\AddressDisplay;
 use Domain\Carrier\Carriers\OmnivaCarrier;
 use Domain\Carrier\Models\Carrier;
 use Domain\Carrier\Models\Location;
@@ -10,8 +10,8 @@ use Domain\Country\Models\Country;
 use Domain\Shipment\Enums\AddressType;
 use Domain\Shipment\Models\Address;
 use Domain\Team\Models\Team;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class AddressDisplayTest extends TestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields\Traits;
+namespace Arpite\Form\Fields\Traits;
 
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Core\Utilities\ExportBuilder;
 
 trait HasMinAndMax
 {

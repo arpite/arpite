@@ -1,14 +1,14 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Card;
+namespace Arpite\Component\Components\Card;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Card\Enums\CardDesignEnum;
-use Arpite\Arpite\Component\Traits\HasButtons;
-use Arpite\Arpite\Component\Traits\HasDescription;
-use Arpite\Arpite\Component\Traits\HasImage;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Card\Enums\CardDesignEnum;
+use Arpite\Component\Traits\HasButtons;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasImage;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Card extends Component
 {

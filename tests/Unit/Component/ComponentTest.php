@@ -1,7 +1,7 @@
 <?php
 
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Tests\Constants;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 it("should export initial state", function () {
 	$testComponent = new TestComponent();

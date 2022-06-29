@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use Arpite\Arpite\Component\Components\Tooltip\Tooltip;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Tooltip\Tooltip;
+use Arpite\Tests\TestCase;
 
 class TooltipTest extends TestCase
 {

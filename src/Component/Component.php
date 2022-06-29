@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Component;
+namespace Arpite\Component;
 
-use Arpite\Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Interfaces\Exportable;
 
 abstract class Component implements Exportable
 {

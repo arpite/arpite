@@ -1,5 +1,5 @@
 <?php
 
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 uses(TestCase::class)->in("Unit");

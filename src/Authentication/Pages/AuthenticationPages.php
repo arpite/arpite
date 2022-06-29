@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Pages;
+namespace Arpite\Authentication\Pages;
 
 use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Route;
-use Arpite\Arpite\Authentication\Operations\LogoutOperation;
+use Arpite\Authentication\Operations\LogoutOperation;
 
 class AuthenticationPages
 {

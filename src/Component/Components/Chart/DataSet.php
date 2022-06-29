@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Chart;
+namespace Arpite\Component\Components\Chart;
 
-use Arpite\Arpite\Core\Interfaces\Exportable;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class DataSet implements Exportable
 {

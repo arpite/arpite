@@ -1,14 +1,14 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Pages;
+namespace Arpite\Authentication\Pages;
 
-use Arpite\Arpite\Authentication\Forms\LoginForm;
-use Arpite\Arpite\Component\Components\Link\Link;
-use Arpite\Arpite\Component\Components\Panel;
-use Arpite\Arpite\Component\Components\Text;
-use Arpite\Arpite\Layout\Layout;
-use Arpite\Arpite\Layout\Layouts\CentralLayout;
-use Arpite\Arpite\Page\Page;
+use Arpite\Authentication\Forms\LoginForm;
+use Arpite\Component\Components\Link\Link;
+use Arpite\Component\Components\Panel;
+use Arpite\Component\Components\Text;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Page\Page;
 
 class LoginPage extends Page
 {

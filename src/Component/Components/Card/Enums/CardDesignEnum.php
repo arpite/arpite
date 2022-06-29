@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Card\Enums;
+namespace Arpite\Component\Components\Card\Enums;
 
 class CardDesignEnum
 {

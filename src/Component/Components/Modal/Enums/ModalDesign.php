@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Modal\Enums;
+namespace Arpite\Component\Components\Modal\Enums;
 
 class ModalDesign
 {

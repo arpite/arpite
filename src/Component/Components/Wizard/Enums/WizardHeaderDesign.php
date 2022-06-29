@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Wizard\Enums;
+namespace Arpite\Component\Components\Wizard\Enums;
 
 class WizardHeaderDesign
 {

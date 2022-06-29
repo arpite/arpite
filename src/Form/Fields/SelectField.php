@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields;
+namespace Arpite\Form\Fields;
 
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Fields\Enums\ValidationRule;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Fields\Enums\ValidationRule;
 use Domain\Country\Models\Country;
 use Illuminate\Validation\Rule;
 

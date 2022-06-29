@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use Arpite\Arpite\Form\Fields\NumberField;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Form\Fields\NumberField;
+use Arpite\Tests\TestCase;
 
 class NumberFieldTest extends TestCase
 {

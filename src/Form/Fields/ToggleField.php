@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields;
+namespace Arpite\Form\Fields;
 
-use Arpite\Arpite\Component\Traits\HasDescription;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Core\Utilities\ExportBuilder;
 use Illuminate\Validation\Rule;
 
 /**

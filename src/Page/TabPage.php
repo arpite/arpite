@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Page;
+namespace Arpite\Page;
 
-use Arpite\Arpite\Core\Traits\HasResolveHelpers;
+use Arpite\Core\Traits\HasResolveHelpers;
 use Exception;
 
 abstract class TabPage extends Page

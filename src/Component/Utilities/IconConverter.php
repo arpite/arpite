@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Utilities;
+namespace Arpite\Component\Utilities;
 
 use Illuminate\Support\Str;
 

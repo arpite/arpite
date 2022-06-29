@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Controllers;
+namespace Arpite\Authentication\Controllers;
 
-use Arpite\Arpite\Core\Utilities\Notification;
+use Arpite\Core\Utilities\Notification;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\RedirectResponse;
 

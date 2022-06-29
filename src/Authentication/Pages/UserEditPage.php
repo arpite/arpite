@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Pages;
+namespace Arpite\Authentication\Pages;
 
-use Arpite\Arpite\Authentication\Forms\UserEditForm;
-use Arpite\Arpite\Page\Page;
+use Arpite\Authentication\Forms\UserEditForm;
+use Arpite\Page\Page;
 
 class UserEditPage extends Page
 {

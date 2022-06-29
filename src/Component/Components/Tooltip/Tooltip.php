@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Tooltip;
+namespace Arpite\Component\Components\Tooltip;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Tooltip\Enums\Placement;
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Tooltip\Enums\Placement;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Tooltip extends Component
 {

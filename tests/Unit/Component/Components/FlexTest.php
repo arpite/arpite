@@ -1,9 +1,9 @@
 <?php
 
-use Arpite\Arpite\Component\Components\Flex\Enums\Display;
-use Arpite\Arpite\Component\Components\Flex\Enums\Justify;
-use Arpite\Arpite\Component\Components\Flex\Flex;
-use Arpite\Arpite\Component\ResponsiveValue;
+use Arpite\Component\Components\Flex\Enums\Display;
+use Arpite\Component\Components\Flex\Enums\Justify;
+use Arpite\Component\Components\Flex\Flex;
+use Arpite\Component\ResponsiveValue;
 
 it("should have initial export", function () {
 	expect(Flex::make()->export())->toBe([

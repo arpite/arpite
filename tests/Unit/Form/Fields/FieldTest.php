@@ -1,14 +1,14 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use Arpite\Arpite\Component\Components\Text;
-use Arpite\Arpite\Component\Rules\DeepEqualRule;
-use Arpite\Arpite\Form\Fields\Enums\ValidationRule;
+use Arpite\Component\Components\Text;
+use Arpite\Component\Rules\DeepEqualRule;
+use Arpite\Form\Fields\Enums\ValidationRule;
 use Exception;
 use Illuminate\Validation\Rule;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class FieldTest extends TestCase
 {

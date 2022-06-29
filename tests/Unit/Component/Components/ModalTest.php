@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use Arpite\Arpite\Component\Components\Modal\Modal;
-use Arpite\Arpite\Form\Form;
+use Arpite\Component\Components\Modal\Modal;
+use Arpite\Form\Form;
 use Exception;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Form\Operation\TestOperation;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Form\Operation\TestOperation;
 
 const MODAL_COMPONENT_EXPORT = [
 	"nodeType" => "Modal",

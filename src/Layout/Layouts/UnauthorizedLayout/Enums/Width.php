@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Layout\Layouts\UnauthorizedLayout\Enums;
+namespace Arpite\Layout\Layouts\UnauthorizedLayout\Enums;
 
 class Width
 {

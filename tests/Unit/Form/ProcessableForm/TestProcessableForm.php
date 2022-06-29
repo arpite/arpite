@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\ProcessableForm;
+namespace Arpite\Tests\Unit\Form\ProcessableForm;
 
-use Arpite\Arpite\Form\ProcessableForm;
+use Arpite\Form\ProcessableForm;
 
 class TestProcessableForm extends ProcessableForm
 {

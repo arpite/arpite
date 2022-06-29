@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Page\Objects;
+namespace Arpite\Page\Objects;
 
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Interfaces\Exportable;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Page\Page;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Page\Page;
 
 class UserNavigationItem implements Exportable
 {

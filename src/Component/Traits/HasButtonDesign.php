@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Component\Traits;
+namespace Arpite\Component\Traits;
 
-use Arpite\Arpite\Component\Components\Button\Enums\ButtonDesign;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Components\Button\Enums\ButtonDesign;
+use Arpite\Core\Utilities\ExportBuilder;
 
 trait HasButtonDesign
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form;
+namespace Arpite\Tests\Unit\Form;
 
-use Arpite\Arpite\Component\Components\Grid;
-use Arpite\Arpite\Component\Components\Panel;
-use Arpite\Arpite\Form\Form;
-use Arpite\Arpite\Form\Form\FormButton;
+use Arpite\Component\Components\Grid;
+use Arpite\Component\Components\Panel;
+use Arpite\Form\Form;
+use Arpite\Form\Form\FormButton;
 use Domain\Shipment\Models\Shipment;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
-use Arpite\Arpite\Tests\Unit\Form\Fields\TestField;
-use Arpite\Arpite\Tests\Unit\Form\Operation\TestOperation;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Tests\Unit\Form\Fields\TestField;
+use Arpite\Tests\Unit\Form\Operation\TestOperation;
 
 class FormTest extends TestCase
 {

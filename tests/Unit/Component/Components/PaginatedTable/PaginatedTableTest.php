@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\PaginatedTable;
+namespace Arpite\Tests\Unit\Component\Components\PaginatedTable;
 
-use Arpite\Arpite\Component\Components\PaginatedTable\PaginatedTable;
-use Arpite\Arpite\Component\Components\Table\TableRow;
+use Arpite\Component\Components\PaginatedTable\PaginatedTable;
+use Arpite\Component\Components\Table\TableRow;
 use Domain\Team\Models\User;
 use Exception;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class PaginatedTableTest extends TestCase
 {

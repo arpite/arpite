@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Form\Form;
+namespace Arpite\Form\Form;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasButtonColor;
-use Arpite\Arpite\Component\Traits\HasButtonDesign;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasButtonColor;
+use Arpite\Component\Traits\HasButtonDesign;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class FormButton extends Component
 {

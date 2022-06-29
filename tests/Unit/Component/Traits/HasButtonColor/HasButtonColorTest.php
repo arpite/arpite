@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasButtonColor;
+namespace Arpite\Tests\Unit\Component\Traits\HasButtonColor;
 
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 const COMPONENT_EXPORT = [
 	"nodeType" => "TestComponentWithHasButtonColorTrait",

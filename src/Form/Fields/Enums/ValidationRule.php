@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields\Enums;
+namespace Arpite\Form\Fields\Enums;
 
 class ValidationRule
 {

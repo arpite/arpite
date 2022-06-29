@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields\RadiosField;
+namespace Arpite\Tests\Unit\Form\Fields\RadiosField;
 
-use Arpite\Arpite\Form\Fields\RadiosField\RadioButton;
-use Arpite\Arpite\Form\Fields\RadiosField\RadiosField;
+use Arpite\Form\Fields\RadiosField\RadioButton;
+use Arpite\Form\Fields\RadiosField\RadiosField;
 use Illuminate\Validation\Rule;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class RadiosFieldTest extends TestCase
 {

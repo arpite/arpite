@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Operation;
+namespace Arpite\Tests\Unit\Form\Operation;
 
-use Arpite\Arpite\Form\Operation;
-use Arpite\Arpite\Form\Traits\HasStore;
+use Arpite\Form\Operation;
+use Arpite\Form\Traits\HasStore;
 
 class TestOperationWithStore extends Operation
 {

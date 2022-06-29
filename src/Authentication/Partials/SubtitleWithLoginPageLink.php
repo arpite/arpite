@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Partials;
+namespace Arpite\Authentication\Partials;
 
-use Arpite\Arpite\Component\Components\Link\Link;
-use Arpite\Arpite\Component\Components\Text;
+use Arpite\Component\Components\Link\Link;
+use Arpite\Component\Components\Text;
 
 class SubtitleWithLoginPageLink
 {

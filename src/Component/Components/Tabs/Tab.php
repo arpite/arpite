@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Tabs;
+namespace Arpite\Component\Components\Tabs;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasActions;
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasActions;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Tab extends Component
 {

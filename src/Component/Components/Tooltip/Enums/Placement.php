@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Tooltip\Enums;
+namespace Arpite\Component\Components\Tooltip\Enums;
 
 class Placement
 {

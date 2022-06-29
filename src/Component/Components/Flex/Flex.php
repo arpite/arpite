@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Flex;
+namespace Arpite\Component\Components\Flex;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Flex\Enums\Display;
-use Arpite\Arpite\Component\ResponsiveValue;
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Flex\Enums\Display;
+use Arpite\Component\ResponsiveValue;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Flex extends Component
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Modal;
+namespace Arpite\Component\Components\Modal;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Modal\Enums\ModalDesign;
-use Arpite\Arpite\Component\Traits\HasDescription;
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Form;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Modal\Enums\ModalDesign;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Form;
 use Exception;
 
 class Modal extends Component

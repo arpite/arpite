@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\ProcessableWizard;
+namespace Arpite\Tests\Unit\Form\ProcessableWizard;
 
-use Arpite\Arpite\Component\Components\Wizard\Partials\WizardStep;
-use Arpite\Arpite\Form\ProcessableWizard;
-use Arpite\Arpite\Tests\Unit\Form\Fields\TestField;
+use Arpite\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Form\ProcessableWizard;
+use Arpite\Tests\Unit\Form\Fields\TestField;
 
 class TestProcessableWizard extends ProcessableWizard
 {

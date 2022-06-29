@@ -1,20 +1,20 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Forms;
+namespace Arpite\Authentication\Forms;
 
 use App\Providers\RouteServiceProvider;
-use Arpite\Arpite\Authentication\Pages\AuthenticationPages;
-use Arpite\Arpite\Authentication\Pages\ForgotPasswordPage;
-use Arpite\Arpite\Component\Components\Flex\Enums\Justify;
-use Arpite\Arpite\Component\Components\Flex\Flex;
-use Arpite\Arpite\Component\Components\Link\Link;
-use Arpite\Arpite\Component\Enums\Align;
-use Arpite\Arpite\Core\Utilities\Notification;
-use Arpite\Arpite\Form\Fields\CheckboxField;
-use Arpite\Arpite\Form\Fields\TextField;
-use Arpite\Arpite\Form\Form;
-use Arpite\Arpite\Form\Form\FormButton;
-use Arpite\Arpite\Form\ProcessableForm;
+use Arpite\Authentication\Pages\AuthenticationPages;
+use Arpite\Authentication\Pages\ForgotPasswordPage;
+use Arpite\Component\Components\Flex\Enums\Justify;
+use Arpite\Component\Components\Flex\Flex;
+use Arpite\Component\Components\Link\Link;
+use Arpite\Component\Enums\Align;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Form\Fields\CheckboxField;
+use Arpite\Form\Fields\TextField;
+use Arpite\Form\Form;
+use Arpite\Form\Form\FormButton;
+use Arpite\Form\ProcessableForm;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;

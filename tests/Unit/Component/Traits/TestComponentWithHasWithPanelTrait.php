@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits;
+namespace Arpite\Tests\Unit\Component\Traits;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasWithPanel;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasWithPanel;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasWithPanelTrait extends Component
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\Tabs;
+namespace Arpite\Tests\Unit\Component\Components\Tabs;
 
-use Arpite\Arpite\Component\Components\Tabs\Tab;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Component\Components\Tabs\Tab;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class TabTest extends TestCase
 {

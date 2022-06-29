@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Alert\Enums;
+namespace Arpite\Component\Components\Alert\Enums;
 
 class AlertType
 {

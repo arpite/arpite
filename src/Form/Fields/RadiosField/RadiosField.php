@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields\RadiosField;
+namespace Arpite\Form\Fields\RadiosField;
 
-use Arpite\Arpite\Component\Exceptions\MethodNotAllowedException;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Fields\Enums\ValidationRule;
-use Arpite\Arpite\Form\Fields\Field;
+use Arpite\Component\Exceptions\MethodNotAllowedException;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Fields\Enums\ValidationRule;
+use Arpite\Form\Fields\Field;
 use Illuminate\Validation\Rule;
 
 /**

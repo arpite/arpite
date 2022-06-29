@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Core\Utilities;
+namespace Arpite\Core\Utilities;
 
-use Arpite\Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Interfaces\Exportable;
 
 class ExportBuilder
 {

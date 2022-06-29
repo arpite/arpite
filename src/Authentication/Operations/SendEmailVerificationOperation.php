@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Operations;
+namespace Arpite\Authentication\Operations;
 
-use Arpite\Arpite\Core\Utilities\Notification;
-use Arpite\Arpite\Form\Operation;
-use Arpite\Arpite\Form\Traits\HasStore;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Form\Operation;
+use Arpite\Form\Traits\HasStore;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
 use Throwable;

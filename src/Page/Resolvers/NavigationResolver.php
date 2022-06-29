@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Page\Resolvers;
+namespace Arpite\Page\Resolvers;
 
-use Arpite\Arpite\Page\Objects\NavigationItem;
+use Arpite\Page\Objects\NavigationItem;
 
 class NavigationResolver
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasButtons;
+namespace Arpite\Tests\Unit\Component\Traits\HasButtons;
 
-use Arpite\Arpite\Component\Components\Button\Button;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Button\Button;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 const COMPONENT_EXPORT = [
 	"nodeType" => "TestComponentWithHasButtonsTrait",

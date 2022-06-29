@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Exceptions;
+namespace Arpite\Component\Exceptions;
 
 use Exception;
 

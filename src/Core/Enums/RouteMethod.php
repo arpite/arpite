@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Core\Enums;
+namespace Arpite\Core\Enums;
 
 enum RouteMethod
 {

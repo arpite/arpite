@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Resource\Enums;
+namespace Arpite\Resource\Enums;
 
 enum ResourcePageType
 {

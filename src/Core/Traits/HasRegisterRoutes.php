@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Core\Traits;
+namespace Arpite\Core\Traits;
 
 trait HasRegisterRoutes
 {

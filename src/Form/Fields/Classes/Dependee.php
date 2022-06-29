@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields\Classes;
+namespace Arpite\Form\Fields\Classes;
 
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Core\Interfaces\Exportable;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
-use Arpite\Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
+use Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
 
 class Dependee implements Exportable
 {

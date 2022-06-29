@@ -1,8 +1,8 @@
 <?php
 
-use Arpite\Arpite\Component\Components\Grid;
-use Arpite\Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
-use Arpite\Arpite\Form\Fields\TextField;
+use Arpite\Component\Components\Grid;
+use Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
+use Arpite\Form\Fields\TextField;
 
 it("should get all nested fields default values", function () {
 	$defaultValues = app(GetNestedFieldsDefaultValuesAction::class)->execute([

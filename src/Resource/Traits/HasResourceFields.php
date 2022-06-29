@@ -1,14 +1,14 @@
 <?php
 
-namespace Arpite\Arpite\Resource\Traits;
+namespace Arpite\Resource\Traits;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Form\Actions\GetNestedFieldsAction;
-use Arpite\Arpite\Form\Fields\Field;
-use Arpite\Arpite\Form\Fields\TextField;
-use Arpite\Arpite\Resource\Enums\ResourcePageType;
+use Arpite\Component\Component;
+use Arpite\Form\Actions\GetNestedFieldsAction;
+use Arpite\Form\Fields\Field;
+use Arpite\Form\Fields\TextField;
+use Arpite\Resource\Enums\ResourcePageType;
 
 trait HasResourceFields
 {

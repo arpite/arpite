@@ -1,19 +1,19 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Page\Page;
+namespace Arpite\Tests\Unit\Page\Page;
 
-use Arpite\Arpite\Layout\Layout;
-use Arpite\Arpite\Layout\Layouts\CentralLayout;
-use Arpite\Arpite\Layout\Layouts\LeftSideLayout;
-use Arpite\Arpite\Layout\Layouts\TopSideLayout;
-use Arpite\Arpite\Page\Objects\NavigationItem;
-use Arpite\Arpite\Page\Resolvers\LayoutResolver;
-use Arpite\Arpite\Page\Resolvers\NavigationResolver;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Layout\Layouts\LeftSideLayout;
+use Arpite\Layout\Layouts\TopSideLayout;
+use Arpite\Page\Objects\NavigationItem;
+use Arpite\Page\Resolvers\LayoutResolver;
+use Arpite\Page\Resolvers\NavigationResolver;
 use Illuminate\Support\Facades\Route;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
-use Arpite\Arpite\Tests\Unit\Form\Operation\TestOperation;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Tests\Unit\Form\Operation\TestOperation;
 
 class PageTest extends TestCase
 {

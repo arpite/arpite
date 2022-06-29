@@ -1,7 +1,7 @@
 <?php
 
-use Arpite\Arpite\Component\Components\Text;
-use Arpite\Arpite\Layout\Layouts\UnauthorizedLayout\UnauthorizedLayout;
+use Arpite\Component\Components\Text;
+use Arpite\Layout\Layouts\UnauthorizedLayout\UnauthorizedLayout;
 
 it("should have initial export", function () {
 	expect(UnauthorizedLayout::make()->export())

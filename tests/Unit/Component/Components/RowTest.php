@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use Arpite\Arpite\Component\Components\Row;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Row;
+use Arpite\Tests\TestCase;
 
 class RowTest extends TestCase
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components;
+namespace Arpite\Component\Components;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasActions;
-use Arpite\Arpite\Component\Traits\HasDescription;
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasActions;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Panel extends Component
 {

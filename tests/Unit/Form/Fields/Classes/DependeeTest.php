@@ -1,9 +1,9 @@
 <?php
 
-use Arpite\Arpite\Component\Components\Panel;
-use Arpite\Arpite\Form\Fields\Classes\Dependee;
-use Arpite\Arpite\Form\Fields\TextField;
-use Arpite\Arpite\Tests\Constants;
+use Arpite\Component\Components\Panel;
+use Arpite\Form\Fields\Classes\Dependee;
+use Arpite\Form\Fields\TextField;
+use Arpite\Tests\Constants;
 
 it("init state", function () {
 	$dependee = Dependee::make("");

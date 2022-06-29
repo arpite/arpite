@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Form;
+namespace Arpite\Form;
 
-use Arpite\Arpite\Core\Traits\HasRegisterRoutes;
-use Arpite\Arpite\Core\Traits\HasResolveHelpers;
-use Arpite\Arpite\Core\Utilities\Notification;
-use Arpite\Arpite\Core\Utilities\RouteUtility;
-use Arpite\Arpite\Form\Actions\IsInertiaRequestAction;
-use Arpite\Arpite\Form\Enums\OperationResponseType;
+use Arpite\Core\Traits\HasRegisterRoutes;
+use Arpite\Core\Traits\HasResolveHelpers;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Core\Utilities\RouteUtility;
+use Arpite\Form\Actions\IsInertiaRequestAction;
+use Arpite\Form\Enums\OperationResponseType;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

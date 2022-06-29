@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Enums;
+namespace Arpite\Component\Enums;
 
 /**
  * Material design icons

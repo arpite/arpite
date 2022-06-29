@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Component;
+namespace Arpite\Component;
 
-use Arpite\Arpite\Core\Interfaces\Exportable;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Utilities\ExportBuilder;
 
 /**
  * @template TValue

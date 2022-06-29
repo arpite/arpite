@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Operation;
+namespace Arpite\Tests\Unit\Form\Operation;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class OperationWithInertiaResponseTest extends TestCase
 {

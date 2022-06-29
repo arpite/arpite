@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasIcon;
+namespace Arpite\Tests\Unit\Component\Traits\HasIcon;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasIcon;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasIcon;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasIconTrait extends Component
 {

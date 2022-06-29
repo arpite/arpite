@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\Alert;
+namespace Arpite\Tests\Unit\Component\Components\Alert;
 
-use Arpite\Arpite\Component\Components\Alert\Alert;
-use Arpite\Arpite\Component\Components\Alert\Enums\AlertType;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Alert\Alert;
+use Arpite\Component\Components\Alert\Enums\AlertType;
+use Arpite\Tests\TestCase;
 
 class AlertTest extends TestCase
 {

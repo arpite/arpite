@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Factories;
+namespace Arpite\Authentication\Factories;
 
 use Domain\Team\Models\User;
 use Illuminate\Validation\Rule;
-use Arpite\Arpite\Form\Fields\TextField;
+use Arpite\Form\Fields\TextField;
 
 class UserFormFactory
 {

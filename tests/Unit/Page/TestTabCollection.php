@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Page;
+namespace Arpite\Tests\Unit\Page;
 
-use Arpite\Arpite\Page\TabCollection;
-use Arpite\Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Page\TabCollection;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class TestTabCollection extends TabCollection
 {

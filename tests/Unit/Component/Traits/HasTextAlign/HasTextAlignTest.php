@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasTextAlign;
+namespace Arpite\Tests\Unit\Component\Traits\HasTextAlign;
 
-use Arpite\Arpite\Component\Enums\Align;
-use Arpite\Arpite\Component\ResponsiveValue;
+use Arpite\Component\Enums\Align;
+use Arpite\Component\ResponsiveValue;
 
 it("should have initial export", function () {
 	expect((new TestComponentWithHasTextAlignTrait())->export())->toBe([

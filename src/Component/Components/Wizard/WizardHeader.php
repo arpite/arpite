@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Wizard;
+namespace Arpite\Component\Components\Wizard;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Wizard\Enums\WizardHeaderDesign;
-use Arpite\Arpite\Component\Components\Wizard\Partials\WizardStep;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Wizard\Enums\WizardHeaderDesign;
+use Arpite\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class WizardHeader extends Component
 {

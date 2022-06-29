@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Form\Actions;
+namespace Arpite\Form\Actions;
 
 use Illuminate\Http\Request;
 

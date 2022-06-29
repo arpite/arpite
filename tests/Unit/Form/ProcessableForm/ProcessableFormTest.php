@@ -1,6 +1,6 @@
 <?php
 
-use Arpite\Arpite\Tests\Unit\Form\ProcessableForm\TestProcessableForm;
+use Arpite\Tests\Unit\Form\ProcessableForm\TestProcessableForm;
 
 beforeEach(function () {
 	$this->withUser();

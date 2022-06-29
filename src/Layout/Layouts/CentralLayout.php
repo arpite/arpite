@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Layout\Layouts;
+namespace Arpite\Layout\Layouts;
 
-use Arpite\Arpite\Component\Components\Text;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Layout\Layout;
+use Arpite\Component\Components\Text;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Layout\Layout;
 
 class CentralLayout extends Layout
 {

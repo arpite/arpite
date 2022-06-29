@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Tabs;
+namespace Arpite\Component\Components\Tabs;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Tabs\Enums\TabsDesign;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Tabs\Enums\TabsDesign;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Tabs extends Component
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Form\Fields;
+namespace Arpite\Form\Fields;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Form\Actions\GetNestedFieldsAction;
-use Arpite\Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
-use Arpite\Arpite\Form\Fields\Classes\Dependee;
+use Arpite\Component\Component;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Actions\GetNestedFieldsAction;
+use Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
+use Arpite\Form\Fields\Classes\Dependee;
 use Exception;
 use Illuminate\Support\Collection;
 

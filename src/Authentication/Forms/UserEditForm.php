@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Forms;
+namespace Arpite\Authentication\Forms;
 
 use App\Providers\RouteServiceProvider;
-use Arpite\Arpite\Authentication\Actions\CreateOrUpdateUserAction;
-use Arpite\Arpite\Authentication\Factories\UserFormFactory;
-use Arpite\Arpite\Core\Utilities\Notification;
-use Arpite\Arpite\Form\Form;
-use Arpite\Arpite\Form\ProcessableForm;
+use Arpite\Authentication\Actions\CreateOrUpdateUserAction;
+use Arpite\Authentication\Factories\UserFormFactory;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Form\Form;
+use Arpite\Form\ProcessableForm;
 use Domain\Team\Models\User;
 
 class UserEditForm extends ProcessableForm

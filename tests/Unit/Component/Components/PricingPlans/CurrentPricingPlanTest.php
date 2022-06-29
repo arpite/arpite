@@ -1,7 +1,7 @@
 <?php
 
-use Arpite\Arpite\Component\Components\PricingPlans\CurrentPricingPlan;
-use Arpite\Arpite\Tests\Constants;
+use Arpite\Component\Components\PricingPlans\CurrentPricingPlan;
+use Arpite\Tests\Constants;
 
 it("should have initial state", function () {
 	$testComponent = CurrentPricingPlan::make();

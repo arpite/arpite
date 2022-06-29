@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Timeline;
+namespace Arpite\Component\Components\Timeline;
 
 use Carbon\CarbonImmutable;
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasDescription;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TimelineItem extends Component
 {

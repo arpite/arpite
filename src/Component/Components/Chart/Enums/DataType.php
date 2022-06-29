@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Chart\Enums;
+namespace Arpite\Component\Components\Chart\Enums;
 
 class DataType
 {

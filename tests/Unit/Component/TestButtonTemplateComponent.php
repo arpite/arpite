@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component;
+namespace Arpite\Tests\Unit\Component;
 
-use Arpite\Arpite\Component\ButtonTemplate;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\ButtonTemplate;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestButtonTemplateComponent extends ButtonTemplate
 {

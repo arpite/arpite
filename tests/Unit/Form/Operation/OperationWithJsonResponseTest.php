@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Operation;
+namespace Arpite\Tests\Unit\Form\Operation;
 
-use Arpite\Arpite\Core\Utilities\Notification;
+use Arpite\Core\Utilities\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class OperationWithJsonResponseTest extends TestCase
 {

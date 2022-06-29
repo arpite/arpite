@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasButtons;
+namespace Arpite\Tests\Unit\Component\Traits\HasButtons;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasButtons;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasButtons;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasButtonsTrait extends Component
 {

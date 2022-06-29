@@ -1,8 +1,8 @@
 <?php
 
-use Arpite\Arpite\Form\Fields\Classes\Dependee;
-use Arpite\Arpite\Form\Fields\TextField;
-use Arpite\Arpite\Tests\Unit\Form\Fields\TestField;
+use Arpite\Form\Fields\Classes\Dependee;
+use Arpite\Form\Fields\TextField;
+use Arpite\Tests\Unit\Form\Fields\TestField;
 
 uses()->group("field-with-dependees");
 

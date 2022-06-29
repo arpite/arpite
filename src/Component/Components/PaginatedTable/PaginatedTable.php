@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\PaginatedTable;
+namespace Arpite\Component\Components\PaginatedTable;
 
-use Arpite\Arpite\Component\Components\PaginatedTable\Actions\GeneratePaginationLinksAction;
-use Arpite\Arpite\Component\Components\Table\Table;
-use Arpite\Arpite\Component\Components\Table\TableRow;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Components\PaginatedTable\Actions\GeneratePaginationLinksAction;
+use Arpite\Component\Components\Table\Table;
+use Arpite\Component\Components\Table\TableRow;
+use Arpite\Core\Utilities\ExportBuilder;
 use Exception;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Layout\Layouts\UnauthorizedLayout;
+namespace Arpite\Layout\Layouts\UnauthorizedLayout;
 
-use Arpite\Arpite\Component\Components\Text;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Layout\Layout;
-use Arpite\Arpite\Layout\Layouts\UnauthorizedLayout\Enums\Width;
+use Arpite\Component\Components\Text;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\UnauthorizedLayout\Enums\Width;
 
 class UnauthorizedLayout extends Layout
 {

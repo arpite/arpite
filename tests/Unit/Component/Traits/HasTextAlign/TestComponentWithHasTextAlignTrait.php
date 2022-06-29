@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasTextAlign;
+namespace Arpite\Tests\Unit\Component\Traits\HasTextAlign;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasTextAlign;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasTextAlign;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasTextAlignTrait extends Component
 {

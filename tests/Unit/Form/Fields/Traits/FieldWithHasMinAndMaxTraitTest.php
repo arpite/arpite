@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields\Traits;
+namespace Arpite\Tests\Unit\Form\Fields\Traits;
 
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class FieldWithHasMinAndMaxTraitTest extends TestCase
 {

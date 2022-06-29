@@ -1,15 +1,15 @@
 <?php
 
-namespace Arpite\Arpite\Authentication\Forms;
+namespace Arpite\Authentication\Forms;
 
-use Arpite\Arpite\Authentication\Jobs\SendResetPasswordMailJob;
-use Arpite\Arpite\Authentication\Pages\ForgotPasswordEmailSentPage;
-use Arpite\Arpite\Core\Utilities\Notification;
-use Arpite\Arpite\Form\Fields\TextField;
-use Arpite\Arpite\Form\Form;
-use Arpite\Arpite\Form\Form\FormButton;
-use Arpite\Arpite\Form\ProcessableForm;
-use Arpite\Arpite\Page\Utilities\Link;
+use Arpite\Authentication\Jobs\SendResetPasswordMailJob;
+use Arpite\Authentication\Pages\ForgotPasswordEmailSentPage;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Form\Fields\TextField;
+use Arpite\Form\Form;
+use Arpite\Form\Form\FormButton;
+use Arpite\Form\ProcessableForm;
+use Arpite\Page\Utilities\Link;
 use Domain\Team\Models\User;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;

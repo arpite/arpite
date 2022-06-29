@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Table;
+namespace Arpite\Component\Components\Table;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TableRow extends Component
 {

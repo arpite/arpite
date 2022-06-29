@@ -1,13 +1,13 @@
 <?php
 
-namespace Arpite\Arpite\Resource\Factories;
+namespace Arpite\Resource\Factories;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use Arpite\Arpite\Core\Utilities\Translate;
-use Arpite\Arpite\Form\Fields\Field;
-use Arpite\Arpite\Form\Form;
+use Arpite\Core\Utilities\Translate;
+use Arpite\Form\Fields\Field;
+use Arpite\Form\Form;
 
 class ResourceFormFactory
 {

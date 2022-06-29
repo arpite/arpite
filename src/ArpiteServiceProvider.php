@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite;
+namespace Arpite;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

@@ -1,17 +1,17 @@
 <?php
 
-namespace Arpite\Arpite\Responses;
+namespace Arpite\Responses;
 
 use Inertia\Inertia;
 use Inertia\Response;
-use Arpite\Arpite\Component\Traits\HasNodes;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
-use Arpite\Arpite\Layout\Layout;
-use Arpite\Arpite\Layout\Layouts\TopSideLayout;
-use Arpite\Arpite\Page\Resolvers\LayoutResolver;
-use Arpite\Arpite\Page\Resolvers\NavigationResolver;
-use Arpite\Arpite\Page\Resolvers\UserNavigationResolver;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\TopSideLayout;
+use Arpite\Page\Resolvers\LayoutResolver;
+use Arpite\Page\Resolvers\NavigationResolver;
+use Arpite\Page\Resolvers\UserNavigationResolver;
 
 class StructuredPageResponse
 {

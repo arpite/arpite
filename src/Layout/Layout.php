@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Layout;
+namespace Arpite\Layout;
 
-use Arpite\Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Interfaces\Exportable;
 
 abstract class Layout implements Exportable
 {

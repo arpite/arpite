@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Form\Traits;
+namespace Arpite\Form\Traits;
 
 trait HasCanHaveStore
 {

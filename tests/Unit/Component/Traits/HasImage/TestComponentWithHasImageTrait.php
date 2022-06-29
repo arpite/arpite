@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasImage;
+namespace Arpite\Tests\Unit\Component\Traits\HasImage;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasImage;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasImage;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasImageTrait extends Component
 {

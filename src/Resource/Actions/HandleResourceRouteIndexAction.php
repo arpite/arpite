@@ -1,6 +1,6 @@
 <?php
 
-namespace Arpite\Arpite\Resource\Actions;
+namespace Arpite\Resource\Actions;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
@@ -10,16 +10,16 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
 use Inertia\Response;
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Button\Button;
-use Arpite\Arpite\Component\Components\Link\Link;
-use Arpite\Arpite\Component\Components\PaginatedTable\PaginatedTable;
-use Arpite\Arpite\Component\Components\Table\Cells\TableLinks;
-use Arpite\Arpite\Component\Components\Table\TableRow;
-use Arpite\Arpite\Component\Components\Text;
-use Arpite\Arpite\Component\Enums\Icon;
-use Arpite\Arpite\Core\Utilities\Translate;
-use Arpite\Arpite\Responses\StructuredPageResponse;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Button\Button;
+use Arpite\Component\Components\Link\Link;
+use Arpite\Component\Components\PaginatedTable\PaginatedTable;
+use Arpite\Component\Components\Table\Cells\TableLinks;
+use Arpite\Component\Components\Table\TableRow;
+use Arpite\Component\Components\Text;
+use Arpite\Component\Enums\Icon;
+use Arpite\Core\Utilities\Translate;
+use Arpite\Responses\StructuredPageResponse;
 
 class HandleResourceRouteIndexAction
 {

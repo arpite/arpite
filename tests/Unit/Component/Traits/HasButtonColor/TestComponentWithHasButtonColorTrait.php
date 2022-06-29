@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Traits\HasButtonColor;
+namespace Arpite\Tests\Unit\Component\Traits\HasButtonColor;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasButtonColor;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasButtonColor;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasButtonColorTrait extends Component
 {

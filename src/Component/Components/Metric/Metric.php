@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Metric;
+namespace Arpite\Component\Components\Metric;
 
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Components\Metric\Enums\MetricTrend;
-use Arpite\Arpite\Component\Traits\HasIcon;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Metric\Enums\MetricTrend;
+use Arpite\Component\Traits\HasIcon;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Metric extends Component
 {

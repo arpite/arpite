@@ -1,11 +1,11 @@
 <?php
 
-namespace Arpite\Arpite\Component\Components\Wizard\Partials;
+namespace Arpite\Component\Components\Wizard\Partials;
 
 use Closure;
-use Arpite\Arpite\Component\Component;
-use Arpite\Arpite\Component\Traits\HasTitle;
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class WizardStep extends Component
 {

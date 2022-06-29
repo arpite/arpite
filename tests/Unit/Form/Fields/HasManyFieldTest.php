@@ -1,12 +1,12 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use Arpite\Arpite\Component\Components\Grid;
-use Arpite\Arpite\Form\Fields\Classes\Dependee;
-use Arpite\Arpite\Form\Fields\HasManyField;
-use Arpite\Arpite\Tests\Constants;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\Grid;
+use Arpite\Form\Fields\Classes\Dependee;
+use Arpite\Form\Fields\HasManyField;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class HasManyFieldTest extends TestCase
 {

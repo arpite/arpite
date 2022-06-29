@@ -1,10 +1,10 @@
 <?php
 
-namespace Arpite\Arpite\Page\Resolvers;
+namespace Arpite\Page\Resolvers;
 
-use Arpite\Arpite\Authentication\Pages\AuthenticationPages;
-use Arpite\Arpite\Authentication\Pages\UserEditPage;
-use Arpite\Arpite\Page\Objects\UserNavigationItem;
+use Arpite\Authentication\Pages\AuthenticationPages;
+use Arpite\Authentication\Pages\UserEditPage;
+use Arpite\Page\Objects\UserNavigationItem;
 
 class UserNavigationResolver
 {

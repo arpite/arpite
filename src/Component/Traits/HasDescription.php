@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Component\Traits;
+namespace Arpite\Component\Traits;
 
-use Arpite\Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Core\Utilities\ExportBuilder;
 
 trait HasDescription
 {

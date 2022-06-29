@@ -1,8 +1,8 @@
 <?php
 
-namespace Arpite\Arpite\Tests;
+namespace Arpite\Tests;
 
-use Arpite\Arpite\Component\Components\Card\Enums\CardDesignEnum;
+use Arpite\Component\Components\Card\Enums\CardDesignEnum;
 
 class Constants
 {

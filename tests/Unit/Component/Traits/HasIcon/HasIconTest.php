@@ -1,6 +1,6 @@
 <?php
 
-use Arpite\Arpite\Tests\Unit\Component\Traits\HasIcon\TestComponentWithHasIconTrait;
+use Arpite\Tests\Unit\Component\Traits\HasIcon\TestComponentWithHasIconTrait;
 
 it("can set icon", function () {
 	$testComponent = new TestComponentWithHasIconTrait();

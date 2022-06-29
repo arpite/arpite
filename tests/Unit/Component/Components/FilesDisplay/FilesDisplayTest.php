@@ -1,9 +1,9 @@
 <?php
 
-namespace Arpite\Arpite\Tests\Unit\Component\Components\FilesDisplay;
+namespace Arpite\Tests\Unit\Component\Components\FilesDisplay;
 
-use Arpite\Arpite\Component\Components\FilesDisplay\FilesDisplay;
-use Arpite\Arpite\Tests\TestCase;
+use Arpite\Component\Components\FilesDisplay\FilesDisplay;
+use Arpite\Tests\TestCase;
 
 const FILES_DISPLAY_COMPONENT_EXPORT = [
 	"nodeType" => "FilesDisplay",

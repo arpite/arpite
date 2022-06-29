@@ -1,9 +1,9 @@
 <?php
 
-use Arpite\Arpite\Component\Components\PricingPlans\PricingPlan;
-use Arpite\Arpite\Component\Components\PricingPlans\PricingPlanInterval;
-use Arpite\Arpite\Component\Components\PricingPlans\PricingPlans;
-use Arpite\Arpite\Tests\Constants;
+use Arpite\Component\Components\PricingPlans\PricingPlan;
+use Arpite\Component\Components\PricingPlans\PricingPlanInterval;
+use Arpite\Component\Components\PricingPlans\PricingPlans;
+use Arpite\Tests\Constants;
 
 it("should have initial state", function () {
 	$testComponent = PricingPlans::make();

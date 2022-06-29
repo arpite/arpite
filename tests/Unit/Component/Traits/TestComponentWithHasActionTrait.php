@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits;
+namespace Arpite\Tests\Unit\Component\Traits;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasAction;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasAction;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasActionTrait extends Component
 {

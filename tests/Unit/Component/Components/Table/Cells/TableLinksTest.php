@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Table\Cells;
+namespace Arpite\Tests\Unit\Component\Components\Table\Cells;
 
-use SudoBee\Cygnus\Component\Components\Table\Cells\TableLinks;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\Table\Cells\TableLinks;
+use Arpite\Tests\TestCase;
 
 class TableLinksTest extends TestCase
 {

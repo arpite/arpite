@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Forms;
+namespace Arpite\Authentication\Forms;
 
-use SudoBee\Cygnus\Core\Utilities\Notification;
-use SudoBee\Cygnus\Form\Fields\TextField;
-use SudoBee\Cygnus\Form\Form;
-use SudoBee\Cygnus\Form\Form\FormButton;
-use SudoBee\Cygnus\Form\ProcessableForm;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Form\Fields\TextField;
+use Arpite\Form\Form;
+use Arpite\Form\Form\FormButton;
+use Arpite\Form\ProcessableForm;
 use Exception;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;

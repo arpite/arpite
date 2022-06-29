@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Traits;
+namespace Arpite\Form\Traits;
 
 trait HasCanHaveStore
 {

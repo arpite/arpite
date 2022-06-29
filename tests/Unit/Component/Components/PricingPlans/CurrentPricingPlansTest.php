@@ -1,8 +1,8 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\PricingPlans\CurrentPricingPlan;
-use SudoBee\Cygnus\Component\Components\PricingPlans\CurrentPricingPlans;
-use SudoBee\Cygnus\Tests\Constants;
+use Arpite\Component\Components\PricingPlans\CurrentPricingPlan;
+use Arpite\Component\Components\PricingPlans\CurrentPricingPlans;
+use Arpite\Tests\Constants;
 
 it("should have initial state", function () {
 	$testComponent = CurrentPricingPlans::make();

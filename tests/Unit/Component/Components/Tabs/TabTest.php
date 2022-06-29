@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Tabs;
+namespace Arpite\Tests\Unit\Component\Components\Tabs;
 
-use SudoBee\Cygnus\Component\Components\Tabs\Tab;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Component\Components\Tabs\Tab;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class TabTest extends TestCase
 {

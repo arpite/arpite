@@ -1,17 +1,17 @@
 <?php
 
-namespace SudoBee\Cygnus\Responses;
+namespace Arpite\Responses;
 
 use Inertia\Inertia;
 use Inertia\Response;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Layout\Layout;
-use SudoBee\Cygnus\Layout\Layouts\TopSideLayout;
-use SudoBee\Cygnus\Page\Resolvers\LayoutResolver;
-use SudoBee\Cygnus\Page\Resolvers\NavigationResolver;
-use SudoBee\Cygnus\Page\Resolvers\UserNavigationResolver;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\TopSideLayout;
+use Arpite\Page\Resolvers\LayoutResolver;
+use Arpite\Page\Resolvers\NavigationResolver;
+use Arpite\Page\Resolvers\UserNavigationResolver;
 
 class StructuredPageResponse
 {

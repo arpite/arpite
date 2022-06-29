@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests;
+namespace Arpite\Tests;
 
-use SudoBee\Cygnus\Component\Components\Card\Enums\CardDesignEnum;
+use Arpite\Component\Components\Card\Enums\CardDesignEnum;
 
 class Constants
 {

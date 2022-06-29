@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Metric\Enums;
+namespace Arpite\Component\Components\Metric\Enums;
 
 enum MetricTrend
 {

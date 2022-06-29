@@ -1,18 +1,18 @@
 <?php
 
-namespace SudoBee\Cygnus\Form;
+namespace Arpite\Form;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Table\Actions\GetTableSelectedValuesValidationRulesAction;
-use SudoBee\Cygnus\Component\Components\Wizard\Enums\WizardHeaderDesign;
-use SudoBee\Cygnus\Component\Components\Wizard\Partials\WizardStep;
-use SudoBee\Cygnus\Component\Components\Wizard\WizardContent;
-use SudoBee\Cygnus\Component\Components\Wizard\WizardHeader;
-use SudoBee\Cygnus\Core\Utilities\Notification;
-use SudoBee\Cygnus\Form\Actions\GetNestedFieldsValidationRulesAction;
-use SudoBee\Cygnus\Form\Enums\OperationResponseType;
-use SudoBee\Cygnus\Form\Form\FormButton;
-use SudoBee\Cygnus\Form\ProcessableWizard\ProcessableWizardForm;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Table\Actions\GetTableSelectedValuesValidationRulesAction;
+use Arpite\Component\Components\Wizard\Enums\WizardHeaderDesign;
+use Arpite\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Component\Components\Wizard\WizardContent;
+use Arpite\Component\Components\Wizard\WizardHeader;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
+use Arpite\Form\Enums\OperationResponseType;
+use Arpite\Form\Form\FormButton;
+use Arpite\Form\ProcessableWizard\ProcessableWizardForm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;

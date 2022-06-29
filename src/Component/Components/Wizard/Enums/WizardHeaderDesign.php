@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Wizard\Enums;
+namespace Arpite\Component\Components\Wizard\Enums;
 
 class WizardHeaderDesign
 {

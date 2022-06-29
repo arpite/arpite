@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component;
+namespace Arpite\Tests\Unit\Component;
 
-use SudoBee\Cygnus\Component\ButtonTemplate;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\ButtonTemplate;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestButtonTemplateComponent extends ButtonTemplate
 {

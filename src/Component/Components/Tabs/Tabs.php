@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Tabs;
+namespace Arpite\Component\Components\Tabs;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Tabs\Enums\TabsDesign;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Tabs\Enums\TabsDesign;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Tabs extends Component
 {

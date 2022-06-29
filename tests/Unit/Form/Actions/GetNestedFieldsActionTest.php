@@ -1,8 +1,8 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Grid;
-use SudoBee\Cygnus\Form\Actions\GetNestedFieldsAction;
-use SudoBee\Cygnus\Form\Fields\TextField;
+use Arpite\Component\Components\Grid;
+use Arpite\Form\Actions\GetNestedFieldsAction;
+use Arpite\Form\Fields\TextField;
 
 it("should get all nested fields default values", function () {
 	$fields = [

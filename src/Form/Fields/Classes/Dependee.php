@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields\Classes;
+namespace Arpite\Form\Fields\Classes;
 
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Core\Interfaces\Exportable;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Actions\GetNestedFieldsDefaultValuesAction;
-use SudoBee\Cygnus\Form\Actions\GetNestedFieldsValidationRulesAction;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
+use Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
 
 class Dependee implements Exportable
 {

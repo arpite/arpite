@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Form;
+namespace Arpite\Form;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;

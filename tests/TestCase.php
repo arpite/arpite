@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests;
+namespace Arpite\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use SudoBee\Cygnus\CygnusServiceProvider;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\ArpiteServiceProvider;
+use Arpite\Page\Page;
 use Database\Seeders\DatabaseSeeder;
 use Domain\Integration\Models\Integration;
 use Domain\Shop\Actions\CreateShopAction;
@@ -30,7 +30,7 @@ abstract class TestCase extends Orchestra
 	 */
 	protected function getPackageProviders($app): array
 	{
-		return [CygnusServiceProvider::class];
+		return [ArpiteServiceProvider::class];
 	}
 
 	/**

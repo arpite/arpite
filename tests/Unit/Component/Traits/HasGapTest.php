@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits;
+namespace Arpite\Tests\Unit\Component\Traits;
 
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class HasGapTest extends TestCase
 {

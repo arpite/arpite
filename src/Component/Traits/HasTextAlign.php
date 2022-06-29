@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Traits;
+namespace Arpite\Component\Traits;
 
-use SudoBee\Cygnus\Component\ResponsiveValue;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\ResponsiveValue;
+use Arpite\Core\Utilities\ExportBuilder;
 
 trait HasTextAlign
 {

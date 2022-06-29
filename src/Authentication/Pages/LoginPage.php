@@ -1,14 +1,14 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Pages;
+namespace Arpite\Authentication\Pages;
 
-use SudoBee\Cygnus\Authentication\Forms\LoginForm;
-use SudoBee\Cygnus\Component\Components\Link\Link;
-use SudoBee\Cygnus\Component\Components\Panel;
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Layout\Layout;
-use SudoBee\Cygnus\Layout\Layouts\CentralLayout;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Authentication\Forms\LoginForm;
+use Arpite\Component\Components\Link\Link;
+use Arpite\Component\Components\Panel;
+use Arpite\Component\Components\Text;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Page\Page;
 
 class LoginPage extends Page
 {

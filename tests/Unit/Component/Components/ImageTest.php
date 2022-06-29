@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use SudoBee\Cygnus\Component\Components\Image;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\Image;
+use Arpite\Tests\TestCase;
 
 class ImageTest extends TestCase
 {

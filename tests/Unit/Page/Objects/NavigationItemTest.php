@@ -1,7 +1,7 @@
 <?php
 
-use SudoBee\Cygnus\Page\Objects\NavigationItem;
-use SudoBee\Cygnus\Tests\Unit\Page\Page\TestPage;
+use Arpite\Page\Objects\NavigationItem;
+use Arpite\Tests\Unit\Page\Page\TestPage;
 
 it("should have initial state", function () {
 	$item = NavigationItem::make("/page", "Page");

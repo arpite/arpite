@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Metric;
+namespace Arpite\Component\Components\Metric;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Metric\Enums\MetricTrend;
-use SudoBee\Cygnus\Component\Traits\HasIcon;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Metric\Enums\MetricTrend;
+use Arpite\Component\Traits\HasIcon;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Metric extends Component
 {

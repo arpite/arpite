@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Page;
+namespace Arpite\Page;
 
-use SudoBee\Cygnus\Core\Traits\HasRegisterRoutes;
-use SudoBee\Cygnus\Page\Enums\TabsDesign;
+use Arpite\Core\Traits\HasRegisterRoutes;
+use Arpite\Page\Enums\TabsDesign;
 
 abstract class TabCollection
 {

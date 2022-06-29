@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Table\Enums;
+namespace Arpite\Component\Components\Table\Enums;
 
 class StatusImage
 {

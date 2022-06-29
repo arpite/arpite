@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Tooltip;
+namespace Arpite\Component\Components\Tooltip;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Tooltip\Enums\Placement;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Tooltip\Enums\Placement;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Tooltip extends Component
 {

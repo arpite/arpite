@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Page;
+namespace Arpite\Tests\Unit\Page;
 
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class TabPageTest extends TestCase
 {

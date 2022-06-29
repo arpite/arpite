@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Page\Resolvers;
+namespace Arpite\Page\Resolvers;
 
-use SudoBee\Cygnus\Authentication\Pages\AuthenticationPages;
-use SudoBee\Cygnus\Authentication\Pages\UserEditPage;
-use SudoBee\Cygnus\Page\Objects\UserNavigationItem;
+use Arpite\Authentication\Pages\AuthenticationPages;
+use Arpite\Authentication\Pages\UserEditPage;
+use Arpite\Page\Objects\UserNavigationItem;
 
 class UserNavigationResolver
 {

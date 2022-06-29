@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components;
+namespace Arpite\Component\Components;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Splitter extends Component
 {

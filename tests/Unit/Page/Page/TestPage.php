@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Page\Page;
+namespace Arpite\Tests\Unit\Page\Page;
 
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Page\Page;
 
 class TestPage extends Page
 {

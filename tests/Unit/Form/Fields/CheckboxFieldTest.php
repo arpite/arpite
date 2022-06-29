@@ -1,6 +1,6 @@
 <?php
 
-use SudoBee\Cygnus\Form\Fields\CheckboxField;
+use Arpite\Form\Fields\CheckboxField;
 use Illuminate\Validation\Rule;
 
 it("should have initial state", function () {

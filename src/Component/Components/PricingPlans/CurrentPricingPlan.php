@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\PricingPlans;
+namespace Arpite\Component\Components\PricingPlans;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasButtons;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasButtons;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class CurrentPricingPlan extends Component
 {

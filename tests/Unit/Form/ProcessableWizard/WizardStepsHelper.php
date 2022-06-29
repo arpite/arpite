@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\ProcessableWizard;
+namespace Arpite\Tests\Unit\Form\ProcessableWizard;
 
-use SudoBee\Cygnus\Component\Components\Wizard\Partials\WizardStep;
-use SudoBee\Cygnus\Tests\Unit\Form\Fields\TestField;
+use Arpite\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Tests\Unit\Form\Fields\TestField;
 
 class WizardStepsHelper
 {

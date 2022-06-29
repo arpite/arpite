@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields\Traits;
+namespace Arpite\Form\Fields\Traits;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Core\Utilities\ExportBuilder;
 
 trait HasMinAndMax
 {

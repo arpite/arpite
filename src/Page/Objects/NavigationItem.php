@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Page\Objects;
+namespace Arpite\Page\Objects;
 
-use SudoBee\Cygnus\Component\Traits\HasIcon;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Interfaces\Exportable;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Component\Traits\HasIcon;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Interfaces\Exportable;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Page\Page;
 
 class NavigationItem implements Exportable
 {

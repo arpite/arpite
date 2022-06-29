@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use SudoBee\Cygnus\Component\Components\EmptyState;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\EmptyState;
+use Arpite\Tests\TestCase;
 
 class EmptyStateTest extends TestCase
 {

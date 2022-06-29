@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Timeline;
+namespace Arpite\Tests\Unit\Component\Components\Timeline;
 
-use SudoBee\Cygnus\Component\Components\Timeline\Timeline;
-use SudoBee\Cygnus\Component\Components\Timeline\TimelineItem;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\Timeline\Timeline;
+use Arpite\Component\Components\Timeline\TimelineItem;
+use Arpite\Tests\TestCase;
 
 class TimelineTest extends TestCase
 {

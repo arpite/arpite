@@ -1,17 +1,17 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields;
+namespace Arpite\Form\Fields;
 
 use Exception;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Text;
-use SudoBee\Cygnus\Component\Rules\DeepEqualRule;
-use SudoBee\Cygnus\Component\Traits\HasDisabled;
-use SudoBee\Cygnus\ResourceFieldConfiguration\Traits\HasResourceConfigurations;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Fields\Classes\Dependee;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Text;
+use Arpite\Component\Rules\DeepEqualRule;
+use Arpite\Component\Traits\HasDisabled;
+use Arpite\ResourceFieldConfiguration\Traits\HasResourceConfigurations;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Fields\Classes\Dependee;
 
 /**
  * @template TDefaultValue

@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use SudoBee\Cygnus\Form\Fields\ToggleField;
+use Arpite\Form\Fields\ToggleField;
 use Illuminate\Validation\Rule;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class ToggleFieldTest extends TestCase
 {

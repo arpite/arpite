@@ -1,8 +1,8 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Card\Card;
-use SudoBee\Cygnus\Component\Components\Card\Enums\CardDesignEnum;
-use SudoBee\Cygnus\Tests\Constants;
+use Arpite\Component\Components\Card\Card;
+use Arpite\Component\Components\Card\Enums\CardDesignEnum;
+use Arpite\Tests\Constants;
 
 it("should have initial state", function () {
 	$testCard = Card::make();

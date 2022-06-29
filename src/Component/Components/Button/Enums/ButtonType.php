@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Button\Enums;
+namespace Arpite\Component\Components\Button\Enums;
 
 class ButtonType
 {

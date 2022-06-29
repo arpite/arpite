@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Fields\Field;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Fields\Field;
 
 class TestField extends Field
 {

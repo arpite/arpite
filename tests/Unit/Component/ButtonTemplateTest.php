@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component;
+namespace Arpite\Tests\Unit\Component;
 
-use SudoBee\Cygnus\Component\Components\Alert\Alert;
-use SudoBee\Cygnus\Component\Components\Modal\Modal;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Page\Page\TestPage;
+use Arpite\Component\Components\Alert\Alert;
+use Arpite\Component\Components\Modal\Modal;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Page\Page\TestPage;
 
 class ButtonTemplateTest extends TestCase
 {

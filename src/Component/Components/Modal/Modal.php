@@ -1,14 +1,14 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Modal;
+namespace Arpite\Component\Components\Modal;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Modal\Enums\ModalDesign;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Form;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Modal\Enums\ModalDesign;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Form;
 use Exception;
 
 class Modal extends Component

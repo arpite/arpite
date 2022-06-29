@@ -1,14 +1,14 @@
 <?php
 
-namespace SudoBee\Cygnus\Resource\Traits;
+namespace Arpite\Resource\Traits;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Form\Actions\GetNestedFieldsAction;
-use SudoBee\Cygnus\Form\Fields\Field;
-use SudoBee\Cygnus\Form\Fields\TextField;
-use SudoBee\Cygnus\Resource\Enums\ResourcePageType;
+use Arpite\Component\Component;
+use Arpite\Form\Actions\GetNestedFieldsAction;
+use Arpite\Form\Fields\Field;
+use Arpite\Form\Fields\TextField;
+use Arpite\Resource\Enums\ResourcePageType;
 
 trait HasResourceFields
 {

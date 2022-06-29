@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Partials;
+namespace Arpite\Authentication\Partials;
 
-use SudoBee\Cygnus\Component\Components\Link\Link;
-use SudoBee\Cygnus\Component\Components\Text;
+use Arpite\Component\Components\Link\Link;
+use Arpite\Component\Components\Text;
 
 class SubtitleWithLoginPageLink
 {

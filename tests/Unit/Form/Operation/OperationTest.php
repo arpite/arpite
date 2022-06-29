@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Operation;
+namespace Arpite\Tests\Unit\Form\Operation;
 
-use SudoBee\Cygnus\Form\AbstractOperationStore;
+use Arpite\Form\AbstractOperationStore;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Tests\TestCase;
 
 class OperationTest extends TestCase
 {
@@ -77,7 +77,7 @@ it("should throw exception when store is not updated", function () {
 
 	expect($operationWithStore->store->user)->toBeNull();
 })->throws(
-	'Typed property App\Cygnus\OperationStore::$user must not be accessed before initialization'
+	'Typed property App\Arpite\OperationStore::$user must not be accessed before initialization'
 );
 
 it(

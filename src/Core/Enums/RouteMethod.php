@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Core\Enums;
+namespace Arpite\Core\Enums;
 
 enum RouteMethod
 {

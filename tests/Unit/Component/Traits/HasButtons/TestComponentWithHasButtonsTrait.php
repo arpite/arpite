@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits\HasButtons;
+namespace Arpite\Tests\Unit\Component\Traits\HasButtons;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasButtons;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasButtons;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasButtonsTrait extends Component
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Page\Utilities;
+namespace Arpite\Page\Utilities;
 
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Page\Page;
 use Illuminate\Support\Str;
 
 class Resolve

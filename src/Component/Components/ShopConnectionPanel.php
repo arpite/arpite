@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components;
+namespace Arpite\Component\Components;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Button\Button;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Button\Button;
+use Arpite\Core\Utilities\ExportBuilder;
 use Domain\Integration\Models\Integration;
 use Exception;
 

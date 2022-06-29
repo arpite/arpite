@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\ProcessableForm;
+namespace Arpite\Tests\Unit\Form\ProcessableForm;
 
-use SudoBee\Cygnus\Form\ProcessableForm;
+use Arpite\Form\ProcessableForm;
 
 class TestProcessableForm extends ProcessableForm
 {

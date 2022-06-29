@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\ResourceFieldConfiguration\Traits;
+namespace Arpite\ResourceFieldConfiguration\Traits;
 
-use SudoBee\Cygnus\ResourceFieldConfiguration\ResourceFieldConfiguration;
-use SudoBee\Cygnus\Resource\Enums\ResourcePageType;
+use Arpite\ResourceFieldConfiguration\ResourceFieldConfiguration;
+use Arpite\Resource\Enums\ResourcePageType;
 
 trait HasResourceConfigurations
 {

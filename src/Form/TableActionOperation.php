@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Form;
+namespace Arpite\Form;
 
-use SudoBee\Cygnus\Component\Components\Table\Actions\GetTableSelectedValuesValidationRulesAction;
+use Arpite\Component\Components\Table\Actions\GetTableSelectedValuesValidationRulesAction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;

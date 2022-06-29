@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use SudoBee\Cygnus\Component\Components\Grid;
-use SudoBee\Cygnus\Form\Fields\Classes\Dependee;
-use SudoBee\Cygnus\Form\Fields\HasManyField;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\Grid;
+use Arpite\Form\Fields\Classes\Dependee;
+use Arpite\Form\Fields\HasManyField;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class HasManyFieldTest extends TestCase
 {

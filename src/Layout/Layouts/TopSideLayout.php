@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Layout\Layouts;
+namespace Arpite\Layout\Layouts;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Layout\Layout;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Layout\Layout;
 
 class TopSideLayout extends Layout
 {

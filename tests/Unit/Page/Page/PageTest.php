@@ -1,19 +1,19 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Page\Page;
+namespace Arpite\Tests\Unit\Page\Page;
 
-use SudoBee\Cygnus\Layout\Layout;
-use SudoBee\Cygnus\Layout\Layouts\CentralLayout;
-use SudoBee\Cygnus\Layout\Layouts\LeftSideLayout;
-use SudoBee\Cygnus\Layout\Layouts\TopSideLayout;
-use SudoBee\Cygnus\Page\Objects\NavigationItem;
-use SudoBee\Cygnus\Page\Resolvers\LayoutResolver;
-use SudoBee\Cygnus\Page\Resolvers\NavigationResolver;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Layout\Layouts\LeftSideLayout;
+use Arpite\Layout\Layouts\TopSideLayout;
+use Arpite\Page\Objects\NavigationItem;
+use Arpite\Page\Resolvers\LayoutResolver;
+use Arpite\Page\Resolvers\NavigationResolver;
 use Illuminate\Support\Facades\Route;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
-use SudoBee\Cygnus\Tests\Unit\Form\Operation\TestOperation;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Tests\Unit\Form\Operation\TestOperation;
 
 class PageTest extends TestCase
 {

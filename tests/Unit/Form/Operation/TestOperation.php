@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Operation;
+namespace Arpite\Tests\Unit\Form\Operation;
 
-use SudoBee\Cygnus\Form\Operation;
+use Arpite\Form\Operation;
 
 class TestOperation extends Operation
 {

@@ -1,23 +1,23 @@
 <?php
 
-namespace SudoBee\Cygnus\Page;
+namespace Arpite\Page;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Core\Traits\HasRegisterRoutes;
-use SudoBee\Cygnus\Core\Traits\HasResolveHelpers;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Core\Utilities\RouteUtility;
-use SudoBee\Cygnus\Form\Operation;
-use SudoBee\Cygnus\Layout\Layout;
-use SudoBee\Cygnus\Layout\Layouts\TopSideLayout;
-use SudoBee\Cygnus\Page\Resolvers\LayoutResolver;
-use SudoBee\Cygnus\Page\Resolvers\NavigationResolver;
+use Arpite\Component\Component;
+use Arpite\Core\Traits\HasRegisterRoutes;
+use Arpite\Core\Traits\HasResolveHelpers;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Core\Utilities\RouteUtility;
+use Arpite\Form\Operation;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\TopSideLayout;
+use Arpite\Page\Resolvers\LayoutResolver;
+use Arpite\Page\Resolvers\NavigationResolver;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller;
 use Inertia\Response;
-use SudoBee\Cygnus\Responses\StructuredPageResponse;
+use Arpite\Responses\StructuredPageResponse;
 
 abstract class Page extends Controller
 {

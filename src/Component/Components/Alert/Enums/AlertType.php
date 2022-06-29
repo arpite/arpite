@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Alert\Enums;
+namespace Arpite\Component\Components\Alert\Enums;
 
 class AlertType
 {

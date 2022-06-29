@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components;
+namespace Arpite\Tests\Unit\Component\Components;
 
-use SudoBee\Cygnus\Component\Components\Tooltip\Tooltip;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\Tooltip\Tooltip;
+use Arpite\Tests\TestCase;
 
 class TooltipTest extends TestCase
 {

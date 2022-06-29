@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Operations;
+namespace Arpite\Authentication\Operations;
 
-use SudoBee\Cygnus\Core\Utilities\Notification;
-use SudoBee\Cygnus\Form\Operation;
-use SudoBee\Cygnus\Form\Traits\HasStore;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Form\Operation;
+use Arpite\Form\Traits\HasStore;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
 use Throwable;

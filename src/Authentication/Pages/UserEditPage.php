@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Pages;
+namespace Arpite\Authentication\Pages;
 
-use SudoBee\Cygnus\Authentication\Forms\UserEditForm;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Authentication\Forms\UserEditForm;
+use Arpite\Page\Page;
 
 class UserEditPage extends Page
 {

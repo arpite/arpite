@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Core\Interfaces;
+namespace Arpite\Core\Interfaces;
 
 interface Exportable
 {

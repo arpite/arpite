@@ -1,6 +1,6 @@
 <?php
 
-use SudoBee\Cygnus\Tests\Unit\Form\ProcessableForm\TestProcessableForm;
+use Arpite\Tests\Unit\Form\ProcessableForm\TestProcessableForm;
 
 beforeEach(function () {
 	$this->withUser();

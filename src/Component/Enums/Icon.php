@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Enums;
+namespace Arpite\Component\Enums;
 
 /**
  * Material design icons

@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Traits;
+namespace Arpite\Component\Traits;
 
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Core\Utilities\ExportBuilder;
 
 trait HasDisabled
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Authentication\Pages;
+namespace Arpite\Authentication\Pages;
 
-use SudoBee\Cygnus\Authentication\Forms\ForgotPasswordForm;
-use SudoBee\Cygnus\Authentication\Partials\SubtitleWithLoginPageLink;
-use SudoBee\Cygnus\Component\Components\Panel;
-use SudoBee\Cygnus\Layout\Layout;
-use SudoBee\Cygnus\Layout\Layouts\CentralLayout;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Authentication\Forms\ForgotPasswordForm;
+use Arpite\Authentication\Partials\SubtitleWithLoginPageLink;
+use Arpite\Component\Components\Panel;
+use Arpite\Layout\Layout;
+use Arpite\Layout\Layouts\CentralLayout;
+use Arpite\Page\Page;
 
 class ForgotPasswordPage extends Page
 {

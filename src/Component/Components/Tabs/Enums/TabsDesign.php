@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Tabs\Enums;
+namespace Arpite\Component\Components\Tabs\Enums;
 
 class TabsDesign
 {

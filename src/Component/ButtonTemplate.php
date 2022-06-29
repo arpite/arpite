@@ -1,16 +1,16 @@
 <?php
 
-namespace SudoBee\Cygnus\Component;
+namespace Arpite\Component;
 
-use SudoBee\Cygnus\Component\Components\Alert\Alert;
-use SudoBee\Cygnus\Component\Components\Modal\Modal;
-use SudoBee\Cygnus\Component\Traits\HasAction;
-use SudoBee\Cygnus\Component\Traits\HasButtonColor;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Operation;
-use SudoBee\Cygnus\Page\Page;
-use SudoBee\Cygnus\Page\Utilities\Link;
+use Arpite\Component\Components\Alert\Alert;
+use Arpite\Component\Components\Modal\Modal;
+use Arpite\Component\Traits\HasAction;
+use Arpite\Component\Traits\HasButtonColor;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Operation;
+use Arpite\Page\Page;
+use Arpite\Page\Utilities\Link;
 
 abstract class ButtonTemplate extends Component
 {

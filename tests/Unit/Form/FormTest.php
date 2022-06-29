@@ -1,17 +1,17 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form;
+namespace Arpite\Tests\Unit\Form;
 
-use SudoBee\Cygnus\Component\Components\Grid;
-use SudoBee\Cygnus\Component\Components\Panel;
-use SudoBee\Cygnus\Form\Form;
-use SudoBee\Cygnus\Form\Form\FormButton;
+use Arpite\Component\Components\Grid;
+use Arpite\Component\Components\Panel;
+use Arpite\Form\Form;
+use Arpite\Form\Form\FormButton;
 use Domain\Shipment\Models\Shipment;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
-use SudoBee\Cygnus\Tests\Unit\Form\Fields\TestField;
-use SudoBee\Cygnus\Tests\Unit\Form\Operation\TestOperation;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
+use Arpite\Tests\Unit\Form\Fields\TestField;
+use Arpite\Tests\Unit\Form\Operation\TestOperation;
 
 class FormTest extends TestCase
 {

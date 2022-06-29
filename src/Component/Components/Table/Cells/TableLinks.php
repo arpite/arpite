@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Table\Cells;
+namespace Arpite\Component\Components\Table\Cells;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TableLinks extends Component
 {

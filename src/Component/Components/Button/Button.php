@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Button;
+namespace Arpite\Component\Components\Button;
 
-use SudoBee\Cygnus\Component\ButtonTemplate;
-use SudoBee\Cygnus\Component\Traits\HasButtonDesign;
-use SudoBee\Cygnus\Component\Traits\HasDisabled;
-use SudoBee\Cygnus\Component\Traits\HasIcon;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\ButtonTemplate;
+use Arpite\Component\Traits\HasButtonDesign;
+use Arpite\Component\Traits\HasDisabled;
+use Arpite\Component\Traits\HasIcon;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Button extends ButtonTemplate
 {

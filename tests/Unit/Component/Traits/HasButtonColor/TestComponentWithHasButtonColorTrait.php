@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits\HasButtonColor;
+namespace Arpite\Tests\Unit\Component\Traits\HasButtonColor;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasButtonColor;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasButtonColor;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasButtonColorTrait extends Component
 {

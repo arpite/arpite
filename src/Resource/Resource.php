@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Resource;
+namespace Arpite\Resource;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;
@@ -13,19 +13,19 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Inertia\Response;
 use LogicException;
-use SudoBee\Cygnus\Core\Traits\HasRegisterRoutes;
-use SudoBee\Cygnus\Core\Traits\HasResolveHelpers;
-use SudoBee\Cygnus\Core\Utilities\Notification;
-use SudoBee\Cygnus\Core\Utilities\RouteUtility;
-use SudoBee\Cygnus\Core\Utilities\Translate;
-use SudoBee\Cygnus\Form\Fields\Field;
-use SudoBee\Cygnus\Resource\Actions\HandleResourceRouteIndexAction;
-use SudoBee\Cygnus\Resource\Enums\ResourcePageType;
-use SudoBee\Cygnus\Resource\Traits\HasResourceFields;
-use SudoBee\Cygnus\Resource\Factories\ResourceFormFactory;
-use SudoBee\Cygnus\Form\Form;
-use SudoBee\Cygnus\Form\Traits\HasCanHaveStore;
-use SudoBee\Cygnus\Responses\StructuredPageResponse;
+use Arpite\Core\Traits\HasRegisterRoutes;
+use Arpite\Core\Traits\HasResolveHelpers;
+use Arpite\Core\Utilities\Notification;
+use Arpite\Core\Utilities\RouteUtility;
+use Arpite\Core\Utilities\Translate;
+use Arpite\Form\Fields\Field;
+use Arpite\Resource\Actions\HandleResourceRouteIndexAction;
+use Arpite\Resource\Enums\ResourcePageType;
+use Arpite\Resource\Traits\HasResourceFields;
+use Arpite\Resource\Factories\ResourceFormFactory;
+use Arpite\Form\Form;
+use Arpite\Form\Traits\HasCanHaveStore;
+use Arpite\Responses\StructuredPageResponse;
 
 /**
  * @template TModelClass of Model

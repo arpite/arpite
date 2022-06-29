@@ -1,13 +1,13 @@
 {
-	"name": "@sudobee/cygnus",
+	"name": "@arpite/ui",
 	"version": "0.0.1",
 	"license": "MIT",
-	"main": "resources/dist-module/cygnus.cjs.js",
-	"module": "resources/dist-module/cygnus.es.js",
+	"main": "resources/dist-module/ui.cjs.js",
+	"module": "resources/dist-module/ui.es.js",
 	"exports": {
 		".": {
-			"import": "./resources/dist-module/cygnus.es.js",
-			"require": "./resources/dist-module/cygnus.cjs.js"
+			"import": "./resources/dist-module/ui.es.js",
+			"require": "./resources/dist-module/ui.cjs.js"
 		}
 	},
 	"files": [
@@ -17,7 +17,7 @@
 	"scripts": {
 		"start": "concurrently -k -n CSS,MODULE,BUNDLE,TSC -c \"bgGreen.bold.black,bgYellow.bold.black,bgYellow.bold.black,bgBlue.bold.black\" \"yarn build:css --watch\" \"yarn build:js:module --watch\" \"yarn build:js:bundle --watch\" \"yarn typecheck --watch\"",
 		"build": "yarn typecheck && yarn build:js:module && yarn build:js:bundle && yarn build:css",
-		"build:css": "postcss -o resources/dist/cygnus.css resources/css/index.css",
+		"build:css": "postcss -o resources/dist/arpite.css resources/css/index.css",
 		"build:js:module": "vite build",
 		"build:js:bundle": "vite -c vite.bundle.config.ts build",
 		"typecheck": "tsc --noEmit --preserveWatchOutput",

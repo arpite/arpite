@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Page\Utilities;
+namespace Arpite\Page\Utilities;
 
-use SudoBee\Cygnus\Form\Operation;
-use SudoBee\Cygnus\Page\Page;
+use Arpite\Form\Operation;
+use Arpite\Page\Page;
 use Illuminate\Support\Str;
 
 class Link

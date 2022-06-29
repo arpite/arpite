@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Table\Actions;
+namespace Arpite\Component\Components\Table\Actions;
 
 class GetTableSelectedValuesValidationRulesAction
 {

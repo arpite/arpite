@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Card\Enums;
+namespace Arpite\Component\Components\Card\Enums;
 
 class CardDesignEnum
 {

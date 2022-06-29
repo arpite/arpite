@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Enums;
+namespace Arpite\Form\Enums;
 
 class OperationResponseType
 {

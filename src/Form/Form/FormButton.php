@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Form;
+namespace Arpite\Form\Form;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasButtonColor;
-use SudoBee\Cygnus\Component\Traits\HasButtonDesign;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasButtonColor;
+use Arpite\Component\Traits\HasButtonDesign;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class FormButton extends Component
 {

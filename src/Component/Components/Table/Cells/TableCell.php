@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Table\Cells;
+namespace Arpite\Component\Components\Table\Cells;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Table\Enums\StatusImage;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Component\Traits\HasImage;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Table\Enums\StatusImage;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasImage;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TableCell extends Component
 {

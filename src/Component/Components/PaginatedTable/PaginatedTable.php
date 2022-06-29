@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\PaginatedTable;
+namespace Arpite\Component\Components\PaginatedTable;
 
-use SudoBee\Cygnus\Component\Components\PaginatedTable\Actions\GeneratePaginationLinksAction;
-use SudoBee\Cygnus\Component\Components\Table\Table;
-use SudoBee\Cygnus\Component\Components\Table\TableRow;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Components\PaginatedTable\Actions\GeneratePaginationLinksAction;
+use Arpite\Component\Components\Table\Table;
+use Arpite\Component\Components\Table\TableRow;
+use Arpite\Core\Utilities\ExportBuilder;
 use Exception;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder;

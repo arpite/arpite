@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields;
+namespace Arpite\Tests\Unit\Form\Fields;
 
-use SudoBee\Cygnus\Form\Fields\NumberField;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Form\Fields\NumberField;
+use Arpite\Tests\TestCase;
 
 class NumberFieldTest extends TestCase
 {

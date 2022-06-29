@@ -1,7 +1,7 @@
 <?php
 
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Tests\Constants;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 it("should export initial state", function () {
 	$testComponent = new TestComponent();

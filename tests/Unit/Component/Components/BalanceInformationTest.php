@@ -1,6 +1,6 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\BalanceInformation;
+use Arpite\Component\Components\BalanceInformation;
 
 it("should have initial export", function () {
 	expect(BalanceInformation::make()->export())->toBe([

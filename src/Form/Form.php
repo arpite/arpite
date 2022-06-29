@@ -1,20 +1,20 @@
 <?php
 
-namespace SudoBee\Cygnus\Form;
+namespace Arpite\Form;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Table\Actions\GetTableSelectedValuesValidationRulesAction;
-use SudoBee\Cygnus\Component\Traits\HasActions;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Component\Traits\HasPreserveScroll;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Component\Traits\HasWithPanel;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
-use SudoBee\Cygnus\Form\Actions\GetNestedFieldsDefaultValuesAction;
-use SudoBee\Cygnus\Form\Actions\GetNestedFieldsValidationRulesAction;
-use SudoBee\Cygnus\Form\Enums\OperationResponseType;
-use SudoBee\Cygnus\Form\Form\FormButton;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Table\Actions\GetTableSelectedValuesValidationRulesAction;
+use Arpite\Component\Traits\HasActions;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Component\Traits\HasPreserveScroll;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Component\Traits\HasWithPanel;
+use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
+use Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
+use Arpite\Form\Enums\OperationResponseType;
+use Arpite\Form\Form\FormButton;
 use Exception;
 
 class Form extends Component

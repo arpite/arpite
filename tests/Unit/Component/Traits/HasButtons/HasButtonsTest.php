@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits\HasButtons;
+namespace Arpite\Tests\Unit\Component\Traits\HasButtons;
 
-use SudoBee\Cygnus\Component\Components\Button\Button;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\Button\Button;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 const COMPONENT_EXPORT = [
 	"nodeType" => "TestComponentWithHasButtonsTrait",

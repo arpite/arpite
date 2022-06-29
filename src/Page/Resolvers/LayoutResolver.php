@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Page\Resolvers;
+namespace Arpite\Page\Resolvers;
 
 class LayoutResolver
 {

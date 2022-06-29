@@ -1,6 +1,6 @@
 <?php
 
-namespace SudoBee\Cygnus\Resource\Enums;
+namespace Arpite\Resource\Enums;
 
 enum ResourcePageType
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Page;
+namespace Arpite\Tests\Unit\Page;
 
-use SudoBee\Cygnus\Page\TabCollection;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Page\TabCollection;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class TestTabCollection extends TabCollection
 {

@@ -1,8 +1,8 @@
 <?php
 
-use SudoBee\Cygnus\Form\Fields\Classes\Dependee;
-use SudoBee\Cygnus\Form\Fields\TextField;
-use SudoBee\Cygnus\Tests\Unit\Form\Fields\TestField;
+use Arpite\Form\Fields\Classes\Dependee;
+use Arpite\Form\Fields\TextField;
+use Arpite\Tests\Unit\Form\Fields\TestField;
 
 uses()->group("field-with-dependees");
 

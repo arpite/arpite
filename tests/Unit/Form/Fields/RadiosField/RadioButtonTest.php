@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Fields\RadiosField;
+namespace Arpite\Tests\Unit\Form\Fields\RadiosField;
 
-use SudoBee\Cygnus\Form\Fields\RadiosField\RadioButton;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Form\Fields\RadiosField\RadioButton;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class RadioButtonTest extends TestCase
 {

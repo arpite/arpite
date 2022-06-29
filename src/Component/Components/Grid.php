@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components;
+namespace Arpite\Component\Components;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\ResponsiveValue;
-use SudoBee\Cygnus\Component\Traits\HasGap;
-use SudoBee\Cygnus\Component\Traits\HasNodes;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\ResponsiveValue;
+use Arpite\Component\Traits\HasGap;
+use Arpite\Component\Traits\HasNodes;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Grid extends Component
 {

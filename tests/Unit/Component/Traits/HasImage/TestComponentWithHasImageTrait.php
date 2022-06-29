@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Traits\HasImage;
+namespace Arpite\Tests\Unit\Component\Traits\HasImage;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Traits\HasImage;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Traits\HasImage;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class TestComponentWithHasImageTrait extends Component
 {

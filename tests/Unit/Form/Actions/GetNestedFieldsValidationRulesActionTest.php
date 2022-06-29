@@ -1,8 +1,8 @@
 <?php
 
-use SudoBee\Cygnus\Component\Components\Grid;
-use SudoBee\Cygnus\Form\Actions\GetNestedFieldsValidationRulesAction;
-use SudoBee\Cygnus\Form\Fields\TextField;
+use Arpite\Component\Components\Grid;
+use Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
+use Arpite\Form\Fields\TextField;
 
 it("should get all nested fields validation rules", function () {
 	$defaultValues = app(GetNestedFieldsValidationRulesAction::class)->execute(

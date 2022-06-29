@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Table;
+namespace Arpite\Tests\Unit\Component\Components\Table;
 
-use SudoBee\Cygnus\Component\Components\Table\TableRow;
-use SudoBee\Cygnus\Tests\TestCase;
-use SudoBee\Cygnus\Tests\Unit\Component\TestComponent;
+use Arpite\Component\Components\Table\TableRow;
+use Arpite\Tests\TestCase;
+use Arpite\Tests\Unit\Component\TestComponent;
 
 class TableRowTest extends TestCase
 {

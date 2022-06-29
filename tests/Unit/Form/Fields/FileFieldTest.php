@@ -1,11 +1,11 @@
 <?php
 
-use SudoBee\Cygnus\Form\Fields\Classes\FileEntity;
-use SudoBee\Cygnus\Form\Fields\FileField;
+use Arpite\Form\Fields\Classes\FileEntity;
+use Arpite\Form\Fields\FileField;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use SudoBee\Cygnus\Tests\Constants;
+use Arpite\Tests\Constants;
 
 it("should have init properties", function () {
 	$field = FileField::make("First");

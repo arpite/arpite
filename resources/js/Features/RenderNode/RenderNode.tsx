@@ -46,7 +46,7 @@ import { ShopConnectionPanel } from "../ShopConnectionPanel";
 import { AlertBanner } from "./Nodes/AlertBanner";
 import { TextareaField } from "./Nodes/Form/Fields/TextareaField";
 import { Metric } from "./Nodes/Metric/Metric";
-import { Cygnus } from "../../Cygnus";
+import { Arpite } from "../../Arpite";
 
 export const RenderNode: React.FC<NodeType> = ({ nodeType, ...props }) => {
 	// eslint-disable-next-line
@@ -97,7 +97,7 @@ export const RenderNode: React.FC<NodeType> = ({ nodeType, ...props }) => {
 		Metric,
 		ShopConnectionPanel,
 		AlertBanner,
-		...Cygnus.getCustomNodes(),
+		...Arpite.getCustomNodes(),
 	}[nodeType];
 
 	if (Component) {

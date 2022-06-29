@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Form\Fields;
+namespace Arpite\Form\Fields;
 
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Core\Utilities\ExportBuilder;
 use Illuminate\Validation\Rule;
 
 /**

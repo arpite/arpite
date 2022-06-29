@@ -1,12 +1,12 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\ProcessableWizard;
+namespace Arpite\Tests\Unit\Form\ProcessableWizard;
 
-use SudoBee\Cygnus\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Component\Components\Wizard\Partials\WizardStep;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class ProcessableWizardTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Operation;
+namespace Arpite\Tests\Unit\Form\Operation;
 
-use SudoBee\Cygnus\Form\Operation;
-use SudoBee\Cygnus\Form\Traits\HasStore;
+use Arpite\Form\Operation;
+use Arpite\Form\Traits\HasStore;
 
 class TestOperationWithStore extends Operation
 {

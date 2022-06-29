@@ -1,14 +1,14 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Card;
+namespace Arpite\Component\Components\Card;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Card\Enums\CardDesignEnum;
-use SudoBee\Cygnus\Component\Traits\HasButtons;
-use SudoBee\Cygnus\Component\Traits\HasDescription;
-use SudoBee\Cygnus\Component\Traits\HasImage;
-use SudoBee\Cygnus\Component\Traits\HasTitle;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Card\Enums\CardDesignEnum;
+use Arpite\Component\Traits\HasButtons;
+use Arpite\Component\Traits\HasDescription;
+use Arpite\Component\Traits\HasImage;
+use Arpite\Component\Traits\HasTitle;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class Card extends Component
 {

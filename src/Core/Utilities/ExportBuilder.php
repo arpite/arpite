@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Core\Utilities;
+namespace Arpite\Core\Utilities;
 
-use SudoBee\Cygnus\Core\Interfaces\Exportable;
+use Arpite\Core\Interfaces\Exportable;
 
 class ExportBuilder
 {

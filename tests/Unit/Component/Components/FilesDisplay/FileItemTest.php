@@ -1,9 +1,9 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\FilesDisplay;
+namespace Arpite\Tests\Unit\Component\Components\FilesDisplay;
 
-use SudoBee\Cygnus\Component\Components\FilesDisplay\FileItem;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\FilesDisplay\FileItem;
+use Arpite\Tests\TestCase;
 
 const FILE_ITEM_COMPONENT_EXPORT = [
 	"nodeType" => "FileItem",

@@ -1,11 +1,11 @@
 <?php
 
-namespace SudoBee\Cygnus\Component\Components\Wizard;
+namespace Arpite\Component\Components\Wizard;
 
-use SudoBee\Cygnus\Component\Component;
-use SudoBee\Cygnus\Component\Components\Wizard\Enums\WizardHeaderDesign;
-use SudoBee\Cygnus\Component\Components\Wizard\Partials\WizardStep;
-use SudoBee\Cygnus\Core\Utilities\ExportBuilder;
+use Arpite\Component\Component;
+use Arpite\Component\Components\Wizard\Enums\WizardHeaderDesign;
+use Arpite\Component\Components\Wizard\Partials\WizardStep;
+use Arpite\Core\Utilities\ExportBuilder;
 
 class WizardHeader extends Component
 {

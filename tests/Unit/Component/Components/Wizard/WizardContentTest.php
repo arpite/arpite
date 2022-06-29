@@ -1,10 +1,10 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Component\Components\Wizard;
+namespace Arpite\Tests\Unit\Component\Components\Wizard;
 
-use SudoBee\Cygnus\Component\Components\Wizard\WizardContent;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Component\Components\Wizard\WizardContent;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class WizardContentTest extends TestCase
 {

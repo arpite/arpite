@@ -1,13 +1,13 @@
 <?php
 
-namespace SudoBee\Cygnus\Tests\Unit\Form\Operation;
+namespace Arpite\Tests\Unit\Form\Operation;
 
-use SudoBee\Cygnus\Core\Utilities\Notification;
+use Arpite\Core\Utilities\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
-use SudoBee\Cygnus\Tests\Constants;
-use SudoBee\Cygnus\Tests\TestCase;
+use Arpite\Tests\Constants;
+use Arpite\Tests\TestCase;
 
 class OperationWithJsonResponseTest extends TestCase
 {

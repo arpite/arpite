@@ -1,8 +1,8 @@
 <?php
 
-namespace SudoBee\Cygnus\Layout;
+namespace Arpite\Layout;
 
-use SudoBee\Cygnus\Core\Interfaces\Exportable;
+use Arpite\Core\Interfaces\Exportable;
 
 abstract class Layout implements Exportable
 {

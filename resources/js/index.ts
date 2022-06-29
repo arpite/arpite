@@ -1,1 +1,1 @@
-export { Cygnus } from "./Cygnus";
+export { Arpite } from "./Arpite";

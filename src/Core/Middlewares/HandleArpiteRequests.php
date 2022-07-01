@@ -13,7 +13,7 @@ class HandleArpiteRequests extends Middleware
 
 	/**
 	 * @param Request $request
-	 * @return array<int, mixed>
+	 * @return array<string, mixed>
 	 */
 	public function share(Request $request): array
 	{

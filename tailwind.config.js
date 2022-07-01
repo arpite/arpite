@@ -4,10 +4,11 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
 	content: ["./resources/js/**/*.{tsx,ts}"],
 	theme: {
+		screens: {
+			xs: "425px",
+			...defaultTheme.screens
+		},
 		extend: {
-			screens: {
-				xs: "425px",
-			},
 			colors: {
 				primary: {
 					50: 'rgb(var(--arpite-primary-50, 236 253 245) / <alpha-value>)',

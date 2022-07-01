@@ -41,9 +41,6 @@ php artisan vendor:publish --tag=arpite-assets
 
 		<title>{{ config('app.name', 'Laravel') }}</title>
 
-		<!-- Fonts -->
-		<link rel="stylesheet" href="{{ asset('fonts/inter/inter.css') }}" />
-
 		<link rel="stylesheet" href="/vendor/arpite/arpite.css" />
 		<script src="/vendor/arpite/arpite.js" defer></script>
 
@@ -62,7 +59,7 @@ php artisan vendor:publish --tag=arpite-assets
 			}
 		</style>
 	</head>
-	<body class="font-base antialiased">
+	<body class="font-sans antialiased">
 		@inertia
 	</body>
 </html>

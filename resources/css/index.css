@@ -1,5 +1,7 @@
 @import "tippy.js/dist/tippy.css";
 
+@import url('https://rsms.me/inter/inter.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

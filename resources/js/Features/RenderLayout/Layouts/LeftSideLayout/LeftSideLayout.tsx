@@ -155,7 +155,7 @@ export const LeftSideLayout: React.FC<LeftSideLayoutInterface> = ({
 						<>
 							<SideTabsMenu tabs={tabs} />
 
-							<div className="w-0 flex-1 space-y-4 md:space-y-6">
+							<div className="flex w-0 flex-1 flex-col space-y-4 md:space-y-6">
 								{children}
 							</div>
 						</>

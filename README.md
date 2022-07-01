@@ -36,7 +36,7 @@ Inertia::share([
 ]);
 ```
 
-4. Add to `HandleArpiteRequests` middleware to `web` group inside `app/Http/Kernel.php` file
+4. Add `HandleArpiteRequests` middleware to `web` group inside `app/Http/Kernel.php` file
 
 ```php
 'web' => [

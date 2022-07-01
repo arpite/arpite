@@ -1,5 +1,7 @@
 {
 	"name": "arpite/arpite",
+	"description": "An open-source Laravel library for building high-quality, accessible applications and administration dashboards",
+	"license": "MIT",
 	"require": {
 		"php": "^8.1",
 		"ext-json": "*",

@@ -96,9 +96,19 @@
 }
 
 .grid-node-container {
+	--d-gtc: initial;
+	--sm-gtc: initial;
+	--md-gtc: initial;
+	--lg-gtc: initial;
+	--xl-gtc: initial;
 	grid-template-columns: repeat(var(--d-gtc), 1fr);
 }
 .grid-node-item {
+	--d-gc: initial;
+	--sm-gc: initial;
+	--md-gc: initial;
+	--lg-gc: initial;
+	--xl-gc: initial;
 	grid-column: span var(--d-gc) / span var(--d-gc);
 }
 @media (min-width: 640px) {
@@ -153,6 +163,11 @@
 }
 
 .responsive-display {
+	--d-d: initial;
+	--sm-d: initial;
+	--md-d: initial;
+	--lg-d: initial;
+	--xl-d: initial;
 	display: var(--d-d);
 }
 @media (min-width: 640px) {
@@ -177,6 +192,11 @@
 }
 
 .responsive-text-align {
+	--d-ta: initial;
+	--sm-ta: initial;
+	--md-ta: initial;
+	--lg-ta: initial;
+	--xl-ta: initial;
 	text-align: var(--d-ta);
 }
 @media (min-width: 640px) {
@@ -204,6 +224,11 @@
 }
 
 .responsive-justify {
+	--d-jc: initial;
+	--sm-jc: initial;
+	--md-jc: initial;
+	--lg-jc: initial;
+	--xl-jc: initial;
 	justify-content: var(--d-jc);
 }
 @media (min-width: 640px) {

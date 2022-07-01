@@ -1,7 +1,27 @@
 {
 	"name": "arpite/arpite",
 	"description": "An open-source Laravel library for building high-quality, accessible applications and administration dashboards",
+	"keywords": [
+		"builder",
+		"laravel",
+		"forms",
+		"inertia",
+		"dashboards",
+		"tables",
+		"tailwindcss"
+	],
+	"homepage": "https://github.com/arpite/arpite",
 	"license": "MIT",
+	"authors": [
+		{
+			"name": "Domantas Mauruča",
+			"email": "domantas.mauruca@gmail.com"
+		},
+		{
+			"name": "Lukas Rimavičius",
+			"email": "lukisrim@gmail.com"
+		}
+	],
 	"require": {
 		"php": "^8.1",
 		"ext-json": "*",

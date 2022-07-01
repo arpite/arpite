@@ -9,6 +9,9 @@ class ArpiteServiceProvider extends PackageServiceProvider
 {
 	public function configurePackage(Package $package): void
 	{
-		$package->name("arpite")->hasAssets();
+		$package
+			->name("arpite")
+			->hasViews()
+			->hasAssets();
 	}
 }

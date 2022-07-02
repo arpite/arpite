@@ -59,7 +59,7 @@ jobs:
               run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
             - name: Run PHPStan
-              run: composer analyze
+              run: composer analyse
 
     typecheck:
         name: Type checking

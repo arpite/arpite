@@ -1,0 +1,134 @@
+name: Arpite
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    unit-tests:
+        name: Unit tests
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                shell: bash
+
+        steps:
+            - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+              with:
+                  php-version: "8.1"
+                  coverage: xdebug
+
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: "14"
+
+            - uses: actions/checkout@v2
+
+            - name: Copy .env
+              run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
+            - name: Install dependencies
+              run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+            - name: Generate key
+              run: php artisan key:generate
+
+            - name: Execute tests
+              run: XDEBUG_MODE=coverage vendor/bin/pest --coverage --coverage-clover=coverage.xml --testsuite Feature,Unit
+
+            - name: Upload coverage
+              uses: codecov/codecov-action@v2
+              with:
+                  token: ${{ secrets.CODECOV_TOKEN }}
+
+    static-analysis:
+        name: Static analysis
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                shell: bash
+
+        steps:
+            - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+              with:
+                  php-version: "8.1"
+
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: "14"
+
+            - uses: actions/checkout@v2
+
+            - name: Copy .env
+              run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
+            - name: Install Dependencies
+              run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+            - name: Generate key
+              run: php artisan key:generate
+
+            - name: Run PHPStan
+              run: composer analyze
+
+    typecheck:
+        name: Type checking
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                shell: bash
+
+        steps:
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: "14"
+
+            - uses: actions/checkout@v2
+
+            - name: Install node modules
+              run: yarn install
+
+            - name: Run type checker
+              run: yarn typecheck
+
+    stylecheck:
+        name: Style checking
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                shell: bash
+
+        steps:
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: "14"
+
+            - uses: actions/checkout@v2
+
+            - name: Install node modules
+              run: yarn install
+
+            - name: Run style checker
+              run: yarn stylecheck
+
+    lint:
+        name: Linting
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                shell: bash
+
+        steps:
+            - uses: actions/setup-node@v2
+              with:
+                  node-version: "14"
+
+            - uses: actions/checkout@v2
+
+            - name: Install node modules
+              run: yarn install
+
+            - name: Run linter
+              run: yarn lint

@@ -8,12 +8,13 @@ use Arpite\Component\Components\Chart\Enums\DataType;
 it("should have initial export", function () {
 	expect(Chart::make()->export())->toBe([
 		"nodeType" => "Chart",
+		"dataSets" => [],
 		"labels" => [],
 		"dataType" => DataType::NUMBERS,
 		"xAxisLabel" => null,
 		"yAxisLabel" => null,
 		"stacked" => false,
-		"dataSets" => [],
+		"height" => 320,
 	]);
 });
 

@@ -12,6 +12,7 @@ class UserFormFactory
 	 * @param User|null $user
 	 * @return array<int, TextField>
 	 */
+	/** @phpstan-ignore-next-line */
 	public static function fields(?User $user): array
 	{
 		return [

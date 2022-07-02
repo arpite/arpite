@@ -25,7 +25,9 @@ it("should have initial validation rules", function () {
 });
 
 it("should have default value", function () {
-	$defaultValue = CheckboxField::make("Apple")->getDefaultValue()["apple"];
+	$defaultValue = CheckboxField::make("Apple")->getDefaultValue((object) [])[
+		"apple"
+	];
 
 	expect($defaultValue)->toBe(false);
 });

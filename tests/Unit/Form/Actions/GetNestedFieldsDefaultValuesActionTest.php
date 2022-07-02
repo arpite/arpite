@@ -5,14 +5,17 @@ use Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
 use Arpite\Form\Fields\TextField;
 
 it("should get all nested fields default values", function () {
-	$defaultValues = app(GetNestedFieldsDefaultValuesAction::class)->execute([
-		Grid::make()->setNodes([
-			TextField::make("First")->setDefaultValue("Tom"),
-			Grid::make()->setNodes([TextField::make("Fourth")]),
-			TextField::make("Second"),
-		]),
-		TextField::make("Third")->setDefaultValue("Jacky"),
-	]);
+	$defaultValues = app(GetNestedFieldsDefaultValuesAction::class)->execute(
+		[
+			Grid::make()->setNodes([
+				TextField::make("First")->setDefaultValue("Tom"),
+				Grid::make()->setNodes([TextField::make("Fourth")]),
+				TextField::make("Second"),
+			]),
+			TextField::make("Third")->setDefaultValue("Jacky"),
+		],
+		(object) []
+	);
 
 	expect($defaultValues)->toBe([
 		"first" => "Tom",

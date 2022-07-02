@@ -24,6 +24,7 @@ class Constants
 				"nodes" => [],
 				"actionResponseType" => "REGULAR",
 				"withPanel" => true,
+				"preserveScroll" => false,
 			],
 			$data
 		);

@@ -5,6 +5,7 @@ namespace Arpite\Form\Fields;
 use Arpite\Component\Rules\DeepExistInRule;
 use Arpite\Core\Utilities\ExportBuilder;
 use Arpite\Form\Fields\Classes\FileEntity;
+use Exception;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
@@ -42,16 +43,15 @@ class FileField extends Field
 		$this->acceptOnlyImages();
 	}
 
+	/**
+	 * @throws Exception
+	 */
 	public static function make(string $label, ?string $name = null): self
 	{
 		return new self($label, $name);
 	}
 
-	/**
-	 * @param array<int, FileEntity> $defaultValue
-	 * @return static
-	 */
-	public function setDefaultValue($defaultValue)
+	public function setDefaultValue($defaultValue): static
 	{
 		parent::setDefaultValue(
 			/** @phpstan-ignore-next-line  */
@@ -70,13 +70,16 @@ class FileField extends Field
 		return array_merge(parent::getValidationRules($formValues), [
 			$name . ".*" => [
 				"required",
-				function (string $attribute, mixed $value, $fail) use ($name) {
+				function (string $attribute, mixed $value, $fail) use (
+					$formValues,
+					$name
+				) {
 					$rules =
 						$value instanceof UploadedFile
 							? $this->fileValidationRules->all()
 							: [
 								new DeepExistInRule(
-									$this->getDefaultValue()[$name]
+									$this->getDefaultValue($formValues)[$name]
 								),
 							];
 

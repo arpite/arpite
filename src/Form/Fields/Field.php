@@ -104,7 +104,7 @@ abstract class Field extends Component
 	 * @param TDefaultValue $defaultValue
 	 * @return static
 	 */
-	public function setDefaultValue($defaultValue)
+	public function setDefaultValue($defaultValue): static
 	{
 		$this->defaultValue = $defaultValue;
 
@@ -192,7 +192,6 @@ abstract class Field extends Component
 	 */
 	public function getDefaultValue(object $formValues): array
 	{
-		//		dump($this->name, $this->defaultValue);
 		$defaultValue = $formValues->{$this->name} ?? $this->defaultValue;
 
 		$activeDependeesDefaultValues = $this->getActiveDependees(

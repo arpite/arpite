@@ -121,7 +121,7 @@ export const Table: React.FC<TableInterface> = ({
 								<th
 									key={identifier}
 									scope="col"
-									className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500 sm:px-6"
+									className="whitespace-nowrap px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500 sm:px-6"
 									style={{
 										width:
 											widths[index] === undefined

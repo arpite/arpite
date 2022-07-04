@@ -1,5 +1,5 @@
 import React from "react";
-import { generateResponsiveVariable as makeResponsiveVariables } from "../helpers/generateResponsiveVariables";
+import { generateResponsiveVariable } from "../helpers/generateResponsiveVariables";
 import { NodeType } from "../NodeType";
 import { RenderNode } from "../RenderNode";
 import { ResponsiveValueInterface } from "../RenderNodeInterface";
@@ -29,7 +29,7 @@ export const Grid: React.FC<GridInterface> = ({ nodes, gap, columns }) => {
 	return (
 		<div
 			className={`grid-node-container grid ${gapClassName}`}
-			style={makeResponsiveVariables("gtc", columns, (value) =>
+			style={generateResponsiveVariable("gtc", columns, (value) =>
 				value.reduce((count, current) => count + current, 0)
 			)}
 		>
@@ -37,10 +37,10 @@ export const Grid: React.FC<GridInterface> = ({ nodes, gap, columns }) => {
 				<div
 					key={index}
 					className="grid-node-item space-y-6"
-					style={makeResponsiveVariables(
+					style={generateResponsiveVariable(
 						"gc",
 						columns,
-						(columns) => columns[index]
+						(columns) => columns[index] ?? 0
 					)}
 				>
 					<RenderNode key={index} {...node} />

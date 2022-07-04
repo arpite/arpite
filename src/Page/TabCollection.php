@@ -2,8 +2,8 @@
 
 namespace Arpite\Page;
 
+use Arpite\Component\Components\Tabs\Enums\TabsDesign;
 use Arpite\Core\Traits\HasRegisterRoutes;
-use Arpite\Page\Enums\TabsDesign;
 
 abstract class TabCollection
 {

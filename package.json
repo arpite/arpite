@@ -2,6 +2,24 @@
 	"name": "@arpite/ui",
 	"version": "0.0.1",
 	"license": "MIT",
+	"author": {
+		"name": "Arpite",
+		"email": "info@arpite.dev"
+	},
+	"contributors": [
+		{
+			"name": "Lukas Rimavičius",
+			"email": "lukisrim@gmail.com"
+		},
+		{
+			"name": "Domantas Mauruča",
+			"email": "domantas.mauruca@gmail.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:arpite/arpite.git"
+	},
 	"main": "resources/dist-module/ui.cjs.js",
 	"module": "resources/dist-module/ui.es.js",
 	"exports": {

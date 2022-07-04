@@ -15,12 +15,12 @@ jobs:
                 shell: bash
 
         steps:
-            - uses: actions/checkout@v2
-
             - uses: shivammathur/setup-php
               with:
                   php-version: "8.1"
                   coverage: xdebug
+
+            - uses: actions/checkout@v2
 
             - name: Install dependencies
               run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
@@ -41,11 +41,11 @@ jobs:
                 shell: bash
 
         steps:
-            - uses: actions/checkout@v2
-
             - uses: shivammathur/setup-php
               with:
                   php-version: "8.1"
+
+            - uses: actions/checkout@v2
 
             - name: Install Dependencies
               run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
@@ -61,11 +61,11 @@ jobs:
                 shell: bash
 
         steps:
-            - uses: actions/checkout@v2
-            
             - uses: actions/setup-node@v3
               with:
                   node-version: "16"
+
+            - uses: actions/checkout@v2
 
             - name: Install node modules
               run: yarn install

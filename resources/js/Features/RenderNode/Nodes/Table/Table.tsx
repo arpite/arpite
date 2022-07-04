@@ -202,9 +202,7 @@ export const Table: React.FC<TableInterface> = ({
 														: ""
 												} ${
 													value.nodeType ===
-														"FilesDisplay" ||
-													value.nodeType ===
-														"AddressDisplay"
+													"FilesDisplay"
 														? "py-5"
 														: ""
 												}`}

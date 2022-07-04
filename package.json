@@ -1,6 +1,6 @@
 {
-	"name": "@arpite/ui",
-	"version": "0.0.2",
+	"name": "@arpite/arpite",
+	"version": "0.0.1",
 	"license": "MIT",
 	"author": {
 		"name": "Arpite",
@@ -20,16 +20,16 @@
 		"type": "git",
 		"url": "git@github.com:arpite/arpite.git"
 	},
-	"main": "resources/dist/ui.cjs.js",
-	"module": "resources/dist/ui.es.js",
+	"main": "resources/dist/arpite.cjs.js",
+	"module": "resources/dist/arpite.es.js",
 	"exports": {
 		".": {
-			"import": "./resources/dist/ui.es.js",
-			"require": "./resources/dist/ui.cjs.js"
+			"import": "./resources/dist/arpite.es.js",
+			"require": "./resources/dist/arpite.cjs.js"
 		},
-		"./resources/dist/ui.css": {
-			"import": "./resources/dist/ui.css",
-			"require": "./resources/dist/ui.css"
+		"./resources/dist/arpite.css": {
+			"import": "./resources/dist/arpite.css",
+			"require": "./resources/dist/arpite.css"
 		}
 	},
 	"files": [
@@ -39,7 +39,7 @@
 	"scripts": {
 		"start": "concurrently -k -n CSS,JS,TYPECHECK -c \"bgGreen.bold.black,bgYellow.bold.black,bgYellow.bold.black,bgBlue.bold.black\" \"yarn build:css --watch\" \"yarn build:js --watch\" \"yarn typecheck --watch\"",
 		"build": "yarn typecheck && yarn build:js && yarn build:css --minify",
-		"build:css": "tailwind -i resources/css/index.css -o resources/dist/ui.css",
+		"build:css": "tailwind -i resources/css/index.css -o resources/dist/arpite.css",
 		"build:js": "vite build",
 		"typecheck": "tsc --noEmit --preserveWatchOutput",
 		"stylecheck": "prettier --check \"{src,tests,resources}/**/*.{ts,tsx,php}\"",

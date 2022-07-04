@@ -1,4 +1,4 @@
-<a href="https://arpite.dev" >
+<a href="https://arpite.dev">
   <img alt="Arpite hero image" src="./.github/HeroImage.png">
 </a>
 
@@ -14,22 +14,21 @@ An open-source Laravel library for building high-quality, accessible application
 
 ```bash
 composer require arpite/arpite
-yarn add @arpite/ui
+yarn add @arpite/arpite
 ```
 
-2. Render Arpite UI in `resources/js/app.js` file
+2. Render Arpite in `resources/js/app.js` file
 
 ```js
-import { Arpite } from "@arpite/ui";
-import "@arpite/ui/resources/dist/ui.css";
+import { Arpite } from "@arpite/arpite";
+import "@arpite/arpite/resources/dist/arpite.css";
 
 Arpite.render();
 ```
 
-3. Install node modules and build assets
+3. Build assets
 
 ```bash
-yarn install
 yarn build
 ```
 

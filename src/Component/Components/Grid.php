@@ -18,7 +18,7 @@ class Grid extends Component
 
 	private function __construct()
 	{
-		$this->columns = ResponsiveValue::make([1]);
+		$this->columns = ResponsiveValue::make([]);
 
 		$this->setGap(4);
 	}
@@ -37,7 +37,7 @@ class Grid extends Component
 	 * @return static
 	 */
 	public function setColumns(
-		array $default = [1],
+		array $default = [],
 		array|null $sm = null,
 		array|null $md = null,
 		array|null $lg = null,

@@ -51,7 +51,7 @@
 		"vite-plugin-dts": "^1.2.0"
 	},
 	"dependencies": {
-		"@headlessui/react": "^1.4.3",
+		"@headlessui/react": "^1.6.5",
 		"@inertiajs/inertia-react": "^0.5.12",
 		"@mdi/js": "^6.5.95",
 		"@tippyjs/react": "^4.2.6",

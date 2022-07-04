@@ -9,22 +9,15 @@ on:
 jobs:
     unit-tests:
         name: Unit tests
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                shell: bash
+        runs-on: ubuntu-20.04
 
         steps:
-            - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+            - uses: actions/checkout@v3
+
+            - uses: shivammathur/setup-php
               with:
                   php-version: "8.1"
                   coverage: xdebug
-
-            - uses: actions/setup-node@v2
-              with:
-                  node-version: "14"
-
-            - uses: actions/checkout@v2
 
             - name: Install dependencies
               run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
@@ -39,21 +32,14 @@ jobs:
 
     static-analysis:
         name: Static analysis
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                shell: bash
+        runs-on: ubuntu-20.04
 
         steps:
-            - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+            - uses: actions/checkout@v3
+
+            - uses: shivammathur/setup-php
               with:
                   php-version: "8.1"
-
-            - uses: actions/setup-node@v2
-              with:
-                  node-version: "14"
-
-            - uses: actions/checkout@v2
 
             - name: Install Dependencies
               run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
@@ -61,19 +47,16 @@ jobs:
             - name: Run PHPStan
               run: composer analyse
 
-    typecheck:
-        name: Type checking
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                shell: bash
+    code-health:
+        name: Code health
+        runs-on: ubuntu-20.04
 
         steps:
-            - uses: actions/setup-node@v2
+            - uses: actions/checkout@v3
+            
+            - uses: actions/setup-node@v3
               with:
-                  node-version: "14"
-
-            - uses: actions/checkout@v2
+                  node-version: "16"
 
             - name: Install node modules
               run: yarn install
@@ -81,42 +64,8 @@ jobs:
             - name: Run type checker
               run: yarn typecheck
 
-    stylecheck:
-        name: Style checking
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                shell: bash
-
-        steps:
-            - uses: actions/setup-node@v2
-              with:
-                  node-version: "14"
-
-            - uses: actions/checkout@v2
-
-            - name: Install node modules
-              run: yarn install
-
             - name: Run style checker
               run: yarn stylecheck
-
-    lint:
-        name: Linting
-        runs-on: ubuntu-latest
-        defaults:
-            run:
-                shell: bash
-
-        steps:
-            - uses: actions/setup-node@v2
-              with:
-                  node-version: "14"
-
-            - uses: actions/checkout@v2
-
-            - name: Install node modules
-              run: yarn install
 
             - name: Run linter
               run: yarn lint

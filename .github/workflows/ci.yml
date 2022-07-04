@@ -10,6 +10,9 @@ jobs:
     unit-tests:
         name: Unit tests
         runs-on: ubuntu-20.04
+        defaults:
+            run:
+                shell: bash
 
         steps:
             - uses: actions/checkout@v3
@@ -33,6 +36,9 @@ jobs:
     static-analysis:
         name: Static analysis
         runs-on: ubuntu-20.04
+        defaults:
+            run:
+                shell: bash
 
         steps:
             - uses: actions/checkout@v3
@@ -50,6 +56,9 @@ jobs:
     code-health:
         name: Code health
         runs-on: ubuntu-20.04
+        defaults:
+            run:
+                shell: bash
 
         steps:
             - uses: actions/checkout@v3

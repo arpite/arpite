@@ -53,7 +53,7 @@
 	"dependencies": {
 		"@headlessui/react": "^1.6.5",
 		"@inertiajs/inertia-react": "^0.5.12",
-		"@mdi/js": "^6.5.95",
+		"@mdi/js": "^6.9.96",
 		"@tippyjs/react": "^4.2.6",
 		"chart.js": "^3.7.0",
 		"react": "^17.0.2",

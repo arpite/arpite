@@ -14,7 +14,7 @@ export default defineConfig({
 				sourcemapExcludeSources: true,
 			},
 		},
-		outDir: "resources/dist-module",
+		outDir: "resources/dist",
 		target: "esnext",
 		sourcemap: true,
 		minify: false,

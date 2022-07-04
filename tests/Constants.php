@@ -316,15 +316,4 @@ class Constants
 			$data
 		);
 	}
-
-	public static function addressDisplay(array $data = []): array
-	{
-		return array_merge(
-			[
-				"nodeType" => "AddressDisplay",
-				"lines" => [],
-			],
-			$data
-		);
-	}
 }

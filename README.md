@@ -17,13 +17,7 @@ composer require arpite/arpite
 yarn add @arpite/ui
 ```
 
-2. Publish assets
-
-```bash
-php artisan vendor:publish --tag=arpite-assets
-```
-
-3. Render Arpite UI in `resources/js/app.js` file
+2. Render Arpite UI in `resources/js/app.js` file
 
 ```js
 import { Arpite } from "@arpite/ui";
@@ -32,14 +26,14 @@ import "@arpite/ui/resources/dist/ui.css";
 Arpite.render();
 ```
 
-4. Install node modules and build assets
+3. Install node modules and build assets
 
 ```bash
 yarn install
 yarn build
 ```
 
-5. Add to AppServiceProvider boot() method
+4. Add to AppServiceProvider boot() method
 
 ```php
 Inertia::share([
@@ -52,7 +46,7 @@ Inertia::share([
 ]);
 ```
 
-6. Add `HandleArpiteRequests` middleware to `web` group inside `app/Http/Kernel.php` file
+5. Add `HandleArpiteRequests` middleware to `web` group inside `app/Http/Kernel.php` file
 
 ```php
 'web' => [
@@ -60,7 +54,7 @@ Inertia::share([
 ]
 ```
 
-7. Add to RouteServiceProvider getHomepage() method
+6. Add to RouteServiceProvider getHomepage() method
 
 ```php
 public static function getHomepage(): string

@@ -72,7 +72,7 @@ class HasManyFieldTest extends TestCase
 				"template" => [
 					[
 						"nodeType" => "Grid",
-						"columns" => ["d" => [1]],
+						"columns" => ["d" => []],
 						"nodes" => [
 							Constants::field([
 								"name" => "cookie_name",

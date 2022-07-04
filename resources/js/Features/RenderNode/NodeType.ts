@@ -23,7 +23,6 @@ import { TimelineItemInterface } from "./Nodes/Timeline/TimelineItem";
 import { AlertInterface } from "./Nodes/Alert/Alert";
 import { FilesDisplayInterface } from "./Nodes/FilesDisplay/FilesDisplay";
 import { FileItemInterface } from "./Nodes/FilesDisplay/FileItem";
-import { AddressDisplayInterface } from "./Nodes/AddressDisplay";
 import { RadiosFieldInterface } from "./Nodes/Form/Fields/RadiosField";
 import { ToggleFieldInterface } from "./Nodes/Form/Fields/ToggleField";
 import { FormButtonInterface } from "./Nodes/Form/FormButton";
@@ -83,7 +82,6 @@ export type NodeType =
 	| NumberFieldInterface
 	| SelectFieldInterface
 	| FileFieldInterface
-	| AddressDisplayInterface
 	| FileItemInterface
 	| FilesDisplayInterface
 	| SplitterInterface

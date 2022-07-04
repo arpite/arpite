@@ -26,7 +26,6 @@ import { WizardContent } from "./Nodes/Wizard/WizardContent";
 import { Alert } from "./Nodes/Alert/Alert";
 import { FilesDisplay } from "./Nodes/FilesDisplay/FilesDisplay";
 import { FileItem } from "./Nodes/FilesDisplay/FileItem";
-import { AddressDisplay } from "./Nodes/AddressDisplay";
 import { RadiosField } from "./Nodes/Form/Fields/RadiosField";
 import { ToggleField } from "./Nodes/Form/Fields/ToggleField";
 import { FormButton } from "./Nodes/Form/FormButton";
@@ -88,7 +87,6 @@ export const RenderNode: React.FC<NodeType> = ({ nodeType, ...props }) => {
 		CheckboxField,
 		ToggleField,
 		FileField,
-		AddressDisplay,
 		FileItem,
 		FilesDisplay,
 		Splitter,

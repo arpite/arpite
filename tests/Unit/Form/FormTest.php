@@ -6,7 +6,6 @@ use Arpite\Component\Components\Grid;
 use Arpite\Component\Components\Panel;
 use Arpite\Form\Form;
 use Arpite\Form\Form\FormButton;
-use Domain\Shipment\Models\Shipment;
 use Arpite\Tests\Constants;
 use Arpite\Tests\TestCase;
 use Arpite\Tests\Unit\Component\TestComponent;
@@ -331,7 +330,7 @@ class FormTest extends TestCase
 			$form->getValidationRules((object) [])
 		);
 
-		$form->acceptsTableSelectedValues(Shipment::class);
+		$form->acceptsTableSelectedValues("App\Modals\User");
 		$this->assertEquals(
 			[
 				"first" => ["required"],
@@ -341,7 +340,7 @@ class FormTest extends TestCase
 				"selectedValues.*" => [
 					"required",
 					"string",
-					"exists:Domain\Shipment\Models\Shipment,id",
+					"exists:App\Modals\User,id",
 				],
 			],
 			$form->getValidationRules((object) [])

@@ -2,7 +2,7 @@
 
 namespace Arpite\Authentication\Forms;
 
-use App\Providers\RouteServiceProvider;
+use Arpite\Authentication\Actions\GetHomepageUrlAction;
 use Arpite\Authentication\Pages\AuthenticationPages;
 use Arpite\Authentication\Pages\ForgotPasswordPage;
 use Arpite\Component\Components\Flex\Enums\Justify;
@@ -45,6 +45,9 @@ class LoginForm extends ProcessableForm
 		]);
 	}
 
+	/**
+	 * @throws \Arpite\Authentication\Exceptions\HomepageNotFoundException
+	 */
 	public function handle(object $validated)
 	{
 		$throttleKey = Str::lower(
@@ -83,6 +86,9 @@ class LoginForm extends ProcessableForm
 
 		session()->regenerate();
 
-		return redirect()->intended(RouteServiceProvider::getHomepage());
+		/** @var GetHomepageUrlAction $getHomepageUrl */
+		$getHomepageUrl = app(GetHomepageUrlAction::class);
+
+		return redirect()->intended($getHomepageUrl->execute());
 	}
 }

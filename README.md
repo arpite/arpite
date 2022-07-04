@@ -43,12 +43,3 @@ Inertia::share([
     \Arpite\Core\Middlewares\HandleArpiteRequests::class
 ]
 ```
-
-5. Add to RouteServiceProvider getHomepage() method
-
-```php
-public static function getHomepage(): string
-{
-    return self::HOME;
-}
-```

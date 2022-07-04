@@ -2,7 +2,7 @@
 
 namespace Arpite\Authentication\Pages;
 
-use App\Providers\RouteServiceProvider;
+use Arpite\Authentication\Actions\GetHomepageUrlAction;
 use Illuminate\Support\Facades\Route;
 use Arpite\Authentication\Operations\LogoutOperation;
 
@@ -112,6 +112,9 @@ class AuthenticationPages
 
 		LogoutOperation::register();
 
-		Route::get("/", fn() => redirect(RouteServiceProvider::getHomepage()));
+		/** @var GetHomepageUrlAction $getHomepageUrl */
+		$getHomepageUrl = app(GetHomepageUrlAction::class);
+
+		Route::get("/", fn() => redirect($getHomepageUrl->execute()));
 	}
 }

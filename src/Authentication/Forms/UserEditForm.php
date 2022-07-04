@@ -2,7 +2,6 @@
 
 namespace Arpite\Authentication\Forms;
 
-use App\Providers\RouteServiceProvider;
 use Arpite\Authentication\Actions\CreateOrUpdateUserAction;
 use Arpite\Authentication\Factories\UserFormFactory;
 use Arpite\Core\Utilities\Notification;

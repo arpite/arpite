@@ -3,10 +3,8 @@
 namespace Arpite\Authentication\Forms;
 
 use App\Providers\RouteServiceProvider;
-use Illuminate\Validation\Rule;
 use Arpite\Authentication\Actions\CreateOrUpdateUserAction;
 use Arpite\Authentication\Factories\UserFormFactory;
-use Arpite\Form\Fields\TextField;
 use Arpite\Form\Form;
 use Arpite\Form\Form\FormButton;
 use Arpite\Form\ProcessableForm;
@@ -39,8 +37,10 @@ class RegisterForm extends ProcessableForm
 			user: null
 		);
 
+		/** @phpstan-ignore-next-line */
 		Auth::login($user);
 
+		/** @phpstan-ignore-next-line */
 		event(new Registered($user));
 
 		return redirect(RouteServiceProvider::getHomepage());

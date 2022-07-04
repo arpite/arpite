@@ -63,12 +63,12 @@ it(
 		$field->addDependee(
 			Dependee::make("Tom")->setNodes([TextField::make("Full name")])
 		);
-		expect($field->getDefaultValue())
+		expect($field->getDefaultValue((object) []))
 			->toHaveKeys(["first"])
 			->each->toBeString();
 
 		$field->setDefaultValue("Tom");
-		expect($field->getDefaultValue())
+		expect($field->getDefaultValue((object) []))
 			->toHaveKeys(["first", "full_name"])
 			->each->toBeString();
 
@@ -76,7 +76,7 @@ it(
 			Dependee::make("Tom")->setNodes([TextField::make("Age")]),
 			Dependee::make("Dipsy")->setNodes([TextField::make("Is bord")]),
 		]);
-		expect($field->getDefaultValue())
+		expect($field->getDefaultValue((object) []))
 			->toHaveKeys(["first", "full_name", "age"])
 			->each->toBeString();
 	}

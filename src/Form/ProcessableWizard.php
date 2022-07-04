@@ -272,7 +272,7 @@ abstract class ProcessableWizard extends Operation
 		return match ($validated->submitAction) {
 			"next" => $validated->step + 1,
 			"back" => $validated->step - 1,
-			default => $validated->step
+			default => $validated->step,
 		};
 	}
 

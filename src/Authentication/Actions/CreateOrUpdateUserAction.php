@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 
 class CreateOrUpdateUserAction
 {
+	/** @phpstan-ignore-next-line */
 	public function execute(object $validated, ?User $user): User
 	{
 		/** @var string|null $password */

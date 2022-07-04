@@ -1,0 +1,71 @@
+name: Arpite
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    unit-tests:
+        name: Unit tests
+        runs-on: ubuntu-20.04
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: "8.1"
+                  coverage: xdebug
+
+            - name: Install dependencies
+              run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+            - name: Execute tests
+              run: XDEBUG_MODE=coverage vendor/bin/pest --coverage --coverage-clover=coverage.xml
+
+            - name: Upload coverage
+              uses: codecov/codecov-action@v2
+              with:
+                  token: ${{ secrets.CODECOV_TOKEN }}
+
+    static-analysis:
+        name: Static analysis
+        runs-on: ubuntu-20.04
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: "8.1"
+
+            - name: Install Dependencies
+              run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+            - name: Run PHPStan
+              run: composer analyse
+
+    code-health:
+        name: Code health
+        runs-on: ubuntu-20.04
+
+        steps:
+            - uses: actions/checkout@v3
+            
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: "16"
+
+            - name: Install node modules
+              run: yarn install
+
+            - name: Run type checker
+              run: yarn typecheck
+
+            - name: Run style checker
+              run: yarn stylecheck
+
+            - name: Run linter
+              run: yarn lint

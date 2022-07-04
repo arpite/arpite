@@ -11,7 +11,7 @@ use Exception;
 use Illuminate\Support\Collection;
 
 /**
- * @extends Field<Collection<Component>|array<int, Component>>
+ * @extends Field<Collection<int, Component>|array<int, Component>>
  */
 class HasManyField extends Field
 {
@@ -52,22 +52,14 @@ class HasManyField extends Field
 		return $this;
 	}
 
-	/**
-	 * @param string $addButtonText
-	 * @return static
-	 */
-	public function setAddButtonText(string $addButtonText)
+	public function setAddButtonText(string $addButtonText): static
 	{
 		$this->addButtonText = $addButtonText;
 
 		return $this;
 	}
 
-	/**
-	 * @param Collection<int, Component>|array<int, Component> $defaultValue
-	 * @return static
-	 */
-	public function setDefaultValue($defaultValue)
+	public function setDefaultValue($defaultValue): static
 	{
 		$this->unparsedDefaultValue = is_array($defaultValue)
 			? collect($defaultValue)

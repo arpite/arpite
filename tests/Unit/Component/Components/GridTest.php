@@ -15,7 +15,7 @@ class GridTest extends TestCase
 		$this->assertEquals(
 			[
 				"nodeType" => "Grid",
-				"columns" => ["d" => [1]],
+				"columns" => ["d" => []],
 				"nodes" => [],
 				"gap" => 4,
 			],

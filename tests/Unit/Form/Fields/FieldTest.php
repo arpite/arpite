@@ -237,10 +237,10 @@ class FieldTest extends TestCase
 it("getDefaultValue should return field default value", function () {
 	$field = new TestField("First");
 
-	expect($field->getDefaultValue())->toBe(["first" => null]);
+	expect($field->getDefaultValue((object) []))->toBe(["first" => null]);
 
 	$field->setDefaultValue("Tom");
-	expect($field->getDefaultValue())->toBe(["first" => "Tom"]);
+	expect($field->getDefaultValue((object) []))->toBe(["first" => "Tom"]);
 });
 
 it("should have proper rules when field is disabled", function () {

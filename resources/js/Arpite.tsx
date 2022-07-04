@@ -6,12 +6,14 @@ import { InertiaProgress } from "@inertiajs/progress";
 import "./i18n";
 
 export class Arpite {
+	// eslint-disable-next-line
 	private static customNodes: Record<string, React.FC<any>> = {};
 
 	public static getCustomNodes() {
 		return this.customNodes;
 	}
 
+	// eslint-disable-next-line
 	public static addNodes(nodes: Record<string, React.FC<any>>) {
 		Arpite.customNodes = { ...Arpite.customNodes, ...nodes };
 

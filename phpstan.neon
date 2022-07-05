@@ -18,7 +18,6 @@ parameters:
         - '#Call to static method [a-zA-Z\(\)]+ on an unknown class Domain\\(Team|Shipment|Country)\\(Models|Utilities)\\#'
         - '#Call to method [a-zA-Z\(\)]+ on an unknown class Domain\\(Team|Integration|Country)\\Models\\#'
         - '#PHPDoc tag @var for variable \$[a-zA-Z]+ contains unknown class Domain\\Team\\Models\\#'
-        - '#Call to static method getHomepage\(\) on an unknown class App\\Providers\\RouteServiceProvider#'
         - '#Parameter \#1 \$user of method Illuminate\\Auth\\Passwords\\PasswordBroker::createToken\(\) expects Illuminate\\Contracts\\Auth\\CanResetPassword, Domain\\Team\\Models\\User given#'
         - '#Access to property \$user on an unknown class App\\Arpite\\OperationStore#'
         - '#Access to property \$[a-zA-Z_]+ on an unknown class Domain\\Country\\Models#'

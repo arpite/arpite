@@ -11,11 +11,11 @@ class GetHomepageUrlAction
 	 */
 	public function execute(): string
 	{
+		/** @var class-string<mixed> $routeServiceProviderClass */
 		$routeServiceProviderClass = "App\Providers\RouteServiceProvider";
 
 		if (
 			class_exists($routeServiceProviderClass) &&
-			/** @phpstan-ignore-next-line  */
 			method_exists($routeServiceProviderClass, "getHomepage")
 		) {
 			return $routeServiceProviderClass::getHomepage();

@@ -1,6 +1,6 @@
 /node_modules
 /vendor
-/resources/dist-module
+/resources/dist
 .idea
 .phpunit.result.cache
 npm-debug.log

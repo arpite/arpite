@@ -1,25 +1,46 @@
 {
-	"name": "@arpite/ui",
+	"name": "@arpite/arpite",
 	"version": "0.0.1",
 	"license": "MIT",
-	"main": "resources/dist-module/ui.cjs.js",
-	"module": "resources/dist-module/ui.es.js",
+	"author": {
+		"name": "Arpite",
+		"email": "info@arpite.dev"
+	},
+	"contributors": [
+		{
+			"name": "Lukas Rimavičius",
+			"email": "lukisrim@gmail.com"
+		},
+		{
+			"name": "Domantas Mauruča",
+			"email": "domantas.mauruca@gmail.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:arpite/arpite.git"
+	},
+	"main": "resources/dist/arpite.cjs.js",
+	"module": "resources/dist/arpite.es.js",
 	"exports": {
 		".": {
-			"import": "./resources/dist-module/ui.es.js",
-			"require": "./resources/dist-module/ui.cjs.js"
+			"import": "./resources/dist/arpite.es.js",
+			"require": "./resources/dist/arpite.cjs.js"
+		},
+		"./resources/dist/arpite.css": {
+			"import": "./resources/dist/arpite.css",
+			"require": "./resources/dist/arpite.css"
 		}
 	},
 	"files": [
 		"resources/js",
-		"resources/dist-module"
+		"resources/dist"
 	],
 	"scripts": {
-		"start": "concurrently -k -n CSS,MODULE,BUNDLE,TSC -c \"bgGreen.bold.black,bgYellow.bold.black,bgYellow.bold.black,bgBlue.bold.black\" \"yarn build:css --watch\" \"yarn build:js:module --watch\" \"yarn build:js:bundle --watch\" \"yarn typecheck --watch\"",
-		"build": "yarn typecheck && yarn build:js:module && yarn build:js:bundle && yarn build:css --minify",
+		"start": "concurrently -k -n CSS,JS,TYPECHECK -c \"bgGreen.bold.black,bgYellow.bold.black,bgYellow.bold.black,bgBlue.bold.black\" \"yarn build:css --watch\" \"yarn build:js --watch\" \"yarn typecheck --watch\"",
+		"build": "yarn typecheck && yarn build:js && yarn build:css --minify",
 		"build:css": "tailwind -i resources/css/index.css -o resources/dist/arpite.css",
-		"build:js:module": "vite build",
-		"build:js:bundle": "vite -c vite.bundle.config.ts build",
+		"build:js": "vite build",
 		"typecheck": "tsc --noEmit --preserveWatchOutput",
 		"stylecheck": "prettier --check \"{src,tests,resources}/**/*.{ts,tsx,php}\"",
 		"lint": "eslint resources/js/**/*.{tsx,ts}",

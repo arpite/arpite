@@ -1,4 +1,4 @@
-<a href="https://arpite.dev" >
+<a href="https://arpite.dev">
   <img alt="Arpite hero image" src="./.github/HeroImage.png">
 </a>
 
@@ -10,20 +10,29 @@ An open-source Laravel library for building high-quality, accessible application
 
 **⚠️ Arpite is currently in early development and APIs are likely to change quite often. Use in production on your own risk!**
 
-1. Install the packege from Composer
+1. Install the packages from Composer and NPM
 
 ```bash
 composer require arpite/arpite
+yarn add @arpite/arpite
 ```
 
-2. Publish/re-publish assets
+2. Render Arpite in `resources/js/app.js` file
+
+```js
+import { Arpite } from "@arpite/arpite";
+import "@arpite/arpite/resources/dist/arpite.css";
+
+Arpite.render();
+```
+
+3. Build assets
 
 ```bash
-rm -rf public/vendor/arpite
-php artisan vendor:publish --tag=arpite-assets
+yarn build
 ```
 
-3. Add to AppServiceProvider boot() method
+4. Add to AppServiceProvider boot() method
 
 ```php
 Inertia::share([
@@ -36,7 +45,7 @@ Inertia::share([
 ]);
 ```
 
-4. Add `HandleArpiteRequests` middleware to `web` group inside `app/Http/Kernel.php` file
+5. Add `HandleArpiteRequests` middleware to `web` group inside `app/Http/Kernel.php` file
 
 ```php
 'web' => [

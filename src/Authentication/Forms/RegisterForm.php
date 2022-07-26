@@ -2,8 +2,8 @@
 
 namespace Arpite\Authentication\Forms;
 
-use App\Providers\RouteServiceProvider;
 use Arpite\Authentication\Actions\CreateOrUpdateUserAction;
+use Arpite\Authentication\Actions\GetHomepageUrlAction;
 use Arpite\Authentication\Factories\UserFormFactory;
 use Arpite\Form\Form;
 use Arpite\Form\Form\FormButton;
@@ -11,7 +11,6 @@ use Arpite\Form\ProcessableForm;
 use Domain\Team\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 
 class RegisterForm extends ProcessableForm
 {
@@ -30,6 +29,9 @@ class RegisterForm extends ProcessableForm
 			]);
 	}
 
+	/**
+	 * @throws \Arpite\Authentication\Exceptions\HomepageNotFoundException
+	 */
 	public function handle(object $validated)
 	{
 		$user = app(CreateOrUpdateUserAction::class)->execute(
@@ -43,6 +45,9 @@ class RegisterForm extends ProcessableForm
 		/** @phpstan-ignore-next-line */
 		event(new Registered($user));
 
-		return redirect(RouteServiceProvider::getHomepage());
+		/** @var GetHomepageUrlAction $getHomepageUrl */
+		$getHomepageUrl = app(GetHomepageUrlAction::class);
+
+		return redirect($getHomepageUrl->execute());
 	}
 }

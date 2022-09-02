@@ -11,6 +11,7 @@ use Arpite\Component\Traits\HasPreserveScroll;
 use Arpite\Component\Traits\HasTitle;
 use Arpite\Component\Traits\HasWithPanel;
 use Arpite\Core\Utilities\ExportBuilder;
+use Arpite\Core\Utilities\NodesUtility;
 use Arpite\Form\Actions\GetNestedFieldsDefaultValuesAction;
 use Arpite\Form\Actions\GetNestedFieldsValidationRulesAction;
 use Arpite\Form\Enums\OperationResponseType;
@@ -98,23 +99,29 @@ class Form extends Component
 	}
 
 	/**
-	 * @param FormButton[] $leftButtons
+	 * @param array<int, FormButton|null|bool> $leftButtons
 	 * @return $this
 	 */
 	public function setLeftButtons(array $leftButtons): self
 	{
-		$this->leftButtons = $leftButtons;
+		$this->leftButtons = array_filter(
+			$leftButtons,
+			fn($node) => $node !== null && $node !== true && $node !== false
+		);
 
 		return $this;
 	}
 
 	/**
-	 * @param FormButton[] $rightButtons
+	 * @param array<int, FormButton|null|bool> $rightButtons
 	 * @return $this
 	 */
 	public function setRightButtons(array $rightButtons): self
 	{
-		$this->rightButtons = $rightButtons;
+		$this->rightButtons = array_filter(
+			$rightButtons,
+			fn($node) => $node !== null && $node !== true && $node !== false
+		);
 
 		return $this;
 	}

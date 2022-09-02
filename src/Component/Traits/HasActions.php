@@ -7,23 +7,25 @@ use Arpite\Core\Utilities\ExportBuilder;
 
 trait HasActions
 {
-	/**
-	 * @var Component[]
-	 */
+	/** @var array<int, Component> $actions */
 	private array $actions = [];
 
 	/**
-	 * @param Component[] $actions
+	 * @param array<int, Component|null|bool> $actions
+	 * @return static
 	 */
-	public function setActions(array $actions): self
+	public function setActions(array $actions): static
 	{
-		$this->actions = $actions;
+		$this->actions = array_filter(
+			$actions,
+			fn($node) => $node !== null && $node !== true && $node !== false
+		);
 
 		return $this;
 	}
 
 	/**
-	 * @return array<mixed>
+	 * @return array<string, mixed>
 	 */
 	private function actionsExport(): array
 	{

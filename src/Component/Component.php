@@ -14,9 +14,10 @@ abstract class Component implements Exportable
 	/**
 	 * @param bool $show
 	 * @return array<int, static>
+	 * @deprecated
 	 */
-	public function show(bool $show)
-	{
+	#[Deprecated("use ternary operator instead")]
+	public function show(bool $show) {
 		if ($show) {
 			return [$this];
 		}

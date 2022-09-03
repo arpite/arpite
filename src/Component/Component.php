@@ -12,12 +12,13 @@ abstract class Component implements Exportable
 	abstract public function export(): array;
 
 	/**
+	 * @deprecated use ternary operator instead
+	 *
 	 * @param bool $show
 	 * @return array<int, static>
-	 * @deprecated
 	 */
-	#[Deprecated("use ternary operator instead")]
-	public function show(bool $show) {
+	public function show(bool $show)
+	{
 		if ($show) {
 			return [$this];
 		}

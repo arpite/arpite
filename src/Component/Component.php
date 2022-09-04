@@ -12,6 +12,8 @@ abstract class Component implements Exportable
 	abstract public function export(): array;
 
 	/**
+	 * @deprecated use ternary operator instead
+	 *
 	 * @param bool $show
 	 * @return array<int, static>
 	 */

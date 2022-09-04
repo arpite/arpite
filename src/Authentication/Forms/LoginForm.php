@@ -3,6 +3,7 @@
 namespace Arpite\Authentication\Forms;
 
 use Arpite\Authentication\Actions\GetHomepageUrlAction;
+use Arpite\Authentication\Exceptions\HomepageNotFoundException;
 use Arpite\Authentication\Pages\AuthenticationPages;
 use Arpite\Authentication\Pages\ForgotPasswordPage;
 use Arpite\Component\Components\Flex\Enums\Justify;
@@ -35,18 +36,20 @@ class LoginForm extends ProcessableForm
 				->setJustify(Justify::BETWEEN)
 				->setNodes([
 					CheckboxField::make("Remember me"),
-					...Link::make()
-						->setTitle("Forgot your password?")
-						->setTextAlign(Align::RIGHT)
-						->toPage(ForgotPasswordPage::class)
-						->show(AuthenticationPages::isPasswordResetEnabled()),
+
+					AuthenticationPages::isPasswordResetEnabled()
+						? Link::make()
+							->setTitle("Forgot your password?")
+							->setTextAlign(Align::RIGHT)
+							->toPage(ForgotPasswordPage::class)
+						: null,
 				]),
 			FormButton::make()->setTitle("Login"),
 		]);
 	}
 
 	/**
-	 * @throws \Arpite\Authentication\Exceptions\HomepageNotFoundException
+	 * @throws HomepageNotFoundException
 	 */
 	public function handle(object $validated)
 	{

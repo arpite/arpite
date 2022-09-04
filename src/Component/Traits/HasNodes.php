@@ -7,24 +7,25 @@ use Arpite\Core\Utilities\ExportBuilder;
 
 trait HasNodes
 {
-	/**
-	 * @var Component[]
-	 */
+	/** @var array<int, Component> $nodes */
 	private array $nodes = [];
 
 	/**
-	 * @param Component[] $nodes
+	 * @param array<int, Component|null|bool> $nodes
 	 * @return static
 	 */
-	public function setNodes(array $nodes)
+	public function setNodes(array $nodes): static
 	{
-		$this->nodes = $nodes;
+		$this->nodes = array_filter(
+			$nodes,
+			fn($node) => $node !== null && $node !== true && $node !== false
+		);
 
 		return $this;
 	}
 
 	/**
-	 * @return Component[]
+	 * @return array<int, Component>
 	 */
 	public function getNodes(): array
 	{
@@ -32,7 +33,7 @@ trait HasNodes
 	}
 
 	/**
-	 * @return array<mixed>
+	 * @return array<string, mixed>
 	 */
 	private function nodesExport(): array
 	{

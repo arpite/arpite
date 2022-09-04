@@ -331,14 +331,15 @@ abstract class ProcessableWizard extends Operation
 		return $this->form(
 			Form::make($this)
 				->setLeftButtons([
-					...FormButton::make()
-						->setTitle("Back")
-						->asSecondaryWithBorder()
-						->withData([
-							"submitAction" => "back",
-						])
-						->withoutFrontendValidation()
-						->show($newStep > 0),
+					$newStep > 0
+						? FormButton::make()
+							->setTitle("Back")
+							->asSecondaryWithBorder()
+							->withData([
+								"submitAction" => "back",
+							])
+							->withoutFrontendValidation()
+						: null,
 				])
 				->setValues($values)
 				->setRightButtons([

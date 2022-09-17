@@ -54,7 +54,7 @@ class RadiosField extends Field
 	/**
 	 * @throws MethodNotAllowedException
 	 */
-	public function setOptional(bool $optional = true): self
+	public function setOptional(bool $optional = true): static
 	{
 		throw new MethodNotAllowedException(__METHOD__);
 	}

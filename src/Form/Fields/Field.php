@@ -29,9 +29,9 @@ abstract class Field extends Component
 	private ?string $explanation = null;
 
 	/** @var mixed $defaultValue */
-	private mixed $defaultValue = null;
+	protected mixed $defaultValue = null;
 
-	/** @var Collection<int, mixed> */
+	/** @var Collection<int, mixed> $validationRules */
 	private Collection $validationRules;
 
 	/** @var Collection<int, Dependee> $dependees */
@@ -60,10 +60,7 @@ abstract class Field extends Component
 		$this->dependees = collect([]);
 	}
 
-	/**
-	 * @return static
-	 */
-	public function setOptional(bool $optional = true)
+	public function setOptional(bool $optional = true): static
 	{
 		if ($optional) {
 			$this->removeValidationRule("required");
@@ -78,22 +75,14 @@ abstract class Field extends Component
 		return $this;
 	}
 
-	/**
-	 * @param string|null $explanation
-	 * @return static
-	 */
-	public function setExplanation(?string $explanation)
+	public function setExplanation(?string $explanation): static
 	{
 		$this->explanation = $explanation;
 
 		return $this;
 	}
 
-	/**
-	 * @param string|null $placeholder
-	 * @return static
-	 */
-	public function setPlaceholder(?string $placeholder)
+	public function setPlaceholder(?string $placeholder): static
 	{
 		$this->placeholder = $placeholder;
 
@@ -111,34 +100,40 @@ abstract class Field extends Component
 		return $this;
 	}
 
-	/**
-	 * @param object|string $rule
-	 * @return static
-	 */
-	public function addValidationRule(object|string $rule)
+	public function addValidationRule(object|string $rule): static
 	{
-		if (!$this->validationRules->contains($rule)) {
-			$this->validationRules->push($rule);
+		if (is_object($rule)) {
+			$this->removeValidationRule($rule);
+		} else {
+			$ruleName = explode(":", $rule, 2)[0];
+			$this->removeValidationRule($ruleName);
 		}
+
+		$this->validationRules->push($rule);
 
 		return $this;
 	}
 
-	/**
-	 * @param string $ruleName
-	 * @return static
-	 */
-	public function removeValidationRule(string $ruleName)
+	public function removeValidationRule(object|string $newRule): static
 	{
 		$this->validationRules = $this->validationRules->filter(function (
-			$rule
-		) use ($ruleName) {
-			if (is_object($rule)) {
-				return $ruleName !== class_basename($rule);
+			$existingRule
+		) use ($newRule) {
+			if (is_object($existingRule) && is_object($newRule)) {
+				return class_basename($newRule) !==
+					class_basename($existingRule);
 			}
 
-			return $ruleName !== $rule &&
-				!Str::startsWith($rule, $ruleName . ":");
+			if (is_object($newRule)) {
+				return class_basename($newRule) !== $existingRule;
+			}
+
+			if (is_object($existingRule)) {
+				return $newRule !== class_basename($existingRule);
+			}
+
+			return $newRule !== $existingRule &&
+				!Str::startsWith($existingRule, $newRule . ":");
 		});
 
 		return $this;
@@ -158,7 +153,7 @@ abstract class Field extends Component
 		 */
 		$fieldRules = $this->disabled
 			? [new DeepEqualRule($fieldValue)]
-			: $this->validationRules->all();
+			: $this->validationRules->values()->all();
 
 		$activeDependeesValidationsRules = $this->getActiveDependees(
 			$fieldValue

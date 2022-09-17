@@ -16,7 +16,6 @@
             <exclude>./tests/Unit/Form/Operation/OperationWithJsonResponseTest.php</exclude>
             <exclude>./tests/Unit/Form/Operation/OperationWithInertiaResponseTest.php</exclude>
             <exclude>./tests/Unit/Component/Components/PaginatedTable/PaginatedTableTest.php</exclude>
-            <exclude>./tests/Unit/Form/Fields/SelectFieldTest.php</exclude>
             <exclude>./tests/Unit/Component/Components/ShopConnectionPanelTest.php</exclude>
 <!--        ###### -->
         </testsuite>

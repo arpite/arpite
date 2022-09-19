@@ -5,6 +5,7 @@ namespace Arpite\Tests\Unit\Form\Fields;
 use Arpite\Component\Components\Text;
 use Arpite\Component\Rules\DeepEqualRule;
 use Arpite\Form\Fields\Enums\ValidationRule;
+use Arpite\Form\Fields\Field;
 use Exception;
 use Illuminate\Validation\Rule;
 use Arpite\Tests\Constants;
@@ -137,30 +138,6 @@ class FieldTest extends TestCase
 			$testField->getValidationRules((object) [])
 		);
 		$this->assertEquals(Constants::field(), $testField->export());
-	}
-
-	public function test_remove_validation_rule_with_starting(): void
-	{
-		$testField = new TestField("First");
-
-		$this->assertEquals(
-			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
-		);
-
-		$testField->addValidationRule("max:255");
-
-		$this->assertEquals(
-			["first" => ["required", "max:255"]],
-			$testField->getValidationRules((object) [])
-		);
-
-		$testField->removeValidationRule("max");
-
-		$this->assertEquals(
-			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
-		);
 	}
 
 	public function test_validation_with_class(): void
@@ -297,6 +274,115 @@ test("addValidationRule should not add duplicate rule", function () {
 	]);
 });
 
+test(
+	"addValidationRule should overwrite rule with same rule name",
+	function () {
+		$field = new TestField("First");
+
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+		]);
+
+		$field->addValidationRule("max:255");
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			"max:255",
+		]);
+
+		$field->addValidationRule("max:300");
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			"max:300",
+		]);
+	}
+);
+
+test(
+	"addValidationRule should overwrite class rule with same class name rule",
+	function () {
+		$field = new TestField("First");
+
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+		]);
+
+		$ruleIn1 = Rule::in(["boo", "foo"]);
+		$field->addValidationRule($ruleIn1);
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			$ruleIn1,
+		]);
+
+		$ruleUnique1 = Rule::unique("users");
+		$field->addValidationRule($ruleUnique1);
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			$ruleIn1,
+			$ruleUnique1,
+		]);
+
+		$ruleIn2 = Rule::in(["world"]);
+		$field->addValidationRule($ruleIn2);
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			$ruleUnique1,
+			$ruleIn2,
+		]);
+	}
+);
+
+test(
+	"addValidationRule should overwrite string rule with same class name rule",
+	function () {
+		$field = new TestField("First");
+
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+		]);
+
+		$ruleIn1 = ValidationRule::RULE_IN;
+		$field->addValidationRule($ruleIn1);
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			$ruleIn1,
+		]);
+
+		$ruleUnique1 = Rule::unique("users");
+		$field->addValidationRule($ruleUnique1);
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			$ruleIn1,
+			$ruleUnique1,
+		]);
+
+		$ruleIn2 = Rule::in(["world"]);
+		$field->addValidationRule($ruleIn2);
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			$ruleUnique1,
+			$ruleIn2,
+		]);
+	}
+)->only();
+
+test(
+	"removeValidationRule should remove rule that starts with given string",
+	function () {
+		$field = new TestField("First");
+
+		$field->addValidationRule("max:255");
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+			"max:255",
+		]);
+
+		$field->removeValidationRule("max");
+		expect($field->getValidationRules((object) []))->first->toBe([
+			"required",
+		]);
+	}
+);
+
 it("can set optional", function () {
 	$field = new TestField("First");
 
@@ -306,9 +392,7 @@ it("can set optional", function () {
 	expect($field->getValidationRules((object) []))->first->toBe(["nullable"]);
 
 	$field->setOptional(false);
-	expect($field->getValidationRules((object) []))->first->toBe([
-		1 => "required",
-	]);
+	expect($field->getValidationRules((object) []))->first->toBe(["required"]);
 });
 
 test(

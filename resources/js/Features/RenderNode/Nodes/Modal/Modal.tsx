@@ -65,10 +65,10 @@ export const Modal: React.FC<ModalInterface> = ({
 			>
 				<Transition.Child
 					as={Fragment}
-					enter="ease-in-out duration-300"
+					enter="duration-300"
 					enterFrom="opacity-0"
 					enterTo="opacity-100"
-					leave="ease-in-out duration-300"
+					leave="duration-300"
 					leaveFrom="opacity-100"
 					leaveTo="opacity-0"
 				>

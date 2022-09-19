@@ -5,20 +5,14 @@ namespace Arpite\Component\Rules;
 use Exception;
 use Illuminate\Contracts\Validation\Rule;
 
-/**
- * @description
- *      Validates that submitted value exists
- *      in given array
- */
-class DeepExistInRule implements Rule
+class ArrayItemsDistinctRule implements Rule
 {
 	/**
 	 * Create a new rule instance.
 	 *
-	 * @param array<mixed> $in
 	 * @return void
 	 */
-	public function __construct(private array $in)
+	public function __construct()
 	{
 		//
 	}
@@ -33,10 +27,11 @@ class DeepExistInRule implements Rule
 	 */
 	public function passes($attribute, $value): bool
 	{
-		return collect($this->in)->some(
-			fn($acceptableValue) => json_encode($acceptableValue) ===
-				json_encode($value)
-		);
+		if (is_array($value)) {
+			return count($value) === count(array_unique($value));
+		}
+
+		return true;
 	}
 
 	/**
@@ -47,6 +42,6 @@ class DeepExistInRule implements Rule
 	public function message(): string
 	{
 		/** @phpstan-ignore-next-line */
-		return __("The given value is invalid.");
+		return __("The given items must be distinct.");
 	}
 }

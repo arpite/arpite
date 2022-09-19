@@ -8,7 +8,7 @@ trait HasIcon
 {
 	private ?string $icon = null;
 
-	public function setIcon(?string $icon): self
+	public function setIcon(?string $icon): static
 	{
 		$this->icon = $icon;
 
@@ -16,7 +16,7 @@ trait HasIcon
 	}
 
 	/**
-	 * @return array<mixed>
+	 * @return array<string, mixed>
 	 */
 	private function iconExport(): array
 	{

@@ -129,7 +129,10 @@ export const HasManyField: React.FC<HasManyFieldInterface> = (props) => {
 					className="focus:shadow-outline flex items-center rounded pr-1 text-sm font-medium text-primary-600 transition duration-150 hover:text-primary-500"
 					onClick={addEmptyItem}
 				>
-					<Icon icon={mdiPlus} className="mr-[2px] h-5 w-5" />
+					<Icon
+						icon={mdiPlus}
+						className="mr-[2px] h-5 w-5 flex-none"
+					/>
 					<span>{addButtonText}</span>
 				</button>
 			)}

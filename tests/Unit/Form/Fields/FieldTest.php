@@ -363,7 +363,7 @@ test(
 			$ruleIn2,
 		]);
 	}
-)->only();
+);
 
 test(
 	"removeValidationRule should remove rule that starts with given string",

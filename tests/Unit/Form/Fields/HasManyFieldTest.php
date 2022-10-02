@@ -5,6 +5,7 @@ namespace Arpite\Tests\Unit\Form\Fields;
 use Arpite\Component\Components\Grid;
 use Arpite\Form\Fields\Classes\Dependee;
 use Arpite\Form\Fields\HasManyField;
+use Arpite\Form\Fields\TextField;
 use Arpite\Tests\Constants;
 use Arpite\Tests\TestCase;
 
@@ -217,3 +218,45 @@ it("should throw exception when addDependees is called", function () {
 
 	$field->addDependees([Dependee::make("")]);
 })->throws("Dependees are not implemented for HasManyField yet.");
+
+it(
+	"should throw exception when default value item does not have at least one field value",
+	function () {
+		$field = HasManyField::make("First")->setTemplate([
+			TextField::make("Fruit"),
+			TextField::make("Year"),
+		]);
+
+		$field->setDefaultValue([
+			[
+				"fruit" => "Apple",
+				"year" => "1500",
+			],
+			[
+				"fruit" => "Apple",
+			],
+		]);
+
+		$field->export();
+	}
+)->throws("Value was not found for field \"year\" in given default value.");
+
+it(
+	"should not throw exception when default value item field value is set to null",
+	function () {
+		$field = HasManyField::make("First")->setTemplate([
+			TextField::make("Fruit"),
+			TextField::make("Year"),
+		]);
+
+		$field->setDefaultValue([
+			[
+				"fruit" => "Apple",
+				"year" => null,
+			],
+		]);
+
+		$field->export();
+		expect(true)->toBeTruthy();
+	}
+);

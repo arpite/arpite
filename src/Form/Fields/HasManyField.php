@@ -135,13 +135,12 @@ class HasManyField extends Field
 					if (
 						/** @phpstan-ignore-next-line  */
 						is_array($unparsedItemValues) &&
-						/** @phpstan-ignore-next-line  */
-						isset($unparsedItemValues[$name])
+						array_key_exists($name, $unparsedItemValues)
 					) {
 						$previous[$name] = $unparsedItemValues[$name];
 					} elseif (
 						is_object($unparsedItemValues) &&
-						isset($unparsedItemValues->$name)
+						property_exists($unparsedItemValues, $name)
 					) {
 						$previous[$name] = $unparsedItemValues->$name;
 					} else {

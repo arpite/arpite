@@ -2,6 +2,7 @@
 
 namespace Arpite\Form\Actions;
 
+use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Validation\ValidationException;
@@ -15,6 +16,14 @@ class HandleExceptionGracefullyAction
 	 */
 	public function execute(Throwable $throwable): JsonResponse|RedirectResponse
 	{
+		/**
+		 * We don't want to silents this exception, because
+		 * Laravel will handle this appropriately.
+		 */
+		if ($throwable instanceof HttpResponseException) {
+			throw $throwable;
+		}
+
 		// TODO: instead of checking if its inertia request,
 		//       check if request wants json (header "Accept")
 		$isInertiaRequest = app(IsInertiaRequestAction::class)->execute(

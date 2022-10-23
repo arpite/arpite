@@ -43,6 +43,10 @@ export const LeftSideLayout: React.FC<LeftSideLayoutInterface> = ({
 
 	useEffect(() => {
 		document.body.classList.add("bg-background");
+
+		return () => {
+			document.body.classList.remove("bg-background");
+		};
 	}, []);
 
 	useEffect(() => {

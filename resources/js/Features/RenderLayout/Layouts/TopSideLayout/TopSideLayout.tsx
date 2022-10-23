@@ -19,6 +19,10 @@ export const TopSideLayout: React.FC<TopSideLayoutInterface> = ({
 }) => {
 	useEffect(() => {
 		document.body.classList.add("bg-background");
+
+		return () => {
+			document.body.classList.remove("bg-background");
+		};
 	}, []);
 
 	const hasRegularTabs =

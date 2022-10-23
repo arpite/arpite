@@ -18,6 +18,10 @@ export const CentralLayout: React.FC<CentralLayoutInterface> = ({
 }) => {
 	useEffect(() => {
 		document.body.classList.add("bg-background");
+
+		return () => {
+			document.body.classList.remove("bg-background");
+		};
 	}, []);
 
 	return (

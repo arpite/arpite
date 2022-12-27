@@ -5,7 +5,7 @@ import { hasError } from "./helpers/hasError";
 import { FieldError } from "./partials/FieldError";
 import { FieldLabel } from "./partials/FieldLabel";
 
-export interface TextareaFieldInterface extends FieldInterface<string> {
+export interface TextareaFieldInterface extends FieldInterface<string | null> {
 	label: string;
 	height: number;
 	resizable: boolean;
@@ -42,7 +42,7 @@ export const TextareaField: React.FC<TextareaFieldInterface> = (props) => {
 				style={{ minHeight: `${height}px` }}
 				name={name}
 				id={id}
-				value={value}
+				value={value ?? ""}
 				placeholder={placeholder ?? ""}
 				disabled={disabled}
 				onChange={(event) => setData?.(name, event.target.value)}

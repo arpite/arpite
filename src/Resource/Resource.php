@@ -100,6 +100,16 @@ abstract class Resource
 	}
 
 	/**
+	 * @param array<string, mixed> $values
+	 * @param ?TModelClass $entity
+	 * @return array<string, mixed>
+	 */
+	protected function parseFormValues(array $values, $entity): array
+	{
+		return $values;
+	}
+
+	/**
 	 * @param array<string, mixed> $validated
 	 * @return array<string, mixed>
 	 */
@@ -252,7 +262,11 @@ abstract class Resource
 			entity: null,
 			fields: $this->getFieldsFor(ResourcePageType::CREATE),
 			actionLink: $this->createRouteLink("/create"),
-			modelHeadline: $this->getModelHeadline()
+			modelHeadline: $this->getModelHeadline(),
+			formValueParser: fn(
+				array $values,
+				$entity
+			) => $this->parseFormValues($values, $entity)
 		);
 	}
 
@@ -271,7 +285,11 @@ abstract class Resource
 			actionLink: $this->createRouteLink(
 				"/" . $entity->{$this->getRouteKeyName()} . "/update"
 			),
-			modelHeadline: $this->getModelHeadline()
+			modelHeadline: $this->getModelHeadline(),
+			formValueParser: fn(
+				array $values,
+				$entity
+			) => $this->parseFormValues($values, $entity)
 		);
 	}
 

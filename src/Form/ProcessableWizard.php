@@ -218,7 +218,8 @@ abstract class ProcessableWizard extends Operation
 					$wizardStep,
 					(object) array_merge($givenValidated, $validated)
 				),
-				(object) $request->all()
+				initialFormValues: (object) [],
+				unvalidatedFormValues: (object) $request->all()
 			);
 
 			try {
@@ -318,7 +319,8 @@ abstract class ProcessableWizard extends Operation
 		if ($validated->submitAction === "reload") {
 			$rules = app(GetNestedFieldsValidationRulesAction::class)->execute(
 				$this->getStepNodes($steps[$validated->step], $validated),
-				$validated
+				initialFormValues: (object) [],
+				unvalidatedFormValues: $validated
 			);
 
 			foreach ($rules as $name => $rule) {

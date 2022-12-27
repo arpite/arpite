@@ -21,6 +21,7 @@ export const ToggleField: React.FC<ToggleFieldInterface> = (props) => {
 		description = null,
 		name,
 		value = false,
+		disabled = false,
 		setData,
 		className = "",
 	} = props;
@@ -30,18 +31,23 @@ export const ToggleField: React.FC<ToggleFieldInterface> = (props) => {
 	const toggleSwitch = (
 		<Switch
 			checked={value}
+			disabled={disabled}
 			onChange={(checked) => setData?.(name, checked)}
-			className={`focus:shadow-outline-only-border relative inline-flex h-[24px] w-[44px] shrink-0 cursor-pointer rounded-full border-2 transition duration-200 ease-in-out ${
+			className={`focus:shadow-outline-only-border relative inline-flex h-[24px] w-[44px] shrink-0 rounded-full border-2 transition duration-200 ease-in-out ${
 				hasError({ name, errors: props.errors })
 					? "border-red-300"
 					: "border-transparent"
-			} ${value || isSwitcher ? "bg-primary-600" : "bg-gray-100"}`}
+			} ${disabled ? "cursor-not-allowed" : "cursor-pointer"} ${
+				value || isSwitcher
+					? `bg-primary-600 ${disabled ? "bg-opacity-40" : ""}`
+					: `bg-gray-200 ${disabled ? "bg-opacity-60" : ""}`
+			}`}
 		>
 			<span
 				aria-hidden="true"
-				className={`pointer-events-none mt-px inline-block h-[18px] w-[18px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out ${
+				className={`pointer-events-none mt-px inline-block h-[18px] w-[18px] transform rounded-full shadow-lg ring-0 transition duration-200 ease-in-out ${
 					value ? "translate-x-[21px]" : "translate-x-[1px]"
-				}`}
+				} ${disabled ? "bg-gray-50" : "bg-white"}`}
 			/>
 		</Switch>
 	);

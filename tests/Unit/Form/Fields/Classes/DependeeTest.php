@@ -40,11 +40,10 @@ it("should get fields validation rules", function () {
 		Panel::make()->setNodes([TextField::make("Second")]),
 	]);
 
-	expect($dependee->getFieldsValidationRules((object) []))->toHaveKeys([
-		"first",
-		"second",
-	]);
-	expect($dependee->getFieldsValidationRules((object) []))
+	expect(
+		$dependee->getFieldsValidationRules((object) [], (object) [])
+	)->toHaveKeys(["first", "second"]);
+	expect($dependee->getFieldsValidationRules((object) [], (object) []))
 		->each->toBeArray()
 		->toContain("required");
 });

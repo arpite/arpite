@@ -15,7 +15,7 @@ class ToggleFieldTest extends TestCase
 
 		$this->assertEquals(
 			["active" => ["required", Rule::in([true, false])]],
-			$testToggleField->getValidationRules((object) [])
+			$testToggleField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			Constants::toggleField(),

@@ -17,7 +17,7 @@ class HasManyFieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["nullable", "array"]],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [],  (object) [])
 		);
 		$this->assertEquals(
 			[
@@ -57,7 +57,7 @@ class HasManyFieldTest extends TestCase
 				"first.*.cookie_name" => ["required", "max:123"],
 				"first.*.jar_age" => ["required", "min:10"],
 			],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [],  (object) [])
 		);
 		$this->assertEquals(
 			[

@@ -87,7 +87,7 @@ it("should validate existing file properly", function () {
 	try {
 		Validator::validate(
 			["first" => [$testFile->export()]],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [],  (object) [])
 		);
 		expect(false)->toBeTrue();
 	} catch (ValidationException $exception) {
@@ -99,7 +99,7 @@ it("should validate existing file properly", function () {
 	$field->setDefaultValue([$testFile]);
 	Validator::validate(
 		["first" => [$testFile->export()]],
-		$field->getValidationRules((object) [])
+		$field->getValidationRules((object) [],  (object) [])
 	);
 	expect(true)->toBeTrue();
 });
@@ -120,7 +120,7 @@ it("should validate new file properly", function () {
 	try {
 		Validator::validate(
 			["first" => [$fakeInvalidFile]],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [],  (object) [])
 		);
 		expect(false)->toBeTrue();
 	} catch (ValidationException $exception) {
@@ -131,7 +131,7 @@ it("should validate new file properly", function () {
 
 	Validator::validate(
 		["first" => [$fakeValidFile]],
-		$field->getValidationRules((object) [])
+		$field->getValidationRules((object) [],  (object) [])
 	);
 	expect(true)->toBeTrue();
 });

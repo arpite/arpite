@@ -14,7 +14,7 @@ class TextFieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required", "string", "max:255"]],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			[
@@ -78,7 +78,7 @@ it("should set email preset", function () {
 
 	expect($field->export())->toHaveKey("type", "email");
 
-	$fieldValidationRules = $field->getValidationRules((object) [])["first"];
+	$fieldValidationRules = $field->getValidationRules((object) [],  (object) [])["first"];
 	expect($fieldValidationRules)->toContain("email:rfc,dns");
 });
 
@@ -87,7 +87,7 @@ it("should set password preset", function () {
 
 	expect($field->export())->toHaveKey("type", "password");
 
-	$fieldValidationRules = $field->getValidationRules((object) [])["first"];
+	$fieldValidationRules = $field->getValidationRules((object) [],  (object) [])["first"];
 	$hasPasswordDefaults = collect($fieldValidationRules)->some(
 		fn($rule) => $rule instanceof Password
 	);

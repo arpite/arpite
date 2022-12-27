@@ -19,7 +19,7 @@ class FieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(Constants::field(), $testField->export());
 	}
@@ -70,21 +70,21 @@ class FieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 
 		$testField->addValidationRule("string");
 
 		$this->assertEquals(
 			["first" => ["required", "string"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 
 		$testField->removeValidationRule("string");
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 	}
 
@@ -94,21 +94,21 @@ class FieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 
 		$testField->addValidationRule("max:255");
 
 		$this->assertEquals(
 			["first" => ["required", "max:255"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 
 		$testField->removeValidationRule("max");
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 	}
 
@@ -118,14 +118,14 @@ class FieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(Constants::field(), $testField->export());
 
 		$testField->removeValidationRule("required");
 		$this->assertEquals(
 			["first" => []],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			Constants::field(["required" => false]),
@@ -135,7 +135,7 @@ class FieldTest extends TestCase
 		$testField->addValidationRule("required");
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(Constants::field(), $testField->export());
 	}
@@ -146,21 +146,21 @@ class FieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 
 		$testField->addValidationRule(Rule::in(["value1", "value2"]));
 
 		$this->assertEquals(
 			["first" => ["required", Rule::in(["value1", "value2"])]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 
 		$testField->removeValidationRule(ValidationRule::RULE_IN);
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 	}
 
@@ -170,7 +170,7 @@ class FieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(Constants::field(), $testField->export());
 
@@ -178,7 +178,7 @@ class FieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["nullable"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			Constants::field([
@@ -211,13 +211,52 @@ class FieldTest extends TestCase
 	}
 }
 
-it("getDefaultValue should return field default value", function () {
-	$field = new TestField("First");
+test("getDefaultValue should return field default value", function () {
+	expect(
+		(new TestField("First"))->getDefaultValue(
+			initialFormValues: (object) []
+		)
+	)->toBe([
+		"first" => null,
+	]);
 
-	expect($field->getDefaultValue((object) []))->toBe(["first" => null]);
+	expect(
+		(new TestField("First"))->getDefaultValue(
+			initialFormValues: (object) ["first" => "Jack"]
+		)
+	)->toBe(["first" => "Jack"]);
 
-	$field->setDefaultValue("Tom");
-	expect($field->getDefaultValue((object) []))->toBe(["first" => "Tom"]);
+	expect(
+		(new TestField("First"))
+			->setDefaultValue("Tom")
+			->getDefaultValue(initialFormValues: (object) ["first" => "Jack"])
+	)->toBe(["first" => "Jack"]);
+
+	expect(
+		(new TestField("First"))
+			->setDefaultValue("Tom")
+			->getDefaultValue(initialFormValues: (object) [])
+	)->toBe([
+		"first" => "Tom",
+	]);
+
+	expect(
+		(new TestField("First"))
+			->setDefaultValue(null)
+			->getDefaultValue(initialFormValues: (object) ["first" => "Jack"])
+	)->toBe([
+		"first" => "Jack",
+	]);
+
+	expect(
+		(new TestField("First"))->setDefaultValue("Tom")->getDefaultValue(
+			initialFormValues: (object) [
+				"first" => null,
+			]
+		)
+	)->toBe([
+		"first" => null,
+	]);
 });
 
 it("should have proper rules when field is disabled", function () {
@@ -226,17 +265,17 @@ it("should have proper rules when field is disabled", function () {
 		->addValidationRule("string")
 		->addValidationRule("max:255");
 
-	expect($field->getValidationRules((object) []))->toEqual([
+	expect($field->getValidationRules((object) [], (object) []))->toEqual([
 		"first" => ["required", "string", "max:255"],
 	]);
 
 	$field->setDisabled();
-	expect($field->getValidationRules((object) []))->toEqual([
+	expect($field->getValidationRules((object) [], (object) []))->toEqual([
 		"first" => [new DeepEqualRule(null)],
 	]);
 
 	$field->setDefaultValue("Little Tommy");
-	expect($field->getValidationRules((object) []))->toEqual([
+	expect($field->getValidationRules((object) [], (object) []))->toEqual([
 		"first" => [new DeepEqualRule("Little Tommy")],
 	]);
 });
@@ -265,10 +304,12 @@ it(
 test("addValidationRule should not add duplicate rule", function () {
 	$field = new TestField("First");
 
-	expect($field->getValidationRules((object) []))->first->toBe(["required"]);
+	expect($field->getValidationRules((object) [], (object) []))->first->toBe([
+		"required",
+	]);
 
 	$field->addValidationRule("max:255")->addValidationRule("max:255");
-	expect($field->getValidationRules((object) []))->first->toBe([
+	expect($field->getValidationRules((object) [], (object) []))->first->toBe([
 		"required",
 		"max:255",
 	]);
@@ -279,21 +320,19 @@ test(
 	function () {
 		$field = new TestField("First");
 
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required"]);
 
 		$field->addValidationRule("max:255");
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			"max:255",
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", "max:255"]);
 
 		$field->addValidationRule("max:300");
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			"max:300",
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", "max:300"]);
 	}
 );
 
@@ -302,32 +341,27 @@ test(
 	function () {
 		$field = new TestField("First");
 
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required"]);
 
 		$ruleIn1 = Rule::in(["boo", "foo"]);
 		$field->addValidationRule($ruleIn1);
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			$ruleIn1,
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", $ruleIn1]);
 
 		$ruleUnique1 = Rule::unique("users");
 		$field->addValidationRule($ruleUnique1);
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			$ruleIn1,
-			$ruleUnique1,
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", $ruleIn1, $ruleUnique1]);
 
 		$ruleIn2 = Rule::in(["world"]);
 		$field->addValidationRule($ruleIn2);
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			$ruleUnique1,
-			$ruleIn2,
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", $ruleUnique1, $ruleIn2]);
 	}
 );
 
@@ -336,32 +370,27 @@ test(
 	function () {
 		$field = new TestField("First");
 
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required"]);
 
 		$ruleIn1 = ValidationRule::RULE_IN;
 		$field->addValidationRule($ruleIn1);
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			$ruleIn1,
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", $ruleIn1]);
 
 		$ruleUnique1 = Rule::unique("users");
 		$field->addValidationRule($ruleUnique1);
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			$ruleIn1,
-			$ruleUnique1,
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", $ruleIn1, $ruleUnique1]);
 
 		$ruleIn2 = Rule::in(["world"]);
 		$field->addValidationRule($ruleIn2);
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			$ruleUnique1,
-			$ruleIn2,
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", $ruleUnique1, $ruleIn2]);
 	}
 );
 
@@ -371,59 +400,83 @@ test(
 		$field = new TestField("First");
 
 		$field->addValidationRule("max:255");
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-			"max:255",
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required", "max:255"]);
 
 		$field->removeValidationRule("max");
-		expect($field->getValidationRules((object) []))->first->toBe([
-			"required",
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->first->toBe(["required"]);
 	}
 );
 
 it("can set optional", function () {
 	$field = new TestField("First");
 
-	expect($field->getValidationRules((object) []))->first->toBe(["required"]);
+	expect($field->getValidationRules((object) [], (object) []))->first->toBe([
+		"required",
+	]);
 
 	$field->setOptional();
-	expect($field->getValidationRules((object) []))->first->toBe(["nullable"]);
+	expect($field->getValidationRules((object) [], (object) []))->first->toBe([
+		"nullable",
+	]);
 
 	$field->setOptional(false);
-	expect($field->getValidationRules((object) []))->first->toBe(["required"]);
+	expect($field->getValidationRules((object) [], (object) []))->first->toBe([
+		"required",
+	]);
 });
 
 test(
-	"form values passed to `getValidationRules` function should overwrite default field value",
+	"initial form values passed to `getValidationRules` function should overwrite default field value and unvalidated form values",
 	function () {
 		$field = new TestField("First");
 		$field->setDisabled();
 
 		$field->setDefaultValue("Tom");
-		expect($field->getValidationRules((object) []))->first->toMatchArray([
-			new DeepEqualRule("Tom"),
-		]);
+		expect(
+			$field->getValidationRules(
+				initialFormValues: (object) [],
+				unvalidatedFormValues: (object) []
+			)
+		)->first->toMatchArray([new DeepEqualRule("Tom")]);
 
 		expect(
-			$field->getValidationRules((object) ["first" => "Bobby"])
+			$field->getValidationRules(
+				initialFormValues: (object) ["first" => "Bobby"],
+				unvalidatedFormValues: (object) []
+			)
+		)->first->toMatchArray([new DeepEqualRule("Bobby")]);
+
+		expect(
+			$field->getValidationRules(
+				initialFormValues: (object) ["first" => "Bobby"],
+				unvalidatedFormValues: (object) ["first" => "Rick"]
+			)
 		)->first->toMatchArray([new DeepEqualRule("Bobby")]);
 	}
 );
 
 test(
-	"form values passed to `getValidationRules` function should be used",
+	"initial form values passed to `getValidationRules` function should be used",
 	function () {
 		$field = new TestField("First");
 		$field->setDisabled();
 
-		expect($field->getValidationRules((object) []))->first->toMatchArray([
-			new DeepEqualRule(null),
-		]);
+		expect(
+			$field->getValidationRules(
+				initialFormValues: (object) [],
+				unvalidatedFormValues: (object) []
+			)
+		)->first->toMatchArray([new DeepEqualRule(null)]);
 
 		expect(
-			$field->getValidationRules((object) ["first" => "Bobby"])
+			$field->getValidationRules(
+				initialFormValues: (object) ["first" => "Bobby"],
+				unvalidatedFormValues: (object) ["first" => "Tipsy"]
+			)
 		)->first->toMatchArray([new DeepEqualRule("Bobby")]);
 	}
 );

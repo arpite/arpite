@@ -167,14 +167,18 @@ class Form extends Component
 	}
 
 	/**
-	 * @param object $formValues
+	 * @param object $unvalidatedFormValues
 	 * @return array<string, mixed>
 	 */
-	public function getValidationRules(object $formValues): array
+	public function getValidationRules(object $unvalidatedFormValues): array
 	{
 		$validationRulesFromFields = app(
 			GetNestedFieldsValidationRulesAction::class
-		)->execute($this->nodes, $formValues);
+		)->execute(
+			$this->nodes,
+			initialFormValues: (object) $this->getValues(),
+			unvalidatedFormValues: $unvalidatedFormValues
+		);
 
 		return array_merge(
 			$validationRulesFromFields,

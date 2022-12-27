@@ -16,13 +16,15 @@ class ResourceFormFactory
 	 * @param Collection<int, Field<mixed>> $fields
 	 * @param string $actionLink
 	 * @param string $modelHeadline
+	 * @param callable $formValueParser
 	 * @return Form
 	 */
 	public static function make(
 		?Model $entity,
 		Collection $fields,
 		string $actionLink,
-		string $modelHeadline
+		string $modelHeadline,
+		callable $formValueParser
 	): Form {
 		$values =
 			$entity === null
@@ -36,7 +38,7 @@ class ResourceFormFactory
 					->all();
 
 		return Form::make($actionLink)
-			->setValues($values)
+			->setValues($formValueParser($values, $entity))
 			->setTitle(
 				Translate::text($entity === null ? "Create new" : "Edit") .
 					" " .

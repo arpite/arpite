@@ -14,6 +14,7 @@ it("should get all nested fields validation rules", function () {
 			]),
 			TextField::make("Third"),
 		],
+		(object) [],
 		(object) []
 	);
 

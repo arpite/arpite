@@ -13,7 +13,7 @@ class NumberFieldTest extends TestCase
 
 		$this->assertEquals(
 			["ping_pong" => ["required", "numeric", "integer", "min:0"]],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [],  (object) [])
 		);
 		$this->assertEquals(
 			[

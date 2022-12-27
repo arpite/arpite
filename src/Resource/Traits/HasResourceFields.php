@@ -40,8 +40,8 @@ trait HasResourceFields
 		$nodes = $this->fields();
 		$fields = app(GetNestedFieldsAction::class)->execute($nodes);
 
-		return collect($fields)->filter(
-			fn(Field $field) => $field->shouldShowOn($pageType)
-		);
+		return collect($fields)
+			->filter(fn(Field $field) => $field->shouldShowOn($pageType))
+			->values();
 	}
 }

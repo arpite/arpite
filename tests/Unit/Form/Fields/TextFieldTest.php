@@ -78,7 +78,10 @@ it("should set email preset", function () {
 
 	expect($field->export())->toHaveKey("type", "email");
 
-	$fieldValidationRules = $field->getValidationRules((object) [],  (object) [])["first"];
+	$fieldValidationRules = $field->getValidationRules(
+		(object) [],
+		(object) []
+	)["first"];
 	expect($fieldValidationRules)->toContain("email:rfc,dns");
 });
 
@@ -87,7 +90,10 @@ it("should set password preset", function () {
 
 	expect($field->export())->toHaveKey("type", "password");
 
-	$fieldValidationRules = $field->getValidationRules((object) [],  (object) [])["first"];
+	$fieldValidationRules = $field->getValidationRules(
+		(object) [],
+		(object) []
+	)["first"];
 	$hasPasswordDefaults = collect($fieldValidationRules)->some(
 		fn($rule) => $rule instanceof Password
 	);

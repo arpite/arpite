@@ -49,7 +49,7 @@ class RadiosFieldTest extends TestCase
 		$testRadiosField = RadiosField::make("Favorite fruit");
 		$this->assertEquals(
 			["favorite_fruit" => ["required"]],
-			$testRadiosField->getValidationRules((object) [])
+			$testRadiosField->getValidationRules((object) [], (object) [])
 		);
 
 		$testRadiosField->setNodes([
@@ -65,7 +65,7 @@ class RadiosFieldTest extends TestCase
 					Rule::in(["Orange", "Pear", "Pineapple", "Carrot"]),
 				],
 			],
-			$testRadiosField->getValidationRules((object) [])
+			$testRadiosField->getValidationRules((object) [], (object) [])
 		);
 	}
 }

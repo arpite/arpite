@@ -18,7 +18,7 @@ class SelectFieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required", Rule::in([])]],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			[
@@ -45,7 +45,7 @@ class SelectFieldTest extends TestCase
 
 		$this->assertEquals(
 			["first" => ["required", Rule::in([])]],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [], (object) [])
 		);
 		$field->setOptions([
 			[
@@ -72,7 +72,7 @@ class SelectFieldTest extends TestCase
 					Rule::in(["omniva", "dpd", "lp-express"]),
 				],
 			],
-			$field->getValidationRules((object) [])
+			$field->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			[
@@ -134,7 +134,7 @@ test("setSearchable method should work properly", function () {
 
 it("should have rule `in` with options values", function () {
 	$field = SelectField::make("Country");
-	expect($field->getValidationRules((object) []))->toEqual([
+	expect($field->getValidationRules((object) [], (object) []))->toEqual([
 		"country" => ["required", Rule::in([])],
 	]);
 
@@ -142,7 +142,7 @@ it("should have rule `in` with options values", function () {
 		["label" => "Apple", "value" => "apple"],
 		["label" => "Banana", "value" => "banana"],
 	]);
-	expect($field->getValidationRules((object) []))->toEqual([
+	expect($field->getValidationRules((object) [], (object) []))->toEqual([
 		"country" => ["required", Rule::in(["apple", "banana"])],
 	]);
 });
@@ -151,7 +151,7 @@ test(
 	"should have `in` rule with options values when multiple selection enabled",
 	function () {
 		$field = SelectField::make("Country")->setMultiple();
-		expect($field->getValidationRules((object) []))->toEqual([
+		expect($field->getValidationRules((object) [], (object) []))->toEqual([
 			"country" => [
 				"required",
 				"array",
@@ -164,7 +164,7 @@ test(
 			["label" => "Apple", "value" => "apple"],
 			["label" => "Banana", "value" => "banana"],
 		]);
-		expect($field->getValidationRules((object) []))->toEqual([
+		expect($field->getValidationRules((object) [], (object) []))->toEqual([
 			"country" => [
 				"required",
 				"array",
@@ -177,12 +177,12 @@ test(
 
 test("should have correct rules when switching multiple", function () {
 	$field = SelectField::make("Country");
-	expect($field->getValidationRules((object) []))->toEqual([
+	expect($field->getValidationRules((object) [], (object) []))->toEqual([
 		"country" => ["required", Rule::in([])],
 	]);
 
 	$field->setMultiple();
-	expect($field->getValidationRules((object) []))->toEqual([
+	expect($field->getValidationRules((object) [], (object) []))->toEqual([
 		"country" => [
 			"required",
 			"array",
@@ -192,7 +192,7 @@ test("should have correct rules when switching multiple", function () {
 	]);
 
 	$field->setMultiple(false);
-	expect($field->getValidationRules((object) []))->toEqual([
+	expect($field->getValidationRules((object) [], (object) []))->toEqual([
 		"country" => ["required", Rule::in([])],
 	]);
 });
@@ -201,22 +201,22 @@ test(
 	"should have `in` rule with values from options when changing options and multiple",
 	function () {
 		$field = SelectField::make("Country");
-		expect($field->getValidationRules((object) []))->country->toEqual([
-			"required",
-			Rule::in([]),
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->country->toEqual(["required", Rule::in([])]);
 
 		$field->setOptions([
 			["label" => "Apple", "value" => "apple"],
 			["label" => "Banana", "value" => "banana"],
 		]);
-		expect($field->getValidationRules((object) []))->country->toEqual([
-			"required",
-			Rule::in(["apple", "banana"]),
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->country->toEqual(["required", Rule::in(["apple", "banana"])]);
 
 		$field->setMultiple();
-		expect($field->getValidationRules((object) []))->country->toEqual([
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->country->toEqual([
 			"required",
 			"array",
 			new ArrayItemsDistinctRule(),
@@ -224,7 +224,9 @@ test(
 		]);
 
 		$field->setOptions([["label" => "Pear", "value" => "pear"]]);
-		expect($field->getValidationRules((object) []))->country->toEqual([
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->country->toEqual([
 			"required",
 			"array",
 			new ArrayItemsDistinctRule(),
@@ -232,10 +234,9 @@ test(
 		]);
 
 		$field->setMultiple(false);
-		expect($field->getValidationRules((object) []))->country->toEqual([
-			"required",
-			Rule::in(["pear"]),
-		]);
+		expect(
+			$field->getValidationRules((object) [], (object) [])
+		)->country->toEqual(["required", Rule::in(["pear"])]);
 	}
 );
 

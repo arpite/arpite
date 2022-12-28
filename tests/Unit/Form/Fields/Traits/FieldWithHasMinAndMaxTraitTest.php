@@ -12,7 +12,7 @@ class FieldWithHasMinAndMaxTraitTest extends TestCase
 
 		$this->assertEquals(
 			["comic_sans_field" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			[
@@ -39,7 +39,7 @@ class FieldWithHasMinAndMaxTraitTest extends TestCase
 		$testField->setMin(20);
 		$this->assertEquals(
 			["comic_sans_field" => ["required", "min:20"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			[
@@ -61,7 +61,7 @@ class FieldWithHasMinAndMaxTraitTest extends TestCase
 		$testField->setMin(null);
 		$this->assertEquals(
 			["comic_sans_field" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			[
@@ -88,7 +88,7 @@ class FieldWithHasMinAndMaxTraitTest extends TestCase
 		$testField->setMax(2550);
 		$this->assertEquals(
 			["comic_sans_field" => ["required", "max:2550"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			[
@@ -110,7 +110,7 @@ class FieldWithHasMinAndMaxTraitTest extends TestCase
 		$testField->setMax(null);
 		$this->assertEquals(
 			["comic_sans_field" => ["required"]],
-			$testField->getValidationRules((object) [])
+			$testField->getValidationRules((object) [], (object) [])
 		);
 		$this->assertEquals(
 			[

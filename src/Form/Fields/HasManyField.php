@@ -69,15 +69,26 @@ class HasManyField extends Field
 		return $this;
 	}
 
-	public function getValidationRules(object $formValues): array
-	{
-		$rules = parent::getValidationRules($formValues);
+	public function getValidationRules(
+		object $initialFormValues,
+		object $unvalidatedFormValues
+	): array {
+		$rules = parent::getValidationRules(
+			initialFormValues: $initialFormValues,
+			unvalidatedFormValues: $unvalidatedFormValues
+		);
 
 		$fields = $this->getFields();
 		$itemValidationRules = array_reduce(
 			$fields,
-			function ($previous, Field $field) use ($formValues) {
-				$fieldsRules = $field->getValidationRules($formValues);
+			function ($previous, Field $field) use (
+				$initialFormValues,
+				$unvalidatedFormValues
+			) {
+				$fieldsRules = $field->getValidationRules(
+					initialFormValues: $initialFormValues,
+					unvalidatedFormValues: $unvalidatedFormValues
+				);
 
 				$newName = $this->getName() . ".*." . $field->getName();
 				$previous[$newName] = $fieldsRules[$field->getName()];

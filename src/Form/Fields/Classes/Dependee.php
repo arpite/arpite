@@ -45,14 +45,18 @@ class Dependee implements Exportable
 	}
 
 	/**
-	 * @param object $formValues
+	 * @param object $initialFormValues
+	 * @param object $unvalidatedFormValues
 	 * @return array<string, mixed>
 	 */
-	public function getFieldsValidationRules(object $formValues): array
-	{
+	public function getFieldsValidationRules(
+		object $initialFormValues,
+		object $unvalidatedFormValues
+	): array {
 		return app(GetNestedFieldsValidationRulesAction::class)->execute(
 			$this->getNodes(),
-			$formValues
+			initialFormValues: $initialFormValues,
+			unvalidatedFormValues: $unvalidatedFormValues
 		);
 	}
 

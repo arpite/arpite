@@ -11,6 +11,7 @@ it("should have initial state", function () {
 
 it("should have initial validation rules", function () {
 	$validationRules = CheckboxField::make("Apple")->getValidationRules(
+		(object) [],
 		(object) []
 	)["apple"];
 

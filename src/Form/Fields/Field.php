@@ -140,27 +140,44 @@ abstract class Field extends Component
 	}
 
 	/**
-	 * @param object $formValues
+	 * @param object $initialFormValues
+	 * @param object $unvalidatedFormValues
 	 * @return array<string, mixed>
 	 */
-	public function getValidationRules(object $formValues): array
-	{
-		$fieldValue = $formValues->{$this->name} ?? $this->defaultValue;
+	public function getValidationRules(
+		object $initialFormValues,
+		object $unvalidatedFormValues
+	): array {
+		$initialFieldValue = property_exists($initialFormValues, $this->name)
+			? $initialFormValues->{$this->name}
+			: $this->defaultValue;
 
 		/**
 		 * We allow only default value to be submitted
 		 * when field is disabled
 		 */
 		$fieldRules = $this->disabled
-			? [new DeepEqualRule($fieldValue)]
+			? [new DeepEqualRule($initialFieldValue)]
 			: $this->validationRules->values()->all();
 
+		$newFieldValue = property_exists($unvalidatedFormValues, $this->name)
+			? $unvalidatedFormValues->{$this->name}
+			: $initialFieldValue;
+		if ($this->name === "enable_stock_management") {
+			ray($this->name);
+			ray($initialFieldValue);
+			ray($newFieldValue);
+		}
+
 		$activeDependeesValidationsRules = $this->getActiveDependees(
-			$fieldValue
+			$newFieldValue
 		)->reduce(
 			fn(array $previous, Dependee $dependee) => array_merge(
 				$previous,
-				$dependee->getFieldsValidationRules($formValues)
+				$dependee->getFieldsValidationRules(
+					initialFormValues: $initialFormValues,
+					unvalidatedFormValues: $unvalidatedFormValues
+				)
 			),
 			[]
 		);
@@ -182,15 +199,17 @@ abstract class Field extends Component
 	}
 
 	/**
-	 * @param object $formValues
+	 * @param object $initialFormValues
 	 * @return array<string, mixed>
 	 */
-	public function getDefaultValue(object $formValues): array
+	public function getDefaultValue(object $initialFormValues): array
 	{
-		$defaultValue = $formValues->{$this->name} ?? $this->defaultValue;
+		$defaultFieldValue = property_exists($initialFormValues, $this->name)
+			? $initialFormValues->{$this->name}
+			: $this->defaultValue;
 
 		$activeDependeesDefaultValues = $this->getActiveDependees(
-			$defaultValue
+			$defaultFieldValue
 		)->reduce(
 			fn(array $previous, Dependee $dependee) => array_merge(
 				$previous,
@@ -200,7 +219,7 @@ abstract class Field extends Component
 		);
 
 		return array_merge(
-			[$this->name => $this->defaultValue],
+			[$this->name => $defaultFieldValue],
 			$activeDependeesDefaultValues
 		);
 	}

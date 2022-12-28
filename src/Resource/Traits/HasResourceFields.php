@@ -15,7 +15,7 @@ trait HasResourceFields
 	/**
 	 * @return array<int, Component>
 	 */
-	protected function fields(): array
+	protected function fields(ResourcePageType $pageType): array
 	{
 		$modelInstance = $this->getModelInstance();
 		$primaryKey = $modelInstance->getKeyName();
@@ -37,7 +37,7 @@ trait HasResourceFields
 	 */
 	private function getFieldsFor(ResourcePageType $pageType): Collection
 	{
-		$nodes = $this->fields();
+		$nodes = $this->fields($pageType);
 		$fields = app(GetNestedFieldsAction::class)->execute($nodes);
 
 		return collect($fields)

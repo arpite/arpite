@@ -63,37 +63,47 @@ class FileField extends Field
 		return $this;
 	}
 
-	public function getValidationRules(object $formValues): array
-	{
+	public function getValidationRules(
+		object $initialFormValues,
+		object $unvalidatedFormValues
+	): array {
 		$name = $this->getName();
 
-		return array_merge(parent::getValidationRules($formValues), [
-			$name . ".*" => [
-				"required",
-				function (string $attribute, mixed $value, $fail) use (
-					$formValues,
-					$name
-				) {
-					$rules =
-						$value instanceof UploadedFile
-							? $this->fileValidationRules->all()
-							: [
-								new DeepExistInRule(
-									$this->getDefaultValue($formValues)[$name]
-								),
-							];
+		return array_merge(
+			parent::getValidationRules(
+				initialFormValues: $initialFormValues,
+				unvalidatedFormValues: $unvalidatedFormValues
+			),
+			[
+				$name . ".*" => [
+					"required",
+					function (string $attribute, mixed $value, $fail) use (
+						$initialFormValues,
+						$name
+					) {
+						$rules =
+							$value instanceof UploadedFile
+								? $this->fileValidationRules->all()
+								: [
+									new DeepExistInRule(
+										$this->getDefaultValue(
+											$initialFormValues
+										)[$name]
+									),
+								];
 
-					try {
-						Validator::validate(
-							["field" => $value],
-							["field" => $rules]
-						);
-					} catch (ValidationException $exception) {
-						$fail($exception->errors()["field"]);
-					}
-				},
-			],
-		]);
+						try {
+							Validator::validate(
+								["field" => $value],
+								["field" => $rules]
+							);
+						} catch (ValidationException $exception) {
+							$fail($exception->errors()["field"]);
+						}
+					},
+				],
+			]
+		);
 	}
 
 	/**

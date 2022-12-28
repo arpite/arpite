@@ -5,7 +5,7 @@ import { hasError } from "./helpers/hasError";
 import { FieldError } from "./partials/FieldError";
 import { FieldLabel } from "./partials/FieldLabel";
 
-export interface TextFieldInterface extends FieldInterface<string> {
+export interface TextFieldInterface extends FieldInterface<string | null> {
 	label: string;
 	type?: "text" | "email" | "password";
 	autofocus?: boolean;
@@ -42,7 +42,7 @@ export const TextField: React.FC<TextFieldInterface> = (props) => {
 				type={type}
 				name={name}
 				id={id}
-				value={value}
+				value={value ?? ""}
 				autoFocus={autofocus}
 				placeholder={placeholder ?? ""}
 				disabled={disabled}

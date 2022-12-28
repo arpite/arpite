@@ -41,7 +41,7 @@ class FormTest extends TestCase
 		);
 	}
 
-	public function test_given_null_values_should_be_overwritten_with_field_default_value(): void
+	public function test_given_null_values_should_not_be_overwritten_with_field_default_value(): void
 	{
 		$form = Form::make(new TestOperation());
 
@@ -72,8 +72,8 @@ class FormTest extends TestCase
 		$this->assertEquals(
 			[
 				"first" => "",
-				"second" => "",
-				"third" => "Bob",
+				"second" => null,
+				"third" => null,
 				"forth" => "Tippy",
 				"fifth" => "",
 			],

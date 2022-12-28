@@ -93,12 +93,40 @@ it(
 			Dependee::make("Dipsy")->setNodes([TextField::make("Is bord")]),
 		]);
 
-		expect($field->getValidationRules((object) ["first" => "Ricky"]))
+		expect(
+			$field->getValidationRules(
+				initialFormValues: (object) ["first" => "Ricky"],
+				unvalidatedFormValues: (object) []
+			)
+		)
 			->toHaveKeys(["first"])
 			->each->toBeArray();
 
-		expect($field->getValidationRules((object) ["first" => "Tom"]))
+		expect(
+			$field->getValidationRules(
+				initialFormValues: (object) ["first" => "Tom"],
+				unvalidatedFormValues: (object) []
+			)
+		)
 			->toHaveKeys(["first", "full_name", "age"])
+			->each->toBeArray();
+
+		expect(
+			$field->getValidationRules(
+				initialFormValues: (object) ["first" => "Ricky"],
+				unvalidatedFormValues: (object) ["first" => "Tom"]
+			)
+		)
+			->toHaveKeys(["first", "full_name", "age"])
+			->each->toBeArray();
+
+		expect(
+			$field->getValidationRules(
+				initialFormValues: (object) ["first" => "Tom"],
+				unvalidatedFormValues: (object) ["first" => "Ricky"]
+			)
+		)
+			->toHaveKeys(["first"])
 			->each->toBeArray();
 	}
 );

@@ -43,6 +43,7 @@ import { ShopConnectionPanelInterface } from "../ShopConnectionPanel";
 import { AlertBannerInterface } from "./Nodes/AlertBanner";
 import { TextareaFieldInterface } from "./Nodes/Form/Fields/TextareaField";
 import { MetricInterface } from "./Nodes/Metric/Metric";
+import { TagsFieldInterface } from "./Nodes/Form/Fields/TagsField";
 
 export type NodeType =
 	| GridInterface
@@ -83,6 +84,7 @@ export type NodeType =
 	| SelectFieldInterface
 	| FileFieldInterface
 	| FileItemInterface
+	| TagsFieldInterface
 	| FilesDisplayInterface
 	| SplitterInterface
 	| BalanceInformationInterface

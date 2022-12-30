@@ -46,6 +46,7 @@ import { AlertBanner } from "./Nodes/AlertBanner";
 import { TextareaField } from "./Nodes/Form/Fields/TextareaField";
 import { Metric } from "./Nodes/Metric/Metric";
 import { Arpite } from "../../Arpite";
+import { TagsField } from "./Nodes/Form/Fields/TagsField";
 
 export const RenderNode: React.FC<NodeType> = ({ nodeType, ...props }) => {
 	// eslint-disable-next-line
@@ -88,6 +89,7 @@ export const RenderNode: React.FC<NodeType> = ({ nodeType, ...props }) => {
 		ToggleField,
 		FileField,
 		FileItem,
+		TagsField,
 		FilesDisplay,
 		Splitter,
 		BalanceInformation,

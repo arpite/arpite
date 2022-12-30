@@ -30,7 +30,6 @@ export const FieldLabel: React.FC<FieldLabelInterface> = ({
 			<Tag htmlFor={id} className="text-sm font-medium text-gray-700">
 				{children}
 			</Tag>
-
 			{explanation !== null && (
 				<Tippy content={explanation}>
 					<div
@@ -55,7 +54,6 @@ export const FieldLabel: React.FC<FieldLabelInterface> = ({
 					</div>
 				</Tippy>
 			)}
-
 			{required === false && (
 				<span className="rounded bg-gray-200 bg-opacity-75 px-[0.32rem] py-[0.20rem] text-xs font-medium leading-none text-gray-600 text-opacity-90">
 					{t("Optional")}

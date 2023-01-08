@@ -88,6 +88,8 @@ export const NumberField: React.FC<NumberFieldInterface> = (props) => {
 				thousandSeparator={false}
 				suffix={suffix ?? undefined}
 				fixedDecimalScale={true}
+				decimalMark="."
+				allowedDecimalSeparators={[",", "."]}
 				decimalScale={decimalScale}
 				onValueChange={(values) => setData?.(name, getValue(values))}
 			/>

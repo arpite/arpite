@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d8b6d2feb161a7da22e88d17bdd9409",
+    "content-hash": "d60c8760062c45a75564260b6b3d9cd4",
     "packages": [
         {
             "name": "brick/math",
@@ -6141,16 +6141,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.8.3",
+            "version": "1.9.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "5583623b61caafebd62bc78a99533aa9d769d097"
+                "reference": "44a338ff0d5572c13fd77dfd91addb96e48c29f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5583623b61caafebd62bc78a99533aa9d769d097",
-                "reference": "5583623b61caafebd62bc78a99533aa9d769d097",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/44a338ff0d5572c13fd77dfd91addb96e48c29f8",
+                "reference": "44a338ff0d5572c13fd77dfd91addb96e48c29f8",
                 "shasum": ""
             },
             "require": {
@@ -6180,7 +6180,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.8.3"
+                "source": "https://github.com/phpstan/phpstan/tree/1.9.12"
             },
             "funding": [
                 {
@@ -6196,7 +6196,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-01T15:27:34+00:00"
+            "time": "2023-01-17T10:44:04+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",

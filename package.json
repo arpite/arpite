@@ -1,6 +1,6 @@
 {
 	"name": "@arpite/arpite",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"license": "MIT",
 	"author": {
 		"name": "Arpite",
@@ -38,7 +38,7 @@
 	],
 	"scripts": {
 		"start": "concurrently -k -n CSS,JS,TYPECHECK -c \"bgGreen.bold.black,bgYellow.bold.black,bgYellow.bold.black,bgBlue.bold.black\" \"yarn build:css --watch\" \"yarn build:js --watch\" \"yarn typecheck --watch\"",
-		"build": "yarn typecheck && yarn build:js && yarn build:css --minify",
+		"build": "yarn build:js && yarn build:css --minify",
 		"build:css": "tailwind -i resources/css/index.css -o resources/dist/arpite.css",
 		"build:js": "vite build",
 		"typecheck": "tsc --noEmit --preserveWatchOutput",

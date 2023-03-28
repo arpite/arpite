@@ -73,13 +73,12 @@ abstract class Operation
 
 	/**
 	 * @param Request $request
-	 * @return JsonResponse|RedirectResponse
+	 * @return mixed
 	 * @throws Throwable
 	 * @throws ValidationException
 	 */
-	public function handleRequest(
-		Request $request
-	): JsonResponse|RedirectResponse {
+	public function handleRequest(Request $request)
+	{
 		$this->updateStore();
 
 		$isInertiaRequest = app(IsInertiaRequestAction::class)->execute(

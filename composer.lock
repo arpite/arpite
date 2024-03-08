@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d8b6d2feb161a7da22e88d17bdd9409",
+    "content-hash": "1575c807ca635cd60def2b61ce36855f",
     "packages": [
         {
             "name": "brick/math",
@@ -6141,16 +6141,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.8.3",
+            "version": "1.10.60",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "5583623b61caafebd62bc78a99533aa9d769d097"
+                "reference": "95dcea7d6c628a3f2f56d091d8a0219485a86bbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5583623b61caafebd62bc78a99533aa9d769d097",
-                "reference": "5583623b61caafebd62bc78a99533aa9d769d097",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/95dcea7d6c628a3f2f56d091d8a0219485a86bbe",
+                "reference": "95dcea7d6c628a3f2f56d091d8a0219485a86bbe",
                 "shasum": ""
             },
             "require": {
@@ -6179,8 +6179,11 @@
                 "static analysis"
             ],
             "support": {
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.8.3"
+                "security": "https://github.com/phpstan/phpstan/security/policy",
+                "source": "https://github.com/phpstan/phpstan-src"
             },
             "funding": [
                 {
@@ -6196,7 +6199,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-01T15:27:34+00:00"
+            "time": "2024-03-07T13:30:19+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",

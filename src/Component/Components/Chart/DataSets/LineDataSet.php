@@ -1,21 +1,19 @@
 <?php
 
-namespace Arpite\Component\Components\Chart;
+namespace Arpite\Component\Components\Chart\DataSets;
 
-use Arpite\Core\Interfaces\Exportable;
 use Arpite\Core\Utilities\ExportBuilder;
 
-/**
- * @deprecated Use BarDataSet instead.
- */
-class DataSet implements Exportable
+class LineDataSet extends DataSet
 {
 	private string $label;
 
 	/** @var array<int, int> */
 	private array $data;
 
-	private ?string $backgroundColor = null;
+	private int $width = 2;
+
+	private string $color = "#111827";
 
 	private function __construct(string $label)
 	{
@@ -47,19 +45,25 @@ class DataSet implements Exportable
 	}
 
 	/**
-	 * @param ?string $backgroundColor
+	 * @param int $width
 	 * @return $this
 	 */
-	public function setBackgroundColor(?string $backgroundColor): self
+	public function setWidth(int $width): self
 	{
-		$this->backgroundColor = $backgroundColor;
+		$this->width = $width;
 
 		return $this;
 	}
 
-	public function getBackgroundColor(): ?string
+	/**
+	 * @param string $color
+	 * @return $this
+	 */
+	public function setColor(string $color): self
 	{
-		return $this->backgroundColor;
+		$this->color = $color;
+
+		return $this;
 	}
 
 	public function getLabel(): string
@@ -70,9 +74,12 @@ class DataSet implements Exportable
 	public function export(): array
 	{
 		return ExportBuilder::make()
+			->addProperty("type", "line")
 			->addProperty("label", $this->label)
 			->addProperty("data", $this->data)
-			->addProperty("backgroundColor", $this->backgroundColor)
+			->addProperty("borderWidth", $this->width)
+			->addProperty("borderColor", $this->color)
+			->addProperty("pointBackgroundColor", $this->color)
 			->export();
 	}
 }

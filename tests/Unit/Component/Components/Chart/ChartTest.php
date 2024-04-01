@@ -15,6 +15,7 @@ it("should have initial export", function () {
 		"yAxisLabel" => null,
 		"stacked" => false,
 		"height" => 320,
+		"legendPosition" => "right",
 	]);
 });
 

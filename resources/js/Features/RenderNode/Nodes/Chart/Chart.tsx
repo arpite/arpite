@@ -1,22 +1,39 @@
 import "chart.js/auto";
 import React from "react";
-import { Bar } from "react-chartjs-2";
+import { Chart as ReactChart } from "react-chartjs-2";
 
-interface DataSetInterface {
+interface BarDataSetInterface {
 	label: string;
 	data: number[];
 	backgroundColor: string;
 }
 
+interface LineDataSetInterface {
+	type: "line";
+	label: string;
+	data: number[];
+	borderColor: string;
+	borderWidth: number;
+	pointBackgroundColor: string;
+}
+
 export interface ChartInterface {
 	nodeType: "Chart";
 	labels: string[];
-	dataSets: DataSetInterface[];
+	dataSets: (BarDataSetInterface | LineDataSetInterface)[];
 	dataType: "NUMBER" | "CURRENCY";
 	xAxisLabel: string | null;
 	yAxisLabel: string | null;
 	stacked: boolean;
 	height: number;
+	legendPosition:
+		| "left"
+		| "top"
+		| "right"
+		| "bottom"
+		| "center"
+		| "chartArea"
+		| null;
 }
 
 export const Chart: React.FC<ChartInterface> = ({
@@ -27,10 +44,17 @@ export const Chart: React.FC<ChartInterface> = ({
 	yAxisLabel,
 	stacked,
 	height,
+	legendPosition,
 }) => {
 	return (
-		<div className="relative w-full" style={{ height: `${height}px` }}>
-			<Bar
+		<div
+			className={`relative w-full ${
+				legendPosition === "right" ? "" : "pr-2"
+			}`}
+			style={{ height: `${height}px` }}
+		>
+			<ReactChart
+				type="bar"
 				data={{
 					labels,
 					datasets: dataSets,
@@ -39,7 +63,10 @@ export const Chart: React.FC<ChartInterface> = ({
 					responsive: true,
 					maintainAspectRatio: false,
 					plugins: {
-						legend: { position: "right" },
+						legend: {
+							display: Boolean(legendPosition),
+							position: legendPosition ?? undefined,
+						},
 						tooltip: {
 							mode: stacked ? "index" : "nearest",
 							callbacks: {

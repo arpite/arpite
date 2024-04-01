@@ -1,14 +1,10 @@
 <?php
 
-namespace Arpite\Component\Components\Chart;
+namespace Arpite\Component\Components\Chart\DataSets;
 
-use Arpite\Core\Interfaces\Exportable;
 use Arpite\Core\Utilities\ExportBuilder;
 
-/**
- * @deprecated Use BarDataSet instead.
- */
-class DataSet implements Exportable
+class BarDataSet extends DataSet
 {
 	private string $label;
 
@@ -70,7 +66,7 @@ class DataSet implements Exportable
 	public function export(): array
 	{
 		return ExportBuilder::make()
-			->addProperty("label", $this->label)
+            ->addProperty("label", $this->label)
 			->addProperty("data", $this->data)
 			->addProperty("backgroundColor", $this->backgroundColor)
 			->export();

@@ -66,7 +66,7 @@ class BarDataSet extends DataSet
 	public function export(): array
 	{
 		return ExportBuilder::make()
-            ->addProperty("label", $this->label)
+			->addProperty("label", $this->label)
 			->addProperty("data", $this->data)
 			->addProperty("backgroundColor", $this->backgroundColor)
 			->export();

@@ -22,36 +22,36 @@ class Chart extends Component
 
 	private bool $isStacked = false;
 
-    private int $height = 320;
+	private int $height = 320;
 
-    private ?string $legendPosition = "right";
+	private ?string $legendPosition = "right";
 
 	public static function make(): self
 	{
 		return new self();
 	}
 
-    /**
-     * @param array<int, string> $labels
-     * @return $this
-     */
-    public function setLabels(array $labels): self
-    {
-        $this->labels = $labels;
+	/**
+	 * @param array<int, string> $labels
+	 * @return $this
+	 */
+	public function setLabels(array $labels): self
+	{
+		$this->labels = $labels;
 
-        return $this;
-    }
+		return $this;
+	}
 
-    /**
-     * @param ?string $legendPosition
-     * @return $this
-     */
-    public function setLegendPosition(?string $legendPosition): self
-    {
-        $this->legendPosition = $legendPosition;
+	/**
+	 * @param ?string $legendPosition
+	 * @return $this
+	 */
+	public function setLegendPosition(?string $legendPosition): self
+	{
+		$this->legendPosition = $legendPosition;
 
-        return $this;
-    }
+		return $this;
+	}
 
 	/**
 	 * @param array<int, \Arpite\Component\Components\Chart\DataSets\DataSet> $dataSets
@@ -115,8 +115,8 @@ class Chart extends Component
 			->addProperty("xAxisLabel", __($this->xAxisLabel))
 			->addProperty("yAxisLabel", __($this->yAxisLabel))
 			->addProperty("stacked", $this->isStacked)
-            ->addProperty("height", $this->height)
-            ->addProperty("legendPosition", $this->legendPosition)
+			->addProperty("height", $this->height)
+			->addProperty("legendPosition", $this->legendPosition)
 			->export();
 	}
 }
